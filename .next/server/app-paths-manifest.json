@@ -1,10 +1,10 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/(use)/[...not-found]/page": "app/(use)/[...not-found]/page.js",
-  "/page": "app/page.js",
-  "/(use)/properties/[slug]/page": "app/(use)/properties/[slug]/page.js",
-  "/(use)/articles/page": "app/(use)/articles/page.js",
-  "/(use)/properties/page": "app/(use)/properties/page.js",
   "/(use)/about-us/page": "app/(use)/about-us/page.js",
-  "/(use)/articles/[slug]/page": "app/(use)/articles/[slug]/page.js"
+  "/(use)/articles/page": "app/(use)/articles/page.js",
+  "/(use)/articles/[slug]/page": "app/(use)/articles/[slug]/page.js",
+  "/(use)/[...not-found]/page": "app/(use)/[...not-found]/page.js",
+  "/(use)/properties/page": "app/(use)/properties/page.js",
+  "/page": "app/page.js",
+  "/(use)/properties/[slug]/page": "app/(use)/properties/[slug]/page.js"
 }
