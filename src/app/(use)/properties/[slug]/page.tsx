@@ -8,7 +8,7 @@ import Wrapper from '@/layouts/Wrapper';
 //   title: "Listing Details One Homy - Real Estate React Next js Template",
 // };
 
-const index = () => {
+const Index = () => {
   const params = useParams();
   const { slug } = params; // Menangkap id dari URL
 
@@ -19,4 +19,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

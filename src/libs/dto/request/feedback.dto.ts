@@ -1,4 +1,4 @@
-import {IFeedback} from '@/lib/commons/interfaces';
+import { IFeedback } from '@/libs/interfaces';
 
 export class ReqCreateFeedbackDTO implements Partial<IFeedback> {
   profile_image?: string;

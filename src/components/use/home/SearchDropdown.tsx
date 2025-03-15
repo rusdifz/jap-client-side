@@ -20,6 +20,19 @@ const DropdownHome = ({ style }: any) => {
   return (
     <form onSubmit={searchHandler}>
       <div className="row gx-0 align-items-center">
+        {/* area search */}
+        <div className="col-xl-3 col-lg-4">
+          <div className="input-box-one border-left border-lg-0">
+            <div className="label">Search Keyword</div>
+            <input
+              type="text"
+              placeholder="aa"
+              className="type-input"
+              // onChange={handleKeywordChange}
+            />
+          </div>
+        </div>
+        {/* area search location */}
         <div className="col-xl-3 col-lg-4">
           <div className="input-box-one border-left">
             <div className="label">I’m looking to...</div>
@@ -33,6 +46,7 @@ const DropdownHome = ({ style }: any) => {
             />
           </div>
         </div>
+
         <div className={`${style ? 'col-xl-3' : 'col-xl-4'} col-lg-4`}>
           <div className="input-box-one border-left">
             <div className="label">Location</div>
@@ -46,23 +60,7 @@ const DropdownHome = ({ style }: any) => {
             />
           </div>
         </div>
-        <div className="col-xl-3 col-lg-4">
-          {/* <div className="input-box-one border-left border-lg-0">
-            <div className="label">Price Range</div>
-            <NiceSelect
-              className={`nice-select ${style ? 'fw-normal' : ''}`}
-              options={[
-                { value: '1', text: '$10,000 - $200,000' },
-                { value: '2', text: '$20,000 - $300,000' },
-                { value: '3', text: '$30,000 - $400,000' },
-              ]}
-              defaultCurrent={0}
-              onChange={selectHandler}
-              name=""
-              placeholder=""
-            />
-          </div> */}
-        </div>
+
         <div className={`${style ? 'col-xl-3' : 'col-xl-2'}`}>
           <div className="input-box-one lg-mt-10">
             <button

@@ -1,7 +1,8 @@
-import PriceRange from '@/components/examples/common/PriceRange';
+// import PriceRange from '@/components/examples/common/PriceRange';
 import NiceSelect from '@/ui/NiceSelect';
 import Link from 'next/link';
-import { FeaturesData } from '@/libs/const/office.const';
+// import { FeaturesData } from '@/libs/const/office.const';
+import { amenities } from '@/libs/const';
 
 const ListingDropdownModal = ({
   handleSearchChange,
@@ -101,7 +102,7 @@ const ListingDropdownModal = ({
                             Amenities
                           </h6>
                           <ul className="style-none d-flex flex-wrap justify-content-between filter-input">
-                            {FeaturesData.map((list, i) => (
+                            {amenities.map((list, i) => (
                               <li key={i}>
                                 <input
                                   type="checkbox"
@@ -141,13 +142,13 @@ const ListingDropdownModal = ({
                               <div className="currency ps-1">USD</div>
                             </div>
                           </div>
-                          <PriceRange
+                          {/* <PriceRange
                             MAX={maxPrice}
                             MIN={0}
                             STEP={1}
                             values={priceValue}
                             handleChanges={handlePriceChange}
-                          />
+                          /> */}
                           <div className="col-md-6">
                             <h6 className="block-title fw-bold mt-45 mb-20">
                               SQFT

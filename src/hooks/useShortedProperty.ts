@@ -2,21 +2,13 @@ import UseProperty from '@/hooks/UseProperty';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectProperties } from '@/redux/features/propertySlice';
-import listing_data from '@/data/inner-data/ListingData';
-import { ResponseAPI, IProperties } from '@/libs/interfaces';
-// import { IOfficeList } from '@/libs/interfaces/property.interface';
-// import { fetchOfficeList } from '@/api/property.api';
-
+import { IProperties } from '@/libs/interfaces';
 interface DataType {
   itemsPerPage: number;
   page: string;
 }
 
 const UseShortedProperty = ({ itemsPerPage, page }: DataType) => {
-  // const searchData = await
-
-  //   let all_property = listing_data;
-
   const { properties, setProperties } = UseProperty();
 
   const filteredProperties = properties.filter((item) => item.page === page);
@@ -149,21 +141,6 @@ const UseShortedProperty = ({ itemsPerPage, page }: DataType) => {
     );
     setProperties(searchingProducts);
   };
-
-  //   // handle Price
-  //   const maxPrice = all_property
-  //     .filter((item) => item.page === page)
-  //     .reduce((max, item) => {
-  //       return item.price > max ? item.price : max;
-  //     }, 0);
-  //   const [priceValue, setPriceValue] = useState([0, maxPrice]);
-
-  //   useEffect(() => {
-  //     let filterPrice = all_property.filter(
-  //       (j) => j.price >= priceValue[0] && j.price <= priceValue[1]
-  //     );
-  //     setProperties(filterPrice);
-  //   }, [priceValue]);
 
   const maxPrice = 20000;
   const [priceValue, setPriceValue] = useState([0, maxPrice]);

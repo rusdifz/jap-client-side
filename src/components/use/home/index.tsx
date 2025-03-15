@@ -25,7 +25,7 @@ const Home = () => {
       <SectionAboutUs />
       <Feedback style={true} />
       <Brand />
-      <BannerBottom />
+      {/* <BannerBottom /> */}
       <FooterTwoUse />
     </>
   );

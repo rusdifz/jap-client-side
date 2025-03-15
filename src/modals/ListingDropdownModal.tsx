@@ -1,20 +1,20 @@
-import PriceRange from "@/components/examples/common/PriceRange";
-import NiceSelect from "@/ui/NiceSelect";
-import Link from "next/link";
+// import PriceRange from "@/components/examples/common/PriceRange";
+import NiceSelect from '@/ui/NiceSelect';
+import Link from 'next/link';
 
 const ammenities_data: string[] = [
-  "A/C & Heating",
-  "Garages",
-  "Garden",
-  "Disabled Access",
-  "Swimming Pool",
-  "Parking",
-  "Wifi",
-  "Pet Friendly",
-  "Ceiling Height",
-  "Fireplace",
-  "Play Ground",
-  "Elevator",
+  'A/C & Heating',
+  'Garages',
+  'Garden',
+  'Disabled Access',
+  'Swimming Pool',
+  'Parking',
+  'Wifi',
+  'Pet Friendly',
+  'Ceiling Height',
+  'Fireplace',
+  'Play Ground',
+  'Elevator',
 ];
 
 const ListingDropdownModal = ({
@@ -60,14 +60,14 @@ const ListingDropdownModal = ({
                             <NiceSelect
                               className="nice-select fw-normal"
                               options={[
-                                { value: "apartments", text: "Buy Apartments" },
-                                { value: "condos", text: "Rent Condos" },
-                                { value: "houses", text: "Sell Houses" },
+                                { value: 'apartments', text: 'Buy Apartments' },
+                                { value: 'condos', text: 'Rent Condos' },
+                                { value: 'houses', text: 'Sell Houses' },
                                 {
-                                  value: "industrial",
-                                  text: "Rent Industrial",
+                                  value: 'industrial',
+                                  text: 'Rent Industrial',
                                 },
-                                { value: "villas", text: "Sell Villas" },
+                                { value: 'villas', text: 'Sell Villas' },
                               ]}
                               defaultCurrent={0}
                               onChange={handleStatusChange}
@@ -82,13 +82,13 @@ const ListingDropdownModal = ({
                             <NiceSelect
                               className="nice-select location fw-normal"
                               options={[
-                                { value: "washington", text: "Washington DC" },
-                                { value: "mexico", text: "Acapulco, Mexico" },
-                                { value: "germany", text: "Berlin, Germany" },
-                                { value: "france", text: "Cannes, France" },
-                                { value: "india", text: "Delhi, India" },
-                                { value: "giza", text: "Giza, Egypt" },
-                                { value: "cuba", text: "Havana, Cuba" },
+                                { value: 'washington', text: 'Washington DC' },
+                                { value: 'mexico', text: 'Acapulco, Mexico' },
+                                { value: 'germany', text: 'Berlin, Germany' },
+                                { value: 'france', text: 'Cannes, France' },
+                                { value: 'india', text: 'Delhi, India' },
+                                { value: 'giza', text: 'Giza, Egypt' },
+                                { value: 'cuba', text: 'Havana, Cuba' },
                               ]}
                               defaultCurrent={0}
                               onChange={handleLocationChange}
@@ -125,10 +125,10 @@ const ListingDropdownModal = ({
                             <NiceSelect
                               className="nice-select fw-normal"
                               options={[
-                                { value: "1", text: "1" },
-                                { value: "2", text: "2" },
-                                { value: "3", text: "3" },
-                                { value: "4", text: "4" },
+                                { value: '1', text: '1' },
+                                { value: '2', text: '2' },
+                                { value: '3', text: '3' },
+                                { value: '4', text: '4' },
                               ]}
                               defaultCurrent={0}
                               onChange={handleBedroomChange}
@@ -143,10 +143,10 @@ const ListingDropdownModal = ({
                             <NiceSelect
                               className="nice-select fw-normal"
                               options={[
-                                { value: "1", text: "1" },
-                                { value: "2", text: "2" },
-                                { value: "3", text: "3" },
-                                { value: "4", text: "4" },
+                                { value: '1', text: '1' },
+                                { value: '2', text: '2' },
+                                { value: '3', text: '3' },
+                                { value: '4', text: '4' },
                               ]}
                               defaultCurrent={0}
                               onChange={handleBathroomChange}
@@ -200,13 +200,13 @@ const ListingDropdownModal = ({
                               <div className="currency ps-1">USD</div>
                             </div>
                           </div>
-                          <PriceRange
+                          {/* <PriceRange
                             MAX={maxPrice}
                             MIN={0}
                             STEP={1}
                             values={priceValue}
                             handleChanges={handlePriceChange}
-                          />
+                          /> */}
                           <div className="col-md-6">
                             <h6 className="block-title fw-bold mt-45 mb-20">
                               SQFT
@@ -227,7 +227,7 @@ const ListingDropdownModal = ({
                             <div className="d-flex justify-content-between form-widget">
                               <a
                                 onClick={handleResetFilter}
-                                style={{ cursor: "pointer" }}
+                                style={{ cursor: 'pointer' }}
                                 className="tran3s"
                               >
                                 <i className="fa-regular fa-arrows-rotate"></i>

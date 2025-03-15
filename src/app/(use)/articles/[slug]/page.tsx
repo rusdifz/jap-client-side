@@ -1,8 +1,8 @@
-import BlogDetails from "@/components/examples/blogs/blog-details";
-import Wrapper from "@/layouts/Wrapper";
+import BlogDetails from '@/components/use/blogs/blog-details';
+import Wrapper from '@/layouts/Wrapper';
 
 export const metadata = {
-  title: "Blog Details Homy - Real Estate React Next js Template",
+  title: 'Blog Details Homy - Real Estate React Next js Template',
 };
 const index = () => {
   return (

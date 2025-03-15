@@ -1,6 +1,6 @@
-import {ConditionUnitEnum, PropertyStatusEnum} from '@/lib/commons/enums';
-import {PaginationDTO} from './global.dto';
-import {IUnit} from '@/lib/commons/interfaces';
+import { ConditionUnitEnum, PropertyStatusEnum } from '@/libs/enums';
+import { PaginationDTO } from './global.dto';
+import { IUnit } from '@/libs/interfaces';
 
 export class ReqGetUnitListDTO extends PaginationDTO {
   property_id!: number;

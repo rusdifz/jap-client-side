@@ -1,12 +1,5 @@
 import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-
-import UseOffice from './UseOffice';
-
-// import { IPagination, ResponseAPI } from '@/libs/interfaces/global.interface';
-// import { IOfficeList } from '@/libs/interfaces/property.interface';
-
-// import { fetchOfficeList } from '@/api/property.api';
+import { useDispatch } from 'react-redux';
 
 import { IPagination, ResponseAPI, IProperties } from '@/libs/interfaces';
 import { fetchApiProperties } from '@/api/property.api';
@@ -15,14 +8,11 @@ import { LocationEnum, PropertyTypeEnum } from '@/libs/enums';
 import {
   fetchOfficesList,
   fetchPaginationOffices,
-  selectOffices,
 } from '@/redux/features/officeSlice';
 import { ReqGetDTO } from '@/libs/dto/request';
 
 const UseSearchOffice = () => {
   const dispatch = useDispatch();
-
-  // const { offices, setOffices } = UseOffice();
 
   const [pagination, setPagination] = useState<IPagination>({
     page: 1,
@@ -215,31 +205,3 @@ const UseSearchOffice = () => {
 };
 
 export default UseSearchOffice;
-//
-
-// handle Price
-// const maxPrice = all_property.reduce((max, item) => {
-//   return item.price > max ? item.price : max;
-// }, 0);
-// const [priceValue, setPriceValue] = useState([0, maxPrice]);
-
-//   const maxPrice = 20000;
-// const [priceValue, setPriceValue] = useState([0, maxPrice]);
-
-//   const handlePriceChange = (val: number[]) => {
-//     setPriceValue(val);
-//   };
-
-// const priceRanges: {
-//   [key: string]: number[];
-// } = {
-//   "1": [10000, 200000],
-//   "2": [20000, 300000],
-//   "3": [30000, 400000],
-// };
-
-// const handlePriceDropChange = (selectedValue: string) => {
-//   const selectedRange = priceRanges[selectedValue];
-//   const newPriceValue = selectedRange ? selectedRange : [0, maxPrice];
-//   setPriceValue(newPriceValue);
-// };

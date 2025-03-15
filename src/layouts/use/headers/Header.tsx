@@ -21,6 +21,15 @@ const Header = ({ style_1, style_2 }: any) => {
 
   return (
     <>
+      {/* <div
+        className={`theme-main-menu menu-overlay sticky-menu ${
+          style_2
+            ? 'menu-style-four'
+            : style_1
+            ? 'menu-style-three'
+            : 'menu-style-two'
+        } ${sticky ? 'fixed' : ''}`}
+      > */}
       <div
         className={`theme-main-menu menu-overlay sticky-menu ${
           style_2

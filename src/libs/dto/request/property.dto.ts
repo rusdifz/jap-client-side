@@ -3,9 +3,8 @@ import {
   PropertyStatusEnum,
   PropertyTypeEnum,
   StatusPublishEnum,
-} from '@/lib/commons/enums';
-import {ReqGetDTO} from './global.dto';
-import {IProperty} from '@/lib/commons/interfaces';
+} from '@/libs/enums';
+import { ReqGetDTO } from './global.dto';
 
 export class ReqPropertiesDTO extends ReqGetDTO {
   location?: LocationEnum | string;

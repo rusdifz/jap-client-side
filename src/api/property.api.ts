@@ -8,8 +8,6 @@ export async function fetchApiProperties(
   props?: ReqPropertiesDTO,
 ): Promise<ResponseAPI<IProperties[]>> {
   try {
-    console.log('props', props);
-
     return await Get<IProperties[]>('/client/v1/properties', { ...props });
   } catch (error: any) {
     console.log('error fetch from api properties', error);
