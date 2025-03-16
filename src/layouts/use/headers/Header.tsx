@@ -16,39 +16,22 @@ import logo from '@/assets/images/logo/logo_jap.png';
 
 const Header = ({ style_1, style_2 }: any) => {
   const { sticky } = UseSticky();
-  const [offCanvas, setOffCanvas] = useState<boolean>(false);
-  const [isSearch, setIsSearch] = useState<boolean>(false);
+  // const [offCanvas, setOffCanvas] = useState<boolean>(false);
+  // const [isSearch, setIsSearch] = useState<boolean>(false);
 
   return (
     <>
-      {/* <div
-        className={`theme-main-menu menu-overlay sticky-menu ${
-          style_2
-            ? 'menu-style-four'
-            : style_1
-            ? 'menu-style-three'
-            : 'menu-style-two'
-        } ${sticky ? 'fixed' : ''}`}
-      > */}
-      <div
-        className={`theme-main-menu menu-overlay sticky-menu ${
-          style_2
-            ? 'menu-style-four'
-            : style_1
-            ? 'menu-style-three'
-            : 'menu-style-two'
-        } ${sticky ? 'fixed' : ''}`}
+      <header
+        className={`theme-main-menu menu-overlay menu-style-two scrolled sticky-menu  ${
+          sticky ? 'fixed' : ''
+        }`}
       >
         <div className={`inner-content ${style_2 ? 'gap-two' : 'gap-one'}`}>
           <div className="top-header position-relative">
             <div className="d-flex align-items-center">
               <div className="logo order-lg-0">
-                <Link href="/" className="d-flex align-items-center">
-                  {/* <Image
-                    src={style_2 ? logo_3 : style_1 ? logo_2 : logo_1}
-                    alt=""
-                  /> */}
-                  <Image src={logo} alt="" />
+                <Link href="/" className="d-flex align-items-center ml-50">
+                  <Image src={logo} alt="" height={70} width={100} />
                 </Link>
               </div>
 
@@ -78,11 +61,7 @@ const Header = ({ style_1, style_2 }: any) => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* <Offcanvas offCanvas={offCanvas} setOffCanvas={setOffCanvas} />
-      <LoginModal />
-      <HeaderSearchbar isSearch={isSearch} setIsSearch={setIsSearch} /> */}
+      </header>
     </>
   );
 };

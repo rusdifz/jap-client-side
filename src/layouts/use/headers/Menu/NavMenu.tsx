@@ -12,16 +12,16 @@ import telp_icon from '@/assets/images/icon/icon_31.svg';
 
 const NavMenu = () => {
   const pathname = usePathname();
-  const currentRoute = usePathname();
+  // const currentRoute = usePathname();
   const [navTitle, setNavTitle] = useState('');
 
-  const isMenuItemActive = (menuLink: string) => {
-    return currentRoute === menuLink;
-  };
+  // const isMenuItemActive = (menuLink: string) => {
+  //   return currentRoute === menuLink;
+  // };
 
-  const isSubMenuItemActive = (subMenuLink: string) => {
-    return currentRoute === subMenuLink;
-  };
+  // const isSubMenuItemActive = (subMenuLink: string) => {
+  //   return currentRoute === subMenuLink;
+  // };
 
   //openMobileMenu
   const openMobileMenu = (menu: any) => {
@@ -34,14 +34,6 @@ const NavMenu = () => {
 
   return (
     <ul className="navbar-nav align-items-lg-center">
-      <li className="d-block d-lg-none">
-        <div className="logo">
-          <Link href="/" className="d-block">
-            <Image src={logo} alt="" />
-          </Link>
-        </div>
-      </li>
-
       {menu_data.map((menu: any) => (
         <li key={menu.id} className={`nav-item dropdown ${menu.class_name}`}>
           <Link
@@ -55,7 +47,12 @@ const NavMenu = () => {
           >
             {menu.title === '+62-821-1178-2867' ? (
               <div className="d-flex align-items-center">
-                <Image src={telp_icon} alt="" width="20" />
+                <Image
+                  src={telp_icon}
+                  alt=""
+                  width="20"
+                  className="icon-telp"
+                />
                 {menu.title}
               </div>
             ) : (

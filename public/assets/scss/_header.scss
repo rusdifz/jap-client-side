@@ -93,7 +93,7 @@
     position: relative;
     z-index: 99;
     border: none;
-    background: $color-one;
+    // background: $color-one;
   }
   .navbar-toggler:focus {
     box-shadow: none;
@@ -147,31 +147,43 @@
 
   // Main Menu
   .nav-item .nav-link {
-    font-family: $main-font;
     font-weight: 500;
     font-size: 18px;
-    line-height: initial;
-    color: $text-dark;
     padding: 10px 0;
     margin: 0 18px;
     position: relative;
+    color: $text-dark;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    line-height: 1.0769em;
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+    transition: text-shadow 0.3s ease;
+
     @include transition(0.2s);
   }
   .nav-item:hover .nav-link {
-    color: $color-one;
+    color: $text-biru;
   }
   .nav-item .nav-link.active {
-    color: $color-one;
+    color: $text-biru;
   }
-  &.white-vr {
-    .nav-item .nav-link {
-      color: #fff;
-    }
-    .nav-item:hover .nav-link {
-      color: $color-one;
-    }
+  .icon-telp {
+    fill: white;
+  }
+  &.scrolled {
     &.fixed {
-      background: #000;
+      .nav-item .nav-link {
+        color: $text-dark;
+        text-shadow: 0px 0px 0px rgba(241, 241, 241, 0);
+        transition: text-shadow 0.3s ease;
+      }
+      .nav-item:hover .nav-link {
+        color: $text-biru;
+      }
+      .nav-item .nav-link.active {
+        color: $text-biru;
+      }
+      background: #faf6f4;
       border: none;
     }
   }
@@ -428,7 +440,7 @@
   .navbar-collapse {
     position: fixed;
     top: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     left: 0;
     height: 100vh;
     max-height: 100vh;
@@ -452,6 +464,7 @@
   .navbar .navbar-nav .nav-link {
     margin: 0;
     padding: 15px 12px;
+    color: #000;
     border-top: 1px dashed rgba($color: #000, $alpha: 0.1);
   }
   .white-vr .navbar .navbar-nav .nav-link {

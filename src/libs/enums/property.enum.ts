@@ -27,7 +27,7 @@ export enum LocationEnum {
 
 export enum PropertyStatusEnum {
   LEASE = 'Lease',
-  BUY = 'Buy',
+  SALE = 'Sale',
 }
 
 export enum PropertyTypeEnum {

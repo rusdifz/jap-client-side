@@ -1,4 +1,8 @@
-import { LocationEnum, PropertyTypeEnum } from '@/libs/enums';
+import {
+  LocationEnum,
+  PropertyStatusEnum,
+  PropertyTypeEnum,
+} from '@/libs/enums';
 
 export const colThRowOne = [
   'No',
@@ -79,6 +83,12 @@ export const optionsProperty = Object.values(PropertyTypeEnum).map((prop) => {
 export const optionsLocation = Object.values(LocationEnum).map((prop) => {
   return { value: prop, text: prop };
 });
+
+export const optionsPropertyStatus = Object.values(PropertyStatusEnum).map(
+  (prop) => {
+    return { value: prop, text: prop };
+  },
+);
 
 export const optionSort = [
   { value: 'newest', text: 'Newest' },

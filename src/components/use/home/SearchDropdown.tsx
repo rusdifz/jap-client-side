@@ -23,7 +23,7 @@ const DropdownHome = ({ style }: any) => {
         {/* area search */}
         <div className="col-xl-3 col-lg-4">
           <div className="input-box-one border-left border-lg-0">
-            <div className="label">Search Keyword</div>
+            <div className="labelNew">Search Keyword</div>
             <input
               type="text"
               placeholder="aa"
@@ -47,7 +47,7 @@ const DropdownHome = ({ style }: any) => {
           </div>
         </div>
 
-        <div className={`${style ? 'col-xl-3' : 'col-xl-4'} col-lg-4`}>
+        <div className="col-xl-3 col-lg-4">
           <div className="input-box-one border-left">
             <div className="label">Location</div>
             <NiceSelect
@@ -61,7 +61,21 @@ const DropdownHome = ({ style }: any) => {
           </div>
         </div>
 
-        <div className={`${style ? 'col-xl-3' : 'col-xl-2'}`}>
+        <div className="col-xl-3 col-lg-4">
+          <div className="input-box-one border-left">
+            <div className="label">Location</div>
+            <NiceSelect
+              className={`nice-select location ${style ? 'fw-normal' : ''}`}
+              options={optionsLocation}
+              defaultCurrent={0}
+              onChange={selectHandler}
+              name=""
+              placeholder=""
+            />
+          </div>
+        </div>
+
+        <div className="col-xl-3 col-lg-4">
           <div className="input-box-one lg-mt-10">
             <button
               className={`fw-500 tran3s ${
