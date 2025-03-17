@@ -15,34 +15,6 @@ interface DataType {
 }
 [];
 
-const property_overview_data: DataType[] = [
-  {
-    id: 1,
-    icon: icon_1,
-    title: 'Sqft . 3,720',
-  },
-  {
-    id: 2,
-    icon: icon_2,
-    title: 'Bed . 03',
-  },
-  {
-    id: 3,
-    icon: icon_3,
-    title: 'Bath . 2',
-  },
-  {
-    id: 4,
-    icon: icon_4,
-    title: 'Kitchen . 01',
-  },
-  {
-    id: 5,
-    icon: icon_5,
-    title: 'Type . Apartment',
-  },
-];
-
 const CommonPropertyOverview: React.FC<PropPropertyDetail> = ({ property }) => {
   return (
     <ul className="style-none d-flex flex-wrap align-items-center justify-content-between">

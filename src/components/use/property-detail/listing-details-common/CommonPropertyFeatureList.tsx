@@ -7,90 +7,9 @@ import feature_data from '@/data/home-data/FeatureData';
 const CommonPropertyFeatureList: React.FC<PropPropertyDetail> = ({
   property,
 }) => {
-  // const property_feature_list: DataType[] = [
-  //   {
-  //     id: 1,
-  //     title: 'Property Details',
-  //     feature_list: [
-  //       { title: 'Property Size:', value: '03' },
-  //       { title: 'Office Hour Weekday:', value: 'Semi furnished' },
-  //       { title: 'Bathrooms:', value: '02' },
-  //       { title: 'Year Built:', value: '2010' },
-  //       { title: 'Floor:', value: 'Ground' },
-  //       { title: 'Garage:', value: '03' },
-  //       { title: 'Ceiling Height:', value: '3.2m' },
-  //       { title: 'Property Type:', value: 'Apartment' },
-  //       { title: 'Renovation:', value: '3.2m' },
-  //       { title: 'Status:', value: 'For Sale' },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'Nearby',
-  //     feature_list: [
-  //       {
-  //         title: '',
-  //         value: '',
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 3,
-  //     title: 'Amenities',
-
-  //     feature_list: [
-  //       {
-  //         title: '',
-  //         value: '',
-  //       },
-  //     ],
-  //   },
-
-  let listProperty: any = [
-    {
-      id: 1,
-      title: 'Detail Description',
-      feature_list: [
-        { title: 'Office Hour Weekday:', value: '08.00 AM - 06.00 PM' },
-        { title: 'Office Hour Weekend:', value: '08.00 AM - 01.00 PM' },
-        { title: 'Year Built:', value: 1997 },
-        { title: 'Number of Floor:', value: 20 },
-        { title: 'Size Floor:', value: '900 Sqm' },
-        { title: 'Property Type:', value: 'Office' },
-        { title: 'Completion', value: '1997' },
-      ],
-    },
-    {
-      id: 2,
-      title: 'Nearby',
-    },
-    {
-      id: 3,
-      title: 'Amenities',
-      feature_list: [{ title: 'Property Size:', value: '03' }],
-    },
-    {
-      id: 3,
-      title: 'Available Units',
-      feature_list: [{ title: 'Property Size:', value: '03' }],
-    },
-  ];
-
-  listProperty = listProperty.map((dt: any) => {
-    if (dt.id === 1) {
-    } else if (dt.id === 2) {
-      dt['feature_list'] = property.nearby_new;
-    } else {
-      // dt['feature_list'] = property.amenities.map
-    }
-
-    return dt;
-  });
-  console.log('list', listProperty);
-
   return (
     <div className="accordion" id="accordionTwo">
-      {listProperty.map((item: any) => (
+      {property.property_feature.map((item: any) => (
         <div key={item.id} className="accordion-item">
           <h2 className="accordion-header">
             <button
@@ -125,10 +44,7 @@ const CommonPropertyFeatureList: React.FC<PropPropertyDetail> = ({
                     {item.feature_list.map((list: any, i: number) => (
                       <li key={i}>
                         <span>{list.title} </span>{' '}
-                        <span className="fw-500 color-dark">
-                          {' '}
-                          {list.value ? list.value : '1km'}
-                        </span>
+                        <span className="fw-500 color-dark"> {list.value}</span>
                       </li>
                     ))}
                   </ul>

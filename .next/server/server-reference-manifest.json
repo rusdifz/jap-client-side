@@ -1,94 +1,124 @@
 {
   "node": {
-    "2228f47d9890bcd9d5784e2660ecee5c2bee0265": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
-    "a05acedb7bd6ea4281105abff3359a1e24227f32": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
-    "e1d2a61ab62ec017f8d61f78879903e8b8bd6211": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
-    "f2db4b3e37c1f4ae4d316f72052f98f847d222b9": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
-    "221b5ce7b9eea7ef9fb3d69876a808fdd023941b": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
-    "40994c1647e9cc65d65861bebbd192c9ed49d4a1": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
-    "6e6f3c18cf3aa416e0585725e46fe5fe93895349": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
-    "d56261d5426d53e84c2f5caee6112ccea6351c18": {
-      "workers": {
-        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(use)/properties/page": "action-browser"
-      }
-    },
     "0219990c1703f6ee6bd764d01126a4ff481d44d7": {
       "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
         "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
         "app/(use)/properties/page": "action-browser"
       }
     },
     "622e93dee8a1114903e0d1183b7f8fd4618bfeef": {
       "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
         "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
         "app/(use)/properties/page": "action-browser"
       }
     },
     "86b65b515ed420360d819a275105dfa1b0b2ed69": {
       "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
         "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
         "app/(use)/properties/page": "action-browser"
+      }
+    },
+    "221b5ce7b9eea7ef9fb3d69876a808fdd023941b": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser"
+      }
+    },
+    "40994c1647e9cc65d65861bebbd192c9ed49d4a1": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser"
+      }
+    },
+    "6e6f3c18cf3aa416e0585725e46fe5fe93895349": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser"
+      }
+    },
+    "d56261d5426d53e84c2f5caee6112ccea6351c18": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser"
+      }
+    },
+    "2228f47d9890bcd9d5784e2660ecee5c2bee0265": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "a05acedb7bd6ea4281105abff3359a1e24227f32": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "e1d2a61ab62ec017f8d61f78879903e8b8bd6211": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "f2db4b3e37c1f4ae4d316f72052f98f847d222b9": {
+      "workers": {
+        "app/(use)/properties/[slug]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/(use)/properties/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fauth.helper.ts%22%2C%5B%22protectRoute%22%2C%22getCookiesJWT%22%2C%22setCookieJWT%22%2C%22removeCookiesJWT%22%5D%5D%2C%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Flibs%2Fhelper%2Fcookies.helper.ts%22%2C%5B%22removeCookie%22%2C%22getCookie%22%2C%22setCookie%22%5D%5D%5D&__client_imported__=true!",
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ffdn-rusdi%2FWork-Area%2Fpersonal%2Fside-job%2Fjap-client%2Fsrc%2Fapi%2Fbase.api.ts%22%2C%5B%22Delete%22%2C%22Post%22%2C%22Put%22%2C%22Get%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(use)/properties/[slug]/page": "action-browser",
+        "app/(use)/properties/page": "action-browser",
+        "app/page": "action-browser"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "PGy5nDY+ugx35vn0lyKCFnrgW4YAVsaKnNhpVrv5t0k="
+  "encryptionKey": "Z+cVJHUuvNO7C6o0bi/x/QGlg6Y1S3OPXuks9x9tOIk="
 }

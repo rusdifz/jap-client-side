@@ -43,12 +43,12 @@ const ResultListArea = ({ style }: any) => {
     <div
       className={`property-listing-six pb-170 xl-pb-120 ${
         style
-          ? 'pt-150 xl-pt-100'
+          ? 'pt-50 xl-pt-100'
           : 'pt-110 md-pt-80 mt-150 xl-mt-120 bg-pink-two'
       }`}
     >
       <div className="container">
-        <div className="listing-header-filter d-sm-flex justify-content-between align-items-center mb-40 lg-mb-30">
+        <div className="listing-header-filter d-sm-flex justify-content-between align-items-center mb-40 lg-mb-3">
           {/* area showing */}
           <div>
             Showing <span className="color-dark fw-500">{pagination.page}</span>{' '}
@@ -85,76 +85,59 @@ const ResultListArea = ({ style }: any) => {
         </div>
 
         {/* buat list data */}
-        <div className="row gx-xxl-5">
+        <div className="row gx-xxl-6">
           {offices.map((property: IProperties, index: number) => (
             <div
               key={property.property_id}
-              className="col-lg-4 col-md-6 d-flex mb-50 wow fadeInUp"
-              //   data-wow-delay={"0,1"}
+              className="col-lg-3 col-md-6  d-flex mb-50 wow fadeInUp"
+              data-wow-delay={'0,' + index + 1}
             >
               <div
-                className={`listing-card-one border-25 h-100 w-100 ${
+                className={`listing-card-one shadow border-25  ${
                   style ? 'border-layout' : ''
                 }`}
               >
-                <div className="img-gallery p-15">
-                  <div className="position-relative border-25 overflow-hidden">
-                    {/* <div
-                      className={`tag border-25 ${
-                        office.status_property == PropertyStatusEnum.LEASE
+                <div className="img-gallery">
+                  <div className="position-relative overflow-hidden">
+                    <div
+                      className={`tag border-30 ${
+                        property.property_status == PropertyStatusEnum.LEASE
                           ? 'sale'
                           : 'rent'
                       }`}
-                    > */}
-                    <div className={`tag border-25 rent`}>
-                      {/* FOR {office.status_property.toUpperCase()} */}
-                      FOR LEASE
+                    >
+                      {property.property_status}
                     </div>
 
-                    <Link href="#" className="fav-btn tran3s">
-                      <i className="fa-light fa-heart"></i>
-                    </Link>
-
-                    <div id={`carousel${index}`} className="carousel slide">
-                      <div className="carousel-inner">
-                        <div
-                          key={index}
-                          className={`carousel-item active`}
-                          data-bs-interval="1000000"
+                    {/* <div id={`carousel${index}`} className="carousel slide"> */}
+                    <div className="carousel-inner">
+                      <div
+                        key={index}
+                        className={`carousel-item active`}
+                        // data-bs-interval="1000000"
+                      >
+                        <Link
+                          href={'properties/' + property.slug}
+                          className="d-block"
                         >
-                          <Link
-                            href={'properties/' + property.slug}
-                            className="d-block"
-                          >
-                            <Image
-                              // src={
-                              //   property.slug == 'anjay' || property.slug == ''
-                              //     ? propertyThumb_8
-                              //     : `/assets/images/offices-jap/${property.slug}/1.png`
-                              // }
-                              src={`/assets/images/property-location/${pascalToKebab(
-                                property.location?.toString(),
-                              )}/${property.slug}/1.png`}
-                              width={500}
-                              height={500}
-                              className="w-100"
-                              alt=""
-                            />
-                          </Link>
-                        </div>
+                          <Image
+                            src={`/assets/images/property-location/${pascalToKebab(
+                              property.location?.toString(),
+                            )}/${property.slug}/1.png`}
+                            // layout="responsive"
+                            width={100}
+                            height={100}
+                            alt=""
+                            className="image-aja"
+                          />
+                        </Link>
                       </div>
                     </div>
+                    {/* </div> */}
                   </div>
                 </div>
 
                 <div className="property-info p-25">
-                  <Link
-                    href={'properties/' + property.slug}
-                    className="title tran3s"
-                  >
-                    {property.name}
-                  </Link>
-                  <div className="address">{property.location}</div>
                   <ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between">
                     <li className="d-flex align-items-center">
                       <Image
@@ -162,27 +145,44 @@ const ResultListArea = ({ style }: any) => {
                         alt=""
                         className="lazy-img icon me-2"
                       />
-                      <span className="fs-16">
-                        {property.spesification?.property_size} sqm
+                      <span className="fs-14" style={{ fontWeight: 700 }}>
+                        {property.spesification?.property_size}/sqm
                       </span>
                     </li>
+
+                    <li className="d-flex align-items-center">
+                      <strong className="color-dark">
+                        IDR {property.price.rent_sqm}
+                      </strong>
+                    </li>
                   </ul>
-                  <div className="pl-footer top-border d-flex align-items-center justify-content-between">
-                    <strong className="price fw-500 color-dark">
-                      Rp {property.price.rent_sqm}
-                    </strong>
-                    <Link
-                      href={'properties/' + property.slug}
-                      className="btn-four rounded-circle"
+
+                  <div className="pl-footer top-border d-flex align-items-center justify-content-between" />
+
+                  <div>
+                    <span
+                      className=""
+                      style={{ color: '#6bb2ef', fontWeight: 550 }}
                     >
-                      <i className="bi bi-arrow-up-right"></i>
-                    </Link>
+                      {' '}
+                      {property.property_type}
+                    </span>
                   </div>
+
+                  <Link
+                    href={'properties/' + property.slug}
+                    className="title-one"
+                    style={{ fontWeight: 700, fontSize: 25 }}
+                  >
+                    {property.name}
+                  </Link>
+                  <div className="address">{property.location}</div>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
         {/* buat list data */}
         <div className="pt-50 md-pt-20 text-center">
           <ReactPaginate
@@ -202,3 +202,36 @@ const ResultListArea = ({ style }: any) => {
 };
 
 export default ResultListArea;
+
+{
+  /* <Link
+href={'properties/' + property.slug}
+className="title tran3s"
+>
+{property.name}
+</Link>
+<div className="address">{property.location}</div>
+<ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between">
+<li className="d-flex align-items-center">
+  <Image
+    src={featureIcon_1}
+    alt=""
+    className="lazy-img icon me-2"
+  />
+  <span className="fs-16">
+    {property.spesification?.property_size} sqm
+  </span>
+</li>
+</ul>
+<div className="pl-footer top-border d-flex align-items-center justify-content-between">
+<strong className="price fw-500 color-dark">
+  Rp {property.price.rent_sqm}
+</strong>
+<Link
+  href={'properties/' + property.slug}
+  className="btn-four rounded-circle"
+>
+  <i className="bi bi-arrow-up-right"></i>
+</Link>
+</div> */
+}

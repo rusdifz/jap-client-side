@@ -15,14 +15,6 @@ const NavMenu = () => {
   // const currentRoute = usePathname();
   const [navTitle, setNavTitle] = useState('');
 
-  // const isMenuItemActive = (menuLink: string) => {
-  //   return currentRoute === menuLink;
-  // };
-
-  // const isSubMenuItemActive = (subMenuLink: string) => {
-  //   return currentRoute === subMenuLink;
-  // };
-
   //openMobileMenu
   const openMobileMenu = (menu: any) => {
     if (navTitle === menu) {

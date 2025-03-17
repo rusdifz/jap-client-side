@@ -9,12 +9,13 @@ import faqImg from '@/assets/images/assets/screen_09.png';
 
 const SectionAboutUs = () => {
   return (
-    <div className="block-feature-thirteen bg-pink pt-160 xl-pt-120 lg-pt-80 pb-130 xl-pb-100 lg-pb-80 mt-50 xl-mt-20">
+    <div className="block-feature-thirteen bg-pink pt-70 xl-pt-40 lg-pt-55 pb-70 xl-pb-25 lg-pb-25 mt-80 mb-20 xl-mb-30 xl-mt-50">
       <div className="position-relative z-1">
         <div className="container container-large">
           <div className="row">
             <div className="col-xl-5 col-lg-6 ms-auto order-lg-last wow fadeInRight">
-              <div className="pb-85 xl-pb-50 position-relative z-1">
+              <div className="pb-5 xl-pb-50 position-relative z-1">
+                {}
                 <div className="title-one mb-55 lg-mb-20">
                   <h3>
                     Find Your{' '}
@@ -37,11 +38,12 @@ const SectionAboutUs = () => {
                   >
                     <span>More Details</span>
                   </Link>
-                  <Link href="/contact" className="btn-three mt-20">
+                  {/* <Link href="/contact" className="btn-three mt-20">
                     <span>Request a Callback</span>{' '}
                     <i className="fa-light fa-arrow-right-long"></i>
-                  </Link>
+                  </Link> */}
                 </div>
+                {}
               </div>
             </div>
           </div>

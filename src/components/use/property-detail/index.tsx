@@ -14,6 +14,7 @@ import { fetchApiPropertyDetail } from '@/api/property.api';
 
 import ResultBody from './ResultBody';
 import FooterTwoUse from '@/layouts/use/footers/FooterTwo';
+import { Skeleton } from 'antd';
 
 const PropertyDetail: React.FC<PropSlug> = ({ slug }) => {
   const dispatch = useDispatch();
@@ -35,20 +36,19 @@ const PropertyDetail: React.FC<PropSlug> = ({ slug }) => {
   if (!office) {
     return (
       <>
-        <Header style={true} />
-        <div className="p-4 text-center">Loading...</div>
-        <FooterFour />
+        {/* <Header style={true} /> */}
+        {/* <div className="p-4 text-center">Loading...</div> */}
+        <Skeleton />
+        {/* <FooterFour /> */}
       </>
     );
   }
 
   return (
     <>
-      <Header style={true} />
       <ResultBody />
       {/* <FancyBanner /> */}
-      {/* <FooterFour /> */}
-      <FooterTwoUse />
+      {/* <FooterTwoUse /> */}
     </>
   );
 };

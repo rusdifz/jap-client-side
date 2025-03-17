@@ -4,13 +4,13 @@ import Link from 'next/link';
 import Slider from 'react-slick';
 import React, { useRef } from 'react';
 
-import feature_data from '@/data/home-data/FeatureData';
 import { CategoryLP } from '@/libs/dummy-data/category-landing-page';
 
-// import ThamrinThumb from '@/assets/images/property-location/thamrin/menara-cakrawala/1.png';
 import titleShape from '@/assets/images/shape/title_shape_02.svg';
 
 const setting = {
+  // width: '50px',
+  // height: '100px',
   infinite: true,
   speed: 300,
   slidesToShow: 4,
@@ -60,21 +60,16 @@ const SectionCategory = () => {
   console.log('catge', CategoryLP);
 
   return (
-    <div className="block-feature-three mt-50 xl-mt-120">
+    <div className="block-feature-three mt-40 xl-mt-100">
       <div className="container">
-        <div className="title-one text-center mb-50 xl-mb-10 md-mb-30 wow fadeInUp">
-          <h3>
-            Explore Popular{' '}
-            <span>
-              Location <Image src={titleShape} alt="" className="lazy-img" />
-            </span>
-          </h3>
+        <div className="title-one text-center mb-20 xl-mb-10 md-mb-30 wow fadeInUp">
+          <h4>Explore Popular Location</h4>
         </div>
 
         <Slider
           {...setting}
           ref={sliderRef}
-          className="property-location-slider-one"
+          className="property-location-slider-one width-50"
         >
           {CategoryLP.map((item: any) => (
             <div key={item.id} className="item-first">
@@ -82,10 +77,14 @@ const SectionCategory = () => {
                 className={`location-card-new position-relative z-1 d-flex align-items-end ${item.item_bg}`}
               >
                 <div className="content text-center w-100 tran3s">
-                  <h5 className="text-white fw-normal">{item.title}</h5>
-                  <p className="text-white fw-light">{item.desc}</p>
+                  <h5 className="text-white font-garamond fw-normal">
+                    {item.title}
+                  </h5>
+                  <p className="text-white font-garamondt fw-light">
+                    {item.desc}
+                  </p>
                 </div>
-                <Link href="/listing_01" className="stretched-link"></Link>
+                <Link href="/properties" className="stretched-link"></Link>
               </div>
             </div>
           ))}

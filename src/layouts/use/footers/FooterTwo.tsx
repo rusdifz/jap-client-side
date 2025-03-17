@@ -24,7 +24,7 @@ const footer_content: ContentType = {
   desc_1: 'Get instant news by subscribe to our newsletter',
   desc_2:
     'World Trade Center, Level 11st Jl. Jendral Sudirman  Kav  29-31  Jakarta Selatan – Indonesia 12920',
-  email: 'homyreal@demo.com',
+  email: 'infosewakantorjakarta@gmail.com',
   number: '+62-821-1178-2867',
   icon: ['youtube', 'tiktok', 'instagram'],
   icon_link: [
@@ -92,7 +92,7 @@ const FooterTwoUse = () => {
                   {icon.map((icon, i) => (
                     <li key={i}>
                       <Link
-                        href={icon_link[0]}
+                        href={icon_link[i]}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -110,7 +110,7 @@ const FooterTwoUse = () => {
             </div>
 
             <div className="col-xl-9">
-              <div className="ms-xxl-5 ps-xl-5 mt-200 lg-mt-20">
+              <div className="ms-xxl-5 ps-xl-5 mt-00 lg-mt-20">
                 <div className="row justify-content-between">
                   {footer_data
                     .filter((items) => items.page === 'home_3')
@@ -135,7 +135,7 @@ const FooterTwoUse = () => {
                     <Image
                       src={footerShape_2}
                       alt=""
-                      className="lazy-img mt-50"
+                      className="lazy-img mt-10"
                     />
                   </div>
                 </div>

@@ -9,7 +9,6 @@ import Header from '@/layouts/use/headers/Header';
 const index = () => {
   return (
     <Wrapper>
-      <Header style_1={true} style_2={false} />
       <Home />
     </Wrapper>
   );

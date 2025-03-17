@@ -11,4 +11,5 @@ export class ReqGetDTO extends PaginationDTO {
   property_type?: any;
   features?: any;
   search_keyword?: any;
+  property_status?: string;
 }

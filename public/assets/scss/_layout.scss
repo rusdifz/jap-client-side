@@ -90,7 +90,7 @@
   .slider-arrows li {
     position: absolute;
     left: -27px;
-    bottom: 173px;
+    bottom: 100px;
     z-index: 1;
     &[class*='next'] {
       left: auto;
@@ -117,7 +117,7 @@
       right: 8px;
       bottom: 8px;
       border-radius: 8px;
-      background: $color-one;
+      background: $text-biru;
       width: 185px;
       font-weight: 500;
       color: #fff;
@@ -212,7 +212,7 @@
       }
     }
     i {
-      color: $color-one;
+      color: $text-biru;
     }
   }
   .shape_01 {
@@ -229,6 +229,9 @@
 .block-feature-eight {
   .title-one {
     margin-bottom: -40px;
+    &:hover {
+      background: $text-biru;
+    }
   }
   .media-block {
     .main-img {
@@ -526,7 +529,7 @@
     .video-icon {
       width: 140px;
       height: 140px;
-      background: $color-one;
+      background: $text-biru;
       color: #fff;
       font-size: 50px;
       &:hover {
@@ -541,11 +544,11 @@
     margin: -45px 0 0;
     transform: translateY(-85%);
     span {
-      color: $color-one;
+      color: $text-biru;
     }
   }
   .bg-wrapper {
-    background: $color-one;
+    background: $text-biru;
     padding: 14px 0;
   }
   .slick-track {
@@ -613,7 +616,7 @@
           }
           &:hover {
             span {
-              color: $color-one;
+              color: $text-biru;
             }
           }
         }
@@ -691,8 +694,8 @@
         filter: invert(100%);
       }
       &:hover {
-        border-color: $color-one;
-        color: $color-one;
+        border-color: $text-biru;
+        color: $text-biru;
       }
     }
   }
@@ -736,8 +739,8 @@
         &:hover,
         &:focus {
           color: #fff;
-          background: $color-one;
-          border-color: $color-one;
+          background: $text-biru;
+          border-color: $text-biru;
         }
       }
     }

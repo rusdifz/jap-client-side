@@ -25,7 +25,7 @@ const DropdownSix = () => {
 
   return (
     <>
-      <div className="search-wrapper-one layout-one mt-250 xl-mt-150 lg-mt-100 position-relative wow fadeInUp">
+      <div className="search-wrapper-one layout-two mt-250 xl-mt-150 lg-mt-100 position-relative wow fadeInUp">
         {}
         {/* <nav className="search-filter-nav-one d-flex">
     <div className="nav nav-tabs border-0" role="tablist">
@@ -151,9 +151,7 @@ const DropdownSix = () => {
                 }}
               >
                 <div className="row gx-0 align-items-center">
-                  {}
-
-                  <div className="col-xl-2 col-lg-3">
+                  <div className="col-xl-2 col-lg-3 col-md-6">
                     <div className="input-box-one border-left border-lg-0">
                       <div className="labelNew">Search Keyword</div>
                       <input
@@ -211,12 +209,22 @@ const DropdownSix = () => {
 
                   {/* area type search */}
 
-                  <div className="col-xl-3 col-lg-3">
-                    <button className="fw-300 text-uppercase search-btn-four">
-                      <span>Search</span>
-                      <i className="fa-light fa-magnifying-glass"></i>
-                    </button>
+                  <div className="col-xl-2">
+                    <div className="input-box-one lg-mt-10">
+                      <button className="fw-500 text-uppercase tran3s search-btn-four">
+                        <span>Search</span>
+                        <i className="fa-light fa-magnifying-glass"></i>
+                      </button>
+                    </div>
                   </div>
+
+                  {/* <div className="col-xl-1">
+                    <div className="input-box-one lg-mt-10">
+                      <button className="fw-500 text-uppercase tran3s search-btn-two">
+                        <i className="fa-light fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                  </div> */}
                 </div>
               </form>
             </div>

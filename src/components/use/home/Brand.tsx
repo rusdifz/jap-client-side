@@ -1,20 +1,20 @@
-import BrandTwo from '@/components/examples/common/brand/BrandTwo';
+import ListOurClient from '../common/ListBrand';
 
-const Brand = () => {
+const OurClient = () => {
   return (
-    <div className="partner-section-one mt-45">
+    <div className="partner-section-one mt-60">
       <div className="container">
-        <h6 className="text-center fs-20 mb-50 lg-mb-30">
+        <h6 className="text-center fs-20 mb-10 lg-mb-20">
           50+ Company trusted by us.
         </h6>
       </div>
       <div className="bg-wrapper bg-white">
         <div className="container">
-          <BrandTwo />
+          <ListOurClient />
         </div>
       </div>
     </div>
   );
 };
 
-export default Brand;
+export default OurClient;

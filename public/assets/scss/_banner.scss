@@ -163,54 +163,6 @@
 }
 .hero-banner-four {
   padding: 100px 0 0 50px;
-  // border-bottom: 1px solid #000;
-  // .social-elemnet {
-  //   position: absolute;
-  //   z-index: 9;
-  //   left: 0;
-  //   top: 40%;
-  //   transform: rotate(-90deg) translate(0, 0);
-  //   li {
-  //     font-weight: 500;
-  //     color: #000;
-  //     margin: 0 5px;
-  //     &:hover {
-  //       a {
-  //         color: $color-one;
-  //       }
-  //     }
-  //   }
-  // }
-  // .scroll-bar {
-  //   width: 3px;
-  //   height: 100px;
-  //   background: #000;
-  //   position: absolute;
-  //   bottom: 10%;
-  //   left: 55px;
-  //   transform: translateY(-50%);
-  //   z-index: 9;
-  //   &:before {
-  //     content: '';
-  //     position: absolute;
-  //     height: 36%;
-  //     width: 100%;
-  //     left: 0;
-  //     top: 0;
-  //     background: #f4f4f4;
-  //   }
-  //   span {
-  //     position: absolute;
-  //     font-weight: 500;
-  //     text-transform: uppercase;
-  //     letter-spacing: 3px;
-  //     font-size: 14px;
-  //     transform: rotate(-90deg);
-  //     top: 137%;
-  //     left: -36px;
-  //     color: #000;
-  //   }
-  // }
   .main-bg {
     &::after {
       content: '';
@@ -267,14 +219,13 @@
       height: 100%;
     }
   }
-
   .hero-heading {
-    font-size: 80px;
+    font-size: 100px;
     color: $text-dark;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-      sans-serif;
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    //   sans-serif;
     line-height: 1.0769em;
-    text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 35px rgba(255, 255, 255, 2);
     transition: text-shadow 0.3s ease;
     margin-left: 70px;
     position: relative;
@@ -552,7 +503,7 @@
 }
 // Fancy Banner Two
 .fancy-banner-two {
-  background: url(../images/media/img_12.jpg) no-repeat center;
+  background: url(../images/banner/banner-image-5.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   &:before {
@@ -971,6 +922,29 @@
     }
   }
 }
+// Fancy Banner Five
+.fancy-banner-five {
+  background: url(../images/media/img_25.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba($color: #000000, $alpha: 0.5);
+  }
+  .shape_01 {
+    bottom: -18%;
+    right: 5%;
+    max-width: 10%;
+    animation: rotated 300s infinite linear;
+  }
+}
+
 // Address Banner
 .address-banner {
   .icon {
@@ -1058,6 +1032,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba($color: #e6e6e6, $alpha: 0.4);
+  }
   .sub-heading {
     font-size: 28px;
     line-height: 1.785em;
@@ -1133,5 +1117,28 @@
     max-width: 4%;
     z-index: 0;
     opacity: 0.7;
+  }
+}
+
+// Fancy Banner Maps Footer
+.fancy-banner-maps {
+  background: url(../images/banner/banner-image-5.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba($color: #e6e6e6, $alpha: 0.9);
+  }
+  .shape_01 {
+    bottom: -18%;
+    right: 5%;
+    max-width: 10%;
+    animation: rotated 300s infinite linear;
   }
 }

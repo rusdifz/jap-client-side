@@ -328,8 +328,9 @@
   background-repeat: no-repeat;
   overflow: hidden;
   border-radius: 20px;
-  height: 400px;
-  padding: 15px 15px 20px;
+  width: auto;
+  height: 350px;
+  padding: 10px 15px 10px;
   background-image: url(../images/property-location/thamrin/menara-cakrawala/1.png);
   &.card {
     &-2 {

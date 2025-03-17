@@ -1,13 +1,23 @@
 'use client';
-import Image from 'next/image';
+import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
+
+import bannerAvatar_1 from '@/assets/images/media/img_33.jpg';
+import bannerAvatar_2 from '@/assets/images/media/img_34.jpg';
+import bannerAvatar_3 from '@/assets/images/media/img_35.jpg';
+import bannerAvatar_4 from '@/assets/images/media/img_36.jpg';
 import Slider from 'react-slick';
+// import DropdownFour from '@/components/examples/search-dropdown/home-dropdown/DropdownFour';
+// import DropdownSix from '@/components/examples/search-dropdown/home-dropdown/DropdownSix';
+// import DropdownHome from './SearchDropdown';
+import SearchDropdown from '../dropdown/SearchDropdown';
 
-// import titleShape from '@/assets/images/shape/shape_34.svg';
-import bannerShape_1 from '@/assets/images/shape/shape_35.svg';
-import bannerShape_2 from '@/assets/images/shape/shape_36.svg';
-// import BannerImage from '@/assets/images/property-location/banner-image1.jpg';
-
-import DropdownHome from './SearchDropdown';
+const banner_avatar: StaticImageData[] = [
+  bannerAvatar_1,
+  bannerAvatar_2,
+  bannerAvatar_3,
+  bannerAvatar_4,
+];
 
 const setting = {
   dots: false,
@@ -22,13 +32,13 @@ const setting = {
 
 const BannerTop = () => {
   return (
-    <div className="hero-banner-three position-relative z-1 pt-30 lg-pt-50 pb-30 xl-pb-20 lg-pb-20">
+    <div className="hero-banner-four position-relative z-1 pt-150 xl-pt-120 md-pt-60 pb-150 xl-pb-120 md-pb-100">
       <Slider {...setting} className="hero-slider-one m0">
         <div className="item m0">
           <div
             className="hero-img"
             style={{
-              backgroundImage: `url(/assets/images/property-location/detabek/green-office-park-6/1.png)`,
+              backgroundImage: `url(/assets/images/banner/banner-image-3.jpg)`,
             }}
           ></div>
         </div>
@@ -36,7 +46,7 @@ const BannerTop = () => {
           <div
             className="hero-img"
             style={{
-              backgroundImage: `url(/assets/images/property-location/banner-image1.jpg)`,
+              backgroundImage: `url(/assets/images/banner/banner-image-12.jpg)`,
             }}
           ></div>
         </div>
@@ -44,43 +54,32 @@ const BannerTop = () => {
           <div
             className="hero-img"
             style={{
-              backgroundImage: `url(/assets/images/property-location/thamrin/menara-cakrawala/1.png)`,
+              backgroundImage: `url(/assets/images/banner/banner-image-9.jpg)`,
             }}
           ></div>
         </div>
       </Slider>
 
-      <div className="container position-relative z-2">
+      <div className="container position-relative z-1">
         <div className="row">
-          <div className="col-lg-10 m-auto">
-            <h3 className="hero-heading text-center text-white font-garamond fw-500 wow fadeInUp">
-              <span>Featured Office</span>
-            </h3>
-            <p
-              className="fs-24 text-white text-center pt-5 md-pt-10 pb-55 lg-pb-40 wow fadeInUp"
-              data-wow-delay="0.1s"
-            >
-              We’ve more than 100 commercial properties across Indonesia.
-            </p>
+          <div className="col-lg-9 wow fadeInLeft">
+            <div className="mt-50 mb-100">
+              {/* <h3 className="hero-heading fw-500 wow fadeInUp"> */}
+              <h1 className="hero-heading font-garamond wow fadeInUp">
+                Featured Office
+              </h1>
+              {/* </h3> */}
+            </div>
           </div>
-        </div>
 
-        <div className="row">
-          <div className="col-xxl-10 m-auto">
-            <div
-              className="search-wrapper-one layout-one position-relative wow fadeInUp"
-              data-wow-delay="0.2s"
-            >
-              <div className="bg-wrapper mt-70">
-                <DropdownHome style={true} />
-              </div>
+          <div className="row">
+            <div className="col-xxl-12 cl mb-10">
+              {/* <DropdownSix /> */}
+              <SearchDropdown />
             </div>
           </div>
         </div>
       </div>
-
-      <Image src={bannerShape_1} alt="" className="lazy-img shapes shape_01" />
-      <Image src={bannerShape_2} alt="" className="lazy-img shapes shape_02" />
     </div>
   );
 };

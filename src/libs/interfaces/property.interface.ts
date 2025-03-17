@@ -1,5 +1,6 @@
 import {
   LocationEnum,
+  PropertyStatusEnum,
   PropertyTypeEnum,
   StatusPublishEnum,
 } from '@/libs/enums';
@@ -16,6 +17,8 @@ export interface IProperty {
   koordinat_map: string;
   property_type: PropertyTypeEnum;
   status_publish: StatusPublishEnum;
+  property_status: PropertyStatusEnum;
+  property_feature: any[];
   price: {
     deposit: string;
     overtime: {
@@ -79,6 +82,7 @@ export interface IProperties {
   spesification?: {
     property_size: number;
   };
+  property_status: string;
   images?: IMedia[];
   created_at?: string;
   updated_at?: string;

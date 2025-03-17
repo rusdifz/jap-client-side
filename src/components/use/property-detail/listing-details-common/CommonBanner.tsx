@@ -10,37 +10,64 @@ const CommonBanner: React.FC<PropPropertyDetail> = ({
   style_3,
 }: any) => {
   return (
-    <div className="row">
+    <div className="row mt-50 ">
       <div className="col-lg-6">
-        <h3 className="property-titlee">{property.name}</h3>
-        <div className="d-flex flex-wrap mt-10">
+        {/* <span className="fs-16" style={{ fontWeight: 700 }}>
+              {property.property_type}
+            </span>
+            <div
+              className={`list-type text-uppercase mt-15 me-3 ${
+                style_3
+                  ? 'bg-white text-dark fw-500'
+                  : 'text-uppercase border-20'
+              }`}
+            >
+              FOR LEASE
+            </div> */}
+
+        {/* <span className="address" style={{ fontWeight: 550 }}>
+          {' '}
+          {property.property_type} anjay
+        </span> */}
+
+        <div className="d-flex flex-wrap mt-10 mb-10">
           <div
-            className={`list-type text-uppercase mt-15 me-3 ${
+            className={` position-relative overflow-hidden pt-1 list-type text-uppercase text-center me-3 ${
               style_3 ? 'bg-white text-dark fw-500' : 'text-uppercase border-20'
             }`}
           >
-            FOR LEASE
-          </div>
-          <div className="address mt-15">
-            <i className="bi bi-geo-alt"></i> {property.address}
+            {property.property_status}
           </div>
 
-          <div className="d-flex flex-wrap mt-10 ml-35">
+          {/* <span
+            className="fs-19 ml-10 pt-10 justify-content"
+            style={{ fontWeight: 700 }}
+          >
+            {property.property_type}
+          </span> */}
+
+          <div className="d-flex flex-wrap ml-10">
             <Image src={icon_1} alt="" className="lazy-img icon" />
           </div>
-          <div className="mt-15 ml-10">
-            {/* <i className="bi bi-geo-alt"></i>{' '}
-            {property.spesification.property_size} sqm */}
-            {/* <Image src={icon_1} alt="" className="lazy-img icon" /> */}
+          <div className=" ml-10 pt-5">
             <span className="fs-20 color-dark">
-              {property.spesification.property_size}
+              {property.spesification.property_size} sqm
             </span>
+          </div>
+        </div>
+
+        {/* <h4 className="property-titlee mt-20">{property.name}</h4> */}
+
+        <span className="property-title"> {property.name} </span>
+        <div className="d-flex flex-wrap mt-10">
+          <div className="address">
+            <i className="bi bi-geo-alt"></i> {property.address}
           </div>
         </div>
       </div>
       <div className="col-lg-6 text-lg-end">
         <div className="d-inline-block md-mt-10">
-          <div className="price color-dark fw-500">
+          <div className="price color-dark fw-500" style={{ fontSize: '30px' }}>
             Rp. {property.price.rent_sqm}/sqm/month
           </div>
           {/* <div className="est-price fs-20 mt-25 mb-35 md-mb-30">

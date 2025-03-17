@@ -4,12 +4,16 @@ import { useDispatch } from 'react-redux';
 import { IPagination, ResponseAPI, IProperties } from '@/libs/interfaces';
 import { fetchApiProperties } from '@/api/property.api';
 
-import { LocationEnum, PropertyTypeEnum } from '@/libs/enums';
+import {
+  LocationEnum,
+  PropertyStatusEnum,
+  PropertyTypeEnum,
+} from '@/libs/enums';
 import {
   fetchOfficesList,
   fetchPaginationOffices,
 } from '@/redux/features/officeSlice';
-import { ReqGetDTO } from '@/libs/dto/request';
+import { ReqGetDTO, ReqPropertiesDTO } from '@/libs/dto/request';
 
 const UseSearchOffice = () => {
   const dispatch = useDispatch();
@@ -21,7 +25,7 @@ const UseSearchOffice = () => {
   });
 
   useEffect(() => {
-    fetchApiProperties({ page: 1, limit: 10, location: LocationEnum.THAMRIN })
+    fetchApiProperties({ page: 1, limit: 12, location: LocationEnum.THAMRIN })
       .then((resp) => {
         console.log('resp', resp.data);
 
@@ -32,16 +36,13 @@ const UseSearchOffice = () => {
   }, []);
 
   const [sortOptionNew, setSortOptionNew] = useState<string>('');
-  const [locationNew, setLocationNew] = useState<string | LocationEnum | null>(
-    null,
-  );
-  const [officeType, setOfficeType] = useState<
-    string | PropertyTypeEnum | null
-  >(null);
+  const [locationNew, setLocationNew] = useState<any>(null);
+  const [officeType, setOfficeType] = useState<any>(null);
   const [selectedAmenitiesNew, setSelectedAmenitiesNew] = useState<string[]>(
     [],
   );
   const [keyword, setKeyword] = useState<string | null>(null);
+  const [propertyStatus, setPropertyStatus] = useState<any>();
 
   // handleSortOptionChange
   const handleSortNewChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -79,9 +80,9 @@ const UseSearchOffice = () => {
 
     const newPage = event.selected + 1;
 
-    let propsFilter: ReqGetDTO = {
+    let propsFilter: ReqPropertiesDTO = {
       page: newPage,
-      limit: 10,
+      limit: 12,
     };
 
     if (sortOptionNew.length > 0) {
@@ -127,10 +128,12 @@ const UseSearchOffice = () => {
   };
 
   const handleSubmitForm = async (e: FormEvent) => {
-    e.preventDefault();
-    let propsFilter: ReqGetDTO = {
+    // console.log('this');
+
+    // e.preventDefault();
+    let propsFilter: ReqPropertiesDTO = {
       page: pagination.page,
-      limit: 10,
+      limit: 12,
     };
 
     if (sortOptionNew !== null) {
@@ -151,6 +154,10 @@ const UseSearchOffice = () => {
 
     if (keyword !== null) {
       propsFilter.search_keyword = keyword;
+    }
+
+    if (propertyStatus !== null) {
+      propsFilter.property_status = propertyStatus;
     }
 
     console.log('submit form', propsFilter);
@@ -189,7 +196,11 @@ const UseSearchOffice = () => {
     // setPagination,
     sortOptionNew,
     locationNew,
+    setLocationNew,
     officeType,
+    setOfficeType,
+    propertyStatus,
+    setPropertyStatus,
     selectedAmenitiesNew,
     keyword,
     handleSortNewChange,

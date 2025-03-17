@@ -71,7 +71,7 @@
     position: fixed;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0 13px 35px -12px rgb(35 35 35 / 10%);
     .alert-wrapper {
       display: none;
@@ -93,7 +93,7 @@
     position: relative;
     z-index: 99;
     border: none;
-    // background: $color-one;
+    background: $text-biru;
   }
   .navbar-toggler:focus {
     box-shadow: none;
@@ -156,7 +156,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
       sans-serif;
     line-height: 1.0769em;
-    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.7);
     transition: text-shadow 0.3s ease;
 
     @include transition(0.2s);
@@ -435,7 +435,7 @@
     padding-left: 12px;
   }
   .white-vr .navbar-collapse {
-    background-color: #000;
+    background-color: #ffffff;
   }
   .navbar-collapse {
     position: fixed;

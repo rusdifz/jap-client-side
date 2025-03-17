@@ -3,6 +3,8 @@
 import '../styles/index.scss';
 import { Provider } from 'react-redux';
 import store from '@/redux/store';
+import Header from '@/layouts/use/headers/Header';
+import Footer from '@/layouts/use/footers/Footer';
 
 export default function RootLayout({
   children,
@@ -46,7 +48,11 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning={true}>
         <div className="main-page-wrapper">
-          <Provider store={store}>{children}</Provider>
+          <Provider store={store}>
+            <Header style_1={true} style_2={false} />
+            {children}
+            <Footer />
+          </Provider>
         </div>
       </body>
     </html>

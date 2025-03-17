@@ -1,10 +1,12 @@
 'use client';
+
 import Image from 'next/image';
 import { Rating } from 'react-simple-star-rating';
-import feedback_data from '@/static-content/home-data/FeedbackData';
-import Link from 'next/link';
+// import Link from 'next/link';
 import Slider from 'react-slick';
 import { useRef } from 'react';
+
+import { feedbackData } from '@/libs/dummy-data/feedback-data';
 
 import titleShape_1 from '@/assets/images/shape/title_shape_01.svg';
 import titleShape_2 from '@/assets/images/shape/shape_37.svg';
@@ -61,24 +63,15 @@ const Feedback = ({ style }: any) => {
         <div className="position-relative z-1">
           <div className="row">
             <div className="col-xl-6 col-lg-8">
-              <div className="title-one pe-xxl-5 mb-75 xl-mb-50 wow fadeInUp">
-                {style ? (
-                  <h3>
-                    Client{' '}
-                    <span>
-                      Feedback{' '}
-                      <Image src={titleShape_1} alt="" className="lazy-img" />
-                    </span>
-                  </h3>
-                ) : (
-                  <h2 className="font-garamond">
-                    Don’t Trust Us, Trust <em>our clients</em>{' '}
-                    <span className="star-shape">
-                      <Image src={titleShape_2} alt="" className="lazy-img" />
-                    </span>
-                  </h2>
-                )}
-                <p className={`fs-20 ${style ? 'mt-xs' : 'm0'}`}>
+              <div className="title-one pe-xxl-5 mb-30 xl-mb-40 wow fadeInUp">
+                <h3>
+                  Client{' '}
+                  <span>
+                    Feedback{' '}
+                    <Image src={titleShape_1} alt="" className="lazy-img" />
+                  </span>
+                </h3>
+                <p className={`fs-20 mt-xs`}>
                   Client satisfaction speaks louder than our words. Hear from
                   them.
                 </p>
@@ -87,36 +80,30 @@ const Feedback = ({ style }: any) => {
           </div>
 
           <Slider {...setting} ref={sliderRef} className="feedback-slider-two">
-            {feedback_data
-              .filter((items) => items.page === 'home_3')
-              .map((item) => (
-                <div key={item.id} className="item">
-                  <div
-                    className={`feedback-block-four ${
-                      style ? 'ps-lg-4 pe-lg-4' : ''
-                    }`}
-                  >
-                    <div className="d-flex align-items-center">
-                      <Image
-                        src={item.thumb}
-                        alt=""
-                        className="rounded-circle avatar"
-                      />
-                      <div className="ps-3">
-                        <h6 className="fs-20 m0">{item.title}</h6>
-                        <span className="fs-16">{item.country}</span>
-                      </div>
+            {feedbackData.map((item: any) => (
+              <div key={item.id} className="item">
+                <div className={`feedback-block-four ps-lg-4 pe-lg-4`}>
+                  <div className="d-flex align-items-center">
+                    <Image
+                      src={item.thumb}
+                      alt=""
+                      className="rounded-circle avatar"
+                    />
+                    <div className="ps-3">
+                      <h6 className="fs-20 m0">{item.title}</h6>
+                      <span className="fs-16">{item.country}</span>
                     </div>
-                    <blockquote>&quot;{item.desc}&quot;</blockquote>
-                    <ul className="rating style-none d-flex">
-                      <li>
-                        <Rating initialValue={5} size={20} readonly={true} />
-                      </li>
-                    </ul>
-                    <Image src={item.quote_icon} alt="" className="icon" />
                   </div>
+                  <blockquote>&quot;{item.desc}&quot;</blockquote>
+                  <ul className="rating style-none d-flex">
+                    <li>
+                      <Rating initialValue={5} size={20} readonly={true} />
+                    </li>
+                  </ul>
+                  <Image src={item.quote_icon} alt="" className="icon" />
                 </div>
-              ))}
+              </div>
+            ))}
           </Slider>
 
           <ul className="slider-arrows slick-arrow-two d-flex justify-content-center style-none md-mt-30">
@@ -127,9 +114,6 @@ const Feedback = ({ style }: any) => {
               <i className="bi bi-arrow-right"></i>
             </li>
           </ul>
-          {/* <div className="section-btn text-center md-mt-30">
-                  <Link href="#" className="btn-eleven fst-italic"><span>See all Feedback</span></Link>
-               </div> */}
         </div>
       </div>
       {!style && (
