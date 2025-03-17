@@ -54,7 +54,7 @@ const menu_data: MenuItem[] = [
       {
         // link: '/service_details',
         link: '#',
-        title: 'Our Service',
+        title: 'Our Partner',
       },
     ],
   },
