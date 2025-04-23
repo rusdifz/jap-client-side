@@ -1,0 +1,37 @@
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px; // adjust vertical distance
+  right: 24px; // adjust horizontal distance
+  width: 56px; // diameter of the circle
+  height: 56px;
+  border-radius: 50%; // perfect circle
+  background-color: #25d366;
+  color: #fff;
+  font-size: 1.5rem; // icon size
+  z-index: 1050; // on top of most elements
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  i {
+    line-height: 0; // ensure icon is perfectly centered
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+// Responsive tweak: slightly smaller on mobile
+@media (max-width: 576px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+}
