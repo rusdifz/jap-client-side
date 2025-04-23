@@ -20,14 +20,14 @@ export default function RootLayout({
       <head>
         <meta
           name="keywords"
-          content="Real estate, Property sale, Property buy"
+          content="Workspace, workspace jabodetabek, jll, regus, property, office"
         />
         <meta name="description" content="master property in jabodetabek" />
-        <meta property="og:site_name" content="Homy" />
-        <meta property="og:url" content="https://creativegigstf.com" />
+        <meta property="og:site_name" content="Office" />
+        <meta property="og:url" content="https://jardineasiapasific.asia" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Jardine Asiapasific" />
-        <meta name="og:image" content="images/assets/ogg.png" />
+        {/* <meta name="og:image" content="images/assets/ogg.png" /> */}
         {/* For IE  */}
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         {/* For Resposive Device */}

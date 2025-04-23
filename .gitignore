@@ -38,4 +38,4 @@ next-env.d.ts
 .env
 
 # /public/assets/images/agent
-/public/assets/images/dashboard
+# /public/assets/images/dashboard
