@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Faq from '@/components/use/common/Faq';
-import Count from '@/components/common/Count';
+import Faq from '@/components/moleculs/Faq';
+import Count from '@/components/atoms/Count';
 
 import titleShape from '@/assets/images/shape/title_shape_03.svg';
 

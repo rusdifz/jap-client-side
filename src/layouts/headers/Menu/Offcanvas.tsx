@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
-import Fancybox from '@/components/common/Fancybox';
+import Fancybox from '@/components/moleculs/Fancybox';
 import Link from 'next/link';
 
 import offcanvasLogo from '@/assets/images/logo/logo_02.svg';

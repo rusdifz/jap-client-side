@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 // import DropdownFour from '@/components/search-dropdown/home-dropdown/DropdownFour';
 // import DropdownSix from '@/components/search-dropdown/home-dropdown/DropdownSix';
 // import DropdownHome from './SearchDropdown';
-import SearchDropdown from '../use/dropdown/SearchDropdown';
+import SearchDropdown from '../moleculs/SearchDropdown';
 import Image from 'next/image';
 
 const setting = {
