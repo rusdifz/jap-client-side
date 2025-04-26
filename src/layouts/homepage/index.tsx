@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <>
       <BannerTop />
-      {/* <SearchAreaTwo /> */}
       <Category />
       <AboutUs />
       <Feedback style={true} />

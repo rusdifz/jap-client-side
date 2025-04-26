@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Faq from '@/components/moleculs/Faq';
 import Count from '@/components/atoms/Count';
 
-import titleShape from '@/assets/images/shape/title_shape_03.svg';
+// import titleShape from '@/assets/images/shape/title_shape_03.svg';
 
 const HomeSectionAboutUs = () => {
   return (
@@ -22,7 +22,14 @@ const HomeSectionAboutUs = () => {
                     Find Your{' '}
                     <span>
                       Perfect
-                      <Image src={titleShape} alt="" className="lazy-img" />
+                      <Image
+                        src="/assets/images/shape/title_shape_03.svg"
+                        width={200}
+                        height={200}
+                        // fill
+                        alt=""
+                        className="lazy-img"
+                      />
                     </span>{' '}
                     Match Easily.
                   </h3>

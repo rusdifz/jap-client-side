@@ -1,32 +1,28 @@
-// 'use client';
+'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
 
-// import footerIcon_1 from '@/assets/images/icon/icon_30.svg';
-// import footerIcon_2 from '@/assets/images/icon/icon_31.svg';
-
-interface ContentType {
-  email: string;
-  number: string;
-  icon: string[];
-  icon_link: string[];
-}
-
-const footer_content: ContentType = {
-  email: 'infosewakantorjakarta@gmail.com',
-  number: '+62-821-1178-2867',
-  icon: ['youtube', 'tiktok', 'instagram'],
-  icon_link: [
-    'https://youtube.com/@jakartasiaproperty?si=orvP7QZX4dc-k2ue',
-    'https://www.tiktok.com/@sewakantorjakarta?_t=ZS-8uMvyc1aCsK&_r=1',
-    'https://www.instagram.com/jakartaasiaproperty?igsh=MXB1OTRqYWZvenMzMA==',
-  ],
-};
-
-const { email, number, icon, icon_link } = footer_content;
-
 const HomeSectionAddress = () => {
+  interface ContentType {
+    email: string;
+    number: string;
+    icon: string[];
+    icon_link: string[];
+  }
+
+  const footer_content: ContentType = {
+    email: 'infosewakantorjakarta@gmail.com',
+    number: '+62-821-1178-2867',
+    icon: ['youtube', 'tiktok', 'instagram'],
+    icon_link: [
+      'https://youtube.com/@jakartasiaproperty?si=orvP7QZX4dc-k2ue',
+      'https://www.tiktok.com/@sewakantorjakarta?_t=ZS-8uMvyc1aCsK&_r=1',
+      'https://www.instagram.com/jakartaasiaproperty?igsh=MXB1OTRqYWZvenMzMA==',
+    ],
+  };
+
+  const { email, number, icon, icon_link } = footer_content;
   return (
     <div className="fancy-banner-maps position-relative z-1 mt-50 xl-mt-120 mb-50">
       <div className="container">
