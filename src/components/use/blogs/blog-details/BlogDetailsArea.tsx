@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import BlogComment from '../common-blog/BlogComment';
-// import BlogForm from "@/components/forms/BlogForm";
 import BlogForm from '@/components/forms/BlogForm';
 import BlogSidebar from '../common-blog/BlogSidebar';
 

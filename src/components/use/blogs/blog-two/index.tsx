@@ -1,13 +1,13 @@
 import BreadcrumbThree from '@/components/common/breadcrumb/BreadcrumbThree';
-import FooterFour from '@/layouts/examples/footers/FooterFour';
-import HeaderFour from '@/layouts/examples/headers/HeaderFour';
+// import FooterFour from '@/layouts/examples/footers/FooterFour';
+// import HeaderFour from '@/layouts/examples/headers/HeaderFour';
 import BlogTwoArea from './BlogTwoArea';
 import FancyBanner from '@/components/common/FancyBanner';
 
 const BlogTwo = () => {
   return (
     <>
-      <HeaderFour />
+      {/* <HeaderFour /> */}
       <BreadcrumbThree
         title="Blog List"
         link="#"
@@ -17,7 +17,7 @@ const BlogTwo = () => {
       />
       <BlogTwoArea />
       <FancyBanner />
-      <FooterFour />
+      {/* <FooterFour /> */}
     </>
   );
 };

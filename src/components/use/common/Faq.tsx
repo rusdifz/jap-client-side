@@ -1,5 +1,5 @@
-"use client";
-import faq_data from "@/static-content/home-data/FaqData";
+'use client';
+import { faq_data } from '@/libs/static-content/faq-data-about-us';
 
 const Faq = () => {
   return (
@@ -8,7 +8,7 @@ const Faq = () => {
         <div key={item.id} className="accordion-item">
           <h2 className="accordion-header">
             <button
-              className={`accordion-button ${item.id === 1 ? "" : "collapsed"}`}
+              className={`accordion-button ${item.id === 1 ? '' : 'collapsed'}`}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target={`#collapse${item.id}`}
@@ -21,7 +21,7 @@ const Faq = () => {
           <div
             id={`collapse${item.id}`}
             className={`accordion-collapse collapse ${
-              item.id === 1 ? "show" : ""
+              item.id === 1 ? 'show' : ''
             }`}
             data-bs-parent="#accordionThree"
           >

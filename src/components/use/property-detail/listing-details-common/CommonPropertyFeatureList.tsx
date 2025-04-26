@@ -1,8 +1,8 @@
 import { PropPropertyDetail } from '@/libs/type/property.type';
-import property_feature_list from '@/data/inner-data/PropertyFeatureListData';
-import Badge from '@/ui/badge/Badge';
-import { Table, TableBody, TableCell, TableHeader, TableRow } from '@/ui/table';
-import feature_data from '@/data/home-data/FeatureData';
+// import property_feature_list from '@/data/inner-data/PropertyFeatureListData';
+// import Badge from '@/ui/badge/Badge';
+// import { Table, TableBody, TableCell, TableHeader, TableRow } from '@/ui/table';
+// import feature_data from '@/data/home-data/FeatureData';
 
 const CommonPropertyFeatureList: React.FC<PropPropertyDetail> = ({
   property,

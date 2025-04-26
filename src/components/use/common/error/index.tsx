@@ -1,4 +1,4 @@
-import HeaderOne from '@/layouts/examples/headers/HeaderOne';
+// import HeaderOne from '@/layouts/headers';
 import ErrorArea from './ErrorArea';
 
 const Error = () => {

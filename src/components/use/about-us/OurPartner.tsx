@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { partnertData } from '@/libs/dummy-data/our-partner-data';
+import { partnertData } from '@/libs/static-content/our-partner-data';
 
 const OurPartners = ({ style }: any) => {
   return (

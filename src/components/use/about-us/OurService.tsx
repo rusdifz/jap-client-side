@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import service_data from '@/libs/dummy-data/ServiceData';
+import service_data from '@/libs/static-content/our-services';
 // import Link from 'next/link';
 
 // import serviceShape_1 from '@/assets/images/shape/title_shape_07.svg';

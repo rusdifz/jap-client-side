@@ -1,6 +1,6 @@
 'use client';
 
-import { faq_data } from '@/libs/dummy-data/faq-data-about-us';
+import { faq_data } from '@/libs/static-content/faq-data-about-us';
 
 const FaqPageAboutUs = () => {
   return (

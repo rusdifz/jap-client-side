@@ -1,8 +1,6 @@
-// import { createServer } from 'http';
 const { createServer } = require('http');
 const { parse } = require('url');
-// import { parse } from 'url';
-// import next from 'next';
+
 const next = require('next');
 
 const port = parseInt(process.env.PORT || '3000', 10);

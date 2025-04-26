@@ -1,15 +1,15 @@
-import FooterFour from '@/layouts/examples/footers/FooterFour';
-import HeaderFour from '@/layouts/examples/headers/HeaderFour';
+// import FooterFour from '@/layouts/examples/footers/FooterFour';
+// import HeaderFour from '@/layouts/examples/headers/HeaderFour';
 import BlogDetailsArea from './BlogDetailsArea';
 import FancyBanner from '@/components/common/FancyBanner';
 
 const BlogDetails = () => {
   return (
     <>
-      <HeaderFour />
+      {/* <HeaderFour /> */}
       <BlogDetailsArea />
       <FancyBanner />
-      <FooterFour />
+      {/* <FooterFour /> */}
     </>
   );
 };

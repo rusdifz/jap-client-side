@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 import { Analytics } from '@vercel/analytics/next';
 
 import store from '@/redux/store';
-import Header from '@/layouts/headers/Header';
-import Footer from '@/layouts/footers/Footer';
+import Header from '@/layouts/headers';
+// import Footer from '@/layouts/footers/Footer';
 
 export default function RootLayout({
   children,
@@ -48,7 +48,7 @@ export default function RootLayout({
       <body suppressHydrationWarning={true}>
         <div className="main-page-wrapper">
           <Provider store={store}>
-            <Header style_1={true} style_2={false} />
+            <Header />
             {children}
             <Analytics />
             {/* <Footer /> */}

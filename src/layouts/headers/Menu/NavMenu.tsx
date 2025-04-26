@@ -2,12 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
 import { useState } from 'react';
 
-import menu_data from '@/static-content/home-data/MenuData';
-
-import telp_icon from '@/assets/images/icon/icon_31.svg';
+import menu_data from '@/libs/static-content/menu-header';
 
 const NavMenu = () => {
   const pathname = usePathname();

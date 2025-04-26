@@ -1,7 +1,7 @@
 'use server';
 
 import axios, { AxiosRequestConfig } from 'axios';
-import { getCookiesJWT } from '@/libs/helper/auth.helper';
+// import { getCookiesJWT } from '@/libs/helper/auth.helper';
 import { ResponseAPI } from '@/libs/interfaces/http.interface';
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
@@ -85,9 +85,9 @@ export async function Delete<T>(path: string): Promise<any> {
 
 async function httpRequestSend<T>(): Promise<ResponseAPI<T>> {
   try {
-    const auth: any = await getCookiesJWT();
+    // const auth: any = await getCookiesJWT();
 
-    Object.assign(configHttp.headers, { Authorization: auth });
+    // Object.assign(configHttp.headers, { Authorization: auth });
 
     const requestData = await axios.request(configHttp);
 

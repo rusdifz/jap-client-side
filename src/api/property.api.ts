@@ -1,3 +1,5 @@
+'use server';
+
 import { ResponseAPI } from '@/libs/interfaces/http.interface';
 import { ReqPropertiesDTO } from '@/libs/dto/request/property.dto';
 import { IProperties, IProperty } from '@/libs/interfaces';

@@ -1,13 +1,13 @@
 import BreadcrumbOne from '@/components/common/breadcrumb/BreadcrumbOne';
-import FooterFour from '@/layouts/examples/footers/FooterFour';
-import HeaderOne from '@/layouts/examples/headers/HeaderOne';
+// import FooterFour from '@/layouts/examples/footers/FooterFour';
+// import HeaderOne from '@/layouts/examples/headers/HeaderOne';
 import BlogThreeArea from './BlogThreeArea';
 import FancyBanner from '@/components/common/FancyBanner';
 
 const BlogThree = () => {
   return (
     <>
-      <HeaderOne style={true} />
+      {/* <HeaderOne style={true} /> */}
       <BreadcrumbOne
         title="Blog Full Width"
         link="#"
@@ -17,7 +17,7 @@ const BlogThree = () => {
       />
       <BlogThreeArea />
       <FancyBanner />
-      <FooterFour />
+      {/* <FooterFour /> */}
     </>
   );
 };

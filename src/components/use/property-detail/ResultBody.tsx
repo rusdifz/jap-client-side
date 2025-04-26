@@ -8,7 +8,7 @@ import { IProperty } from '@/libs/interfaces';
 
 import Amenities from './Amenities';
 import BannerTop from './Banner';
-import CommonSimilarProperty from './listing-details-common/CommonSimilarProperty';
+
 import Location from './Location';
 import MediaGalleryDekstop from './MediaGalleryDekstop';
 import MediaGalleryMobile from './MediaGalleryMobile';
@@ -66,8 +66,8 @@ const DetailResultBody = () => {
         <MediaGalleryMobile />
         <div className="property-overview mb-30 bg-white border-10">
           <h4 className="mb-15">About Wisma Nusantara</h4>
-          {/* <Description htmlContent={office.description} /> */}
-          <p>
+          <Description htmlContent={office.description} />
+          {/* <p>
             Intiland Tower is a 24-storey commercial office building located at
             Sudirman, completed in 1987 and has majorly renovated in 2016.
             Located right in front of Bendungan Hilir MRT Station, this building
@@ -75,7 +75,7 @@ const DetailResultBody = () => {
             feature in Jakarta. The building was designed by the world
             well-known architect, Paul Rudolph. Tropical Elements were
             considered to be the “SOUL” of the building
-          </p>
+          </p> */}
         </div>
 
         <div>
@@ -112,7 +112,6 @@ const DetailResultBody = () => {
         <div className="container border-top mt-50">
           <SimilarProperty />
         </div>
-        {/* <CommonSimilarProperty /> */}
       </div>
     </div>
   );

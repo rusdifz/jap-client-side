@@ -35,13 +35,6 @@ const ResultListArea = ({ style }: any) => {
 
   const offices = useSelector(selectOffices);
 
-  // const thumbnail = () => {
-  //   return '';
-  // };
-
-  console.log('offices', offices);
-  console.log('pagination', pagination);
-
   return (
     <div
       className={`property-listing-six pb-170 xl-pb-120 ${
@@ -223,36 +216,3 @@ const ResultListArea = ({ style }: any) => {
 };
 
 export default ResultListArea;
-
-{
-  /* <Link
-href={'properties/' + property.slug}
-className="title tran3s"
->
-{property.name}
-</Link>
-<div className="address">{property.location}</div>
-<ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between">
-<li className="d-flex align-items-center">
-  <Image
-    src={featureIcon_1}
-    alt=""
-    className="lazy-img icon me-2"
-  />
-  <span className="fs-16">
-    {property.spesification?.property_size} sqm
-  </span>
-</li>
-</ul>
-<div className="pl-footer top-border d-flex align-items-center justify-content-between">
-<strong className="price fw-500 color-dark">
-  Rp {property.price.rent_sqm}
-</strong>
-<Link
-  href={'properties/' + property.slug}
-  className="btn-four rounded-circle"
->
-  <i className="bi bi-arrow-up-right"></i>
-</Link>
-</div> */
-}

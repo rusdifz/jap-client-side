@@ -62,6 +62,7 @@ const TableUnit: React.FC<PropPropertyDetail> = ({ property }) => {
       <Table<IUnit> columns={columns} dataSource={property.units} />
       <p>
         <strong>More available info, please contact us</strong>{' '}
+        {/* for other space call us */}
       </p>
     </div>
   );

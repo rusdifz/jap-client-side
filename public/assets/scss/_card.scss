@@ -8,26 +8,26 @@
   object-fit: cover; /* Atau 'contain' sesuai kebutuhan Anda */
 }
 // Card Style One
-.card-style-one {
-  .fs-text {
-    letter-spacing: 0.16px;
-    color: rgba($color: #000000, $alpha: 0.4);
-  }
-  h5 {
-    letter-spacing: -0.5px;
-  }
-  &.arrow:before,
-  &.arrow:after {
-    content: url(../images/icon/icon_10.svg);
-    position: absolute;
-    top: 88px;
-    left: -90px;
-  }
-  &.arrow:after {
-    left: auto;
-    right: -72px;
-  }
-}
+// .card-style-one {
+//   .fs-text {
+//     letter-spacing: 0.16px;
+//     color: rgba($color: #000000, $alpha: 0.4);
+//   }
+//   h5 {
+//     letter-spacing: -0.5px;
+//   }
+//   &.arrow:before,
+//   &.arrow:after {
+//     content: url(../images/icon/icon_10.svg);
+//     position: absolute;
+//     top: 88px;
+//     left: -90px;
+//   }
+//   &.arrow:after {
+//     left: auto;
+//     right: -72px;
+//   }
+// }
 // Card Style Two
 .card-style-two {
   h4 {
@@ -149,59 +149,59 @@
     }
   }
 }
-// Card Style Seven
-.card-style-seven {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 338px;
-  height: 338px;
-  background-image: url(../images/media/img_38.jpg);
-  &.category-4-item-2 {
-    background-image: url(../images/media/img_39.jpg);
-  }
-  &.category-4-item-3 {
-    background-image: url(../images/media/img_40.jpg);
-  }
-  &.category-4-item-4 {
-    background-image: url(../images/media/img_41.jpg);
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    background: rgba($color: #000000, $alpha: 0.25);
-    z-index: -1;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    background: rgba($color: #000000, $alpha: 0.25);
-    z-index: -1;
-    transform: scale(0.5);
-    opacity: 0;
-    @include transition(0.3s);
-  }
-  &:hover {
-    .title h4 {
-      text-decoration: underline;
-      transform: translateY(-10px);
-    }
-    &:after {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-}
+// // Card Style Seven
+// .card-style-seven {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   width: 338px;
+//   height: 338px;
+//   background-image: url(../images/media/img_38.jpg);
+//   &.category-4-item-2 {
+//     background-image: url(../images/media/img_39.jpg);
+//   }
+//   &.category-4-item-3 {
+//     background-image: url(../images/media/img_40.jpg);
+//   }
+//   &.category-4-item-4 {
+//     background-image: url(../images/media/img_41.jpg);
+//   }
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     border-radius: 50%;
+//     background: rgba($color: #000000, $alpha: 0.25);
+//     z-index: -1;
+//   }
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     border-radius: 50%;
+//     background: rgba($color: #000000, $alpha: 0.25);
+//     z-index: -1;
+//     transform: scale(0.5);
+//     opacity: 0;
+//     @include transition(0.3s);
+//   }
+//   &:hover {
+//     .title h4 {
+//       text-decoration: underline;
+//       transform: translateY(-10px);
+//     }
+//     &:after {
+//       transform: scale(1);
+//       opacity: 1;
+//     }
+//   }
+// }
 // Card Style Eight
 .card-style-eight {
   .icon {
@@ -470,135 +470,135 @@
   }
 }
 
-//Location Card One
-.location-card-one {
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  border-radius: 20px;
-  height: 400px;
-  padding: 15px 15px 20px;
-  background-image: url(../images/media/img_05.jpg);
-  &.card {
-    &-2 {
-      background-image: url(../images/media/img_06.jpg);
-    }
-    &-3 {
-      background-image: url(../images/media/img_07.jpg);
-    }
-    &-4 {
-      background-image: url(../images/media/img_08.jpg);
-    }
-    &-5 {
-      background-image: url(../images/media/img_09.jpg);
-    }
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.72) 100%
-    );
-    mix-blend-mode: luminosity;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    @include transition(0.3s);
-  }
-  &:hover .content {
-    transform: translateY(-20px);
-  }
-}
-// Location Card Two
-.location-card-two {
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  height: 300px;
-  padding: 10px;
-  background-image: url(../images/media/img_13.jpg);
-  &.location-card-2 {
-    background-image: url(../images/media/img_14.jpg);
-  }
-  &.location-card-3 {
-    background-image: url(../images/media/img_15.jpg);
-  }
-  &.location-card-4 {
-    background-image: url(../images/media/img_16.jpg);
-  }
-  &.location-card-5 {
-    background-image: url(../images/media/img_17.jpg);
-  }
-  &.location-card-6 {
-    background-image: url(../images/media/img_18.jpg);
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    background: rgba($color: #000000, $alpha: 0.25);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    @include transition(0.3s);
-  }
-  h5 {
-    font-size: 44px;
-    @include transition(0.4s);
-  }
-  &:hover {
-    h5 {
-      transform: translateY(-20px);
-      text-decoration: underline;
-    }
-    &:before {
-      background: rgba($color: #000000, $alpha: 0.35);
-    }
-  }
-}
-// Location Card Three
-.location-card-three {
-  .image-bg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 338px;
-    height: 338px;
-    background-image: url(../images/media/img_38.jpg);
-    &.home-5-feature-item-2 {
-      background-image: url(../images/media/img_39.jpg);
-    }
-    &.home-5-feature-item-3 {
-      background-image: url(../images/media/img_40.jpg);
-    }
-    &.home-5-feature-item-4 {
-      background-image: url(../images/media/img_41.jpg);
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      border-radius: 50%;
-      background: rgba($color: #000000, $alpha: 0.25);
-      z-index: -1;
-      transform: scale(0.5);
-      opacity: 0;
-      @include transition(0.3s);
-    }
-  }
-  &:hover {
-    .image-bg:after {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-}
+// //Location Card One
+// .location-card-one {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   overflow: hidden;
+//   border-radius: 20px;
+//   height: 400px;
+//   padding: 15px 15px 20px;
+//   background-image: url(../images/media/img_05.jpg);
+//   &.card {
+//     &-2 {
+//       background-image: url(../images/media/img_06.jpg);
+//     }
+//     &-3 {
+//       background-image: url(../images/media/img_07.jpg);
+//     }
+//     &-4 {
+//       background-image: url(../images/media/img_08.jpg);
+//     }
+//     &-5 {
+//       background-image: url(../images/media/img_09.jpg);
+//     }
+//   }
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     background: linear-gradient(
+//       180deg,
+//       rgba(0, 0, 0, 0) 0%,
+//       rgba(0, 0, 0, 0.72) 100%
+//     );
+//     mix-blend-mode: luminosity;
+//     border-radius: 20px;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     @include transition(0.3s);
+//   }
+//   &:hover .content {
+//     transform: translateY(-20px);
+//   }
+// }
+// // Location Card Two
+// .location-card-two {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   overflow: hidden;
+//   height: 300px;
+//   padding: 10px;
+//   background-image: url(../images/media/img_13.jpg);
+//   &.location-card-2 {
+//     background-image: url(../images/media/img_14.jpg);
+//   }
+//   &.location-card-3 {
+//     background-image: url(../images/media/img_15.jpg);
+//   }
+//   &.location-card-4 {
+//     background-image: url(../images/media/img_16.jpg);
+//   }
+//   &.location-card-5 {
+//     background-image: url(../images/media/img_17.jpg);
+//   }
+//   &.location-card-6 {
+//     background-image: url(../images/media/img_18.jpg);
+//   }
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     background: rgba($color: #000000, $alpha: 0.25);
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     @include transition(0.3s);
+//   }
+//   h5 {
+//     font-size: 44px;
+//     @include transition(0.4s);
+//   }
+//   &:hover {
+//     h5 {
+//       transform: translateY(-20px);
+//       text-decoration: underline;
+//     }
+//     &:before {
+//       background: rgba($color: #000000, $alpha: 0.35);
+//     }
+//   }
+// }
+// // Location Card Three
+// .location-card-three {
+//   .image-bg {
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     width: 338px;
+//     height: 338px;
+//     background-image: url(../images/media/img_38.jpg);
+//     &.home-5-feature-item-2 {
+//       background-image: url(../images/media/img_39.jpg);
+//     }
+//     &.home-5-feature-item-3 {
+//       background-image: url(../images/media/img_40.jpg);
+//     }
+//     &.home-5-feature-item-4 {
+//       background-image: url(../images/media/img_41.jpg);
+//     }
+//     &:after {
+//       content: '';
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       top: 0;
+//       left: 0;
+//       border-radius: 50%;
+//       background: rgba($color: #000000, $alpha: 0.25);
+//       z-index: -1;
+//       transform: scale(0.5);
+//       opacity: 0;
+//       @include transition(0.3s);
+//     }
+//   }
+//   &:hover {
+//     .image-bg:after {
+//       opacity: 1;
+//       transform: scale(1);
+//     }
+//   }
+// }

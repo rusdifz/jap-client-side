@@ -1,5 +1,5 @@
 import Wrapper from '@/layouts/Wrapper';
-import Home from '@/components/use/home';
+import Home from '@/layouts/homepage';
 
 const index = () => {
   return (
