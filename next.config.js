@@ -14,10 +14,6 @@ const nextConfig = {
       allowedOrigins: ['localhost:3000', 'api-jap.vercel.com'],
     },
   },
-  outputFileTracingExcludes: {
-    '**/node_modules/**': true,
-    '**/public/**': true,
-  },
 };
 
 module.exports = nextConfig;
