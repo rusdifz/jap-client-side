@@ -15,6 +15,7 @@ export interface IProperty {
   address: string;
   location: LocationEnum;
   koordinat_map: string;
+  url_youtube: string;
   property_type: PropertyTypeEnum;
   status_publish: StatusPublishEnum;
   property_status: PropertyStatusEnum;

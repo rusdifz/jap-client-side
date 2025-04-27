@@ -44,45 +44,6 @@ export async function Get<T>(
   return await httpRequestSend<T>();
 }
 
-export async function Post<T>(
-  path: string,
-  body: any,
-): Promise<ResponseAPI<T>> {
-  Object.assign(configHttp, {
-    url: path, // this is endpoint not base url
-    data: body,
-    method: 'POST',
-  });
-
-  return await httpRequestSend<T>();
-}
-
-export async function Put<T>(path: string, body: any): Promise<any> {
-  Object.assign(configHttp, {
-    url: path, // this is endpoint not base url
-    data: body,
-    method: 'PUT',
-  });
-
-  console.log('options PUT', configHttp);
-
-  return await httpRequestSend<T>();
-}
-
-export async function Delete<T>(path: string): Promise<any> {
-  Object.assign(configHttp, {
-    url: path, // this is endpoint not base url
-    method: 'DELETE',
-  });
-
-  // if (authorization) {
-  //   Object.assign(configHttp.headers, {Authorization: authorization});
-  // }
-  console.log('options DELETE', configHttp);
-
-  return await httpRequestSend<T>();
-}
-
 async function httpRequestSend<T>(): Promise<ResponseAPI<T>> {
   try {
     // const auth: any = await getCookiesJWT();

@@ -11,7 +11,11 @@ const nextConfig = {
   experimental: {
     serverActions: {
       bodySizeLimit: '4mb',
-      allowedOrigins: ['localhost:3000', 'api-jap.vercel.com'],
+      allowedOrigins: [
+        'localhost:3000',
+        'api-jap.vercel.com',
+        'res.cloudinary.com',
+      ],
     },
   },
 };
