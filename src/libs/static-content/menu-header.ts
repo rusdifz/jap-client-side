@@ -38,14 +38,12 @@ const menu_data: MenuItem[] = [
     has_dropdown: false,
     title: 'Articles',
     link: '/article',
-    // link: '#',
   },
   {
     id: 4,
     has_dropdown: false,
     title: 'About Us',
-    // link: '/about-us',
-    link: '#',
+    link: '/about-us',
   },
   {
     id: 5,
