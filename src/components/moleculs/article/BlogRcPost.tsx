@@ -38,7 +38,7 @@ const rc_data: DataType[] = [
 const BlogRcPost = () => {
   return (
     <div className="recent-news bg-white bg-wrapper mb-30">
-      <h5 className="mb-20">Recent News</h5>
+      <h5 className="mb-20">Recent Update</h5>
       {rc_data.map((item) => (
         <div
           key={item.id}

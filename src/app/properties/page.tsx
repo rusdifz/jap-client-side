@@ -1,4 +1,5 @@
 // import ListProperty from '@/components/use/property-list';
+import ListProperty from '@/components/property-list';
 import Wrapper from '@/layouts/Wrapper';
 
 export const metadata = {
@@ -6,7 +7,11 @@ export const metadata = {
 };
 
 const index = () => {
-  return <Wrapper>{/* <ListProperty /> */}</Wrapper>;
+  return (
+    <Wrapper>
+      <ListProperty />
+    </Wrapper>
+  );
 };
 
 export default index;

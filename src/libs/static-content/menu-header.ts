@@ -30,13 +30,13 @@ const menu_data: MenuItem[] = [
     id: 2,
     has_dropdown: false,
     title: 'Properties',
-    // link: '/properties',
-    link: '#',
+    link: '/properties',
+    // link: '#',
   },
   {
     id: 3,
     has_dropdown: false,
-    title: 'Articles',
+    title: 'Update',
     link: '/article',
   },
   {

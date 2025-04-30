@@ -23,13 +23,14 @@ const BannerTop = () => {
         <div className="item m-0">
           <Image
             alt=""
-            src="/assets/images/banner/banner-image-13.jpg"
+            src=""
+            // src="/assets/images/banner/banner-image-13.jpg"
             width={1000}
             height={1000}
             style={{
               objectFit: 'fill',
-              objectPosition: 'top',
-              // backgroundImage: `url(/assets/images/banner/banner-image-13.jpg)`,
+              objectPosition: 'center',
+              backgroundImage: `url(/assets/images/banner/banner-image-13.jpg)`,
             }}
             className="hero-img lazy-img"
           />

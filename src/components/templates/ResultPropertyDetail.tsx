@@ -93,15 +93,15 @@ const DetailResultBody = () => {
         {renderContent()}
 
         {/* area video */}
-        {office.url_youtube && (
-          <div className="container">
-            <div className="row border-top">
-              <div className="col-lg-8">
-                <MediaVideoYoutube property={office} />
-              </div>
+        {/* {office.url_youtube && ( */}
+        <div className="container">
+          <div className="row border-top">
+            <div className="col-lg-8">
+              <MediaVideoYoutube property={office} />
             </div>
           </div>
-        )}
+        </div>
+        {/* )} */}
 
         {/* area similiar property by location */}
         <div className="container border-top mt-50">
