@@ -101,7 +101,7 @@ const SearchDropdown = () => {
                 {/* area type property */}
                 <div className="col-xl-2 col-lg-3">
                   <div className="input-box-one border-left">
-                    <div className="labelNew">Proprerty Type</div>
+                    <div className="labelNew">Property Type</div>
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsPropertyStatus}

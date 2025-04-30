@@ -26,7 +26,7 @@ const NavMenu = () => {
         <li key={menu.id} className={`nav-item dropdown ${menu.class_name}`}>
           <Link
             href={menu.link}
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer"
             className={`nav-link ${menu.has_dropdown && 'dropdown-toggle'}  ${
               pathname === menu.link ? 'active' : ''
@@ -62,7 +62,7 @@ const NavMenu = () => {
                       </Link>
                     </li>
                   ))}
-                {menu.menu_column && (
+                {/* {menu.menu_column && (
                   <li className="row gx-1">
                     {menu.menu_column.map((item: any) => (
                       <div key={item.id} className="col-lg-4">
@@ -86,7 +86,7 @@ const NavMenu = () => {
                       </div>
                     ))}
                   </li>
-                )}
+                )} */}
               </ul>
             </>
           )}
