@@ -46,6 +46,7 @@ const HomeSectionFeedback = ({ style }: any) => {
     fetchApiFeedbackList({ page: 1, limit: 5 })
       .then((resp) => {
         setFeedbacks(resp.data);
+        console.log('res feedback', resp.data);
       })
       .catch((err) => {
         console.log('error get feedback', err);
@@ -100,7 +101,11 @@ const HomeSectionFeedback = ({ style }: any) => {
                 <div className="feedback-block-four ps-lg-4 pe-lg-4">
                   <div className="d-flex align-items-center">
                     <Image
-                      src={item.profile_image ?? defaultProfile}
+                      src={
+                        item.profile_image && item.profile_image !== ''
+                          ? item.profile_image
+                          : '/assets/images/default-image/profile-default.jpg'
+                      }
                       alt=""
                       className="rounded-circle avatar"
                       width={200}

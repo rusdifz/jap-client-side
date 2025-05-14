@@ -14,11 +14,7 @@ const MediaVideoYoutube: React.FC<PropPropertyDetail> = ({ property }) => {
           <div className="player-wrapper">
             <ReactPlayer
               className="react-player"
-              url={
-                property
-                  ? 'https://www.youtube.com/watch?v=hrMkfNN0KjM&list=RDhrMkfNN0KjM&start_radio=1'
-                  : 'https://www.youtube.com/watch?v=hrMkfNN0KjM&list=RDhrMkfNN0KjM&start_radio=1'
-              }
+              url={property.url_youtube}
               width="100%"
               height="100%"
               controls

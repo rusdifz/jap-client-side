@@ -51,7 +51,7 @@ const MediaGalleryMobile: React.FC<PropPropertyDetail> = ({ property }) => {
         {property.images.length > 0
           ? property.images.map((gallery, i) => (
               <div key={i} className="item">
-                <Image
+                <img
                   src={gallery.full_url}
                   alt=""
                   className="w-100"

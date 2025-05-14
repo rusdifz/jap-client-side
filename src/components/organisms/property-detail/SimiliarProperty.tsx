@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -58,6 +58,7 @@ const CommonSimilarProperty = ({ location }: Props) => {
     url,
     fetcher,
   );
+  console.log('data similiar', data);
 
   if (isLoading) {
     return (
@@ -88,136 +89,63 @@ const CommonSimilarProperty = ({ location }: Props) => {
   return (
     <div className="similar-property mt-50">
       <h4 className="mb-40">Similar Property</h4>
-      <Slider {...setting} className="similar-listing-slider-one">
-        {data.data.map((item: IProperties) => (
-          <div key={item.property_id} className="item">
-            <div className="listing-card-one shadow style-three border-20 mb-50">
-              <div className="img-gallery p-15">
-                <div className="position-relative border-20 overflow-hidden">
-                  <div className="tag bg-white text-dark fw-500 border-20">
-                    {item.property_status}
-                  </div>
-                  <Image
+      {data.data.length > 0 && (
+        <Slider {...setting} className="similar-listing-slider-one">
+          {data.data.map((item: IProperties) => (
+            <div key={item.property_id} className="item">
+              <div className="listing-card-one shadow style-three border-20 mb-50">
+                <div className="img-gallery p-15">
+                  <div className="position-relative border-20 overflow-hidden">
+                    <div className="tag bg-white text-dark fw-500 border-20">
+                      {item.property_status}
+                    </div>
+                    {/* <Image
                     // src={item.thumb ? item.thumb : ''}
                     src={property3Thumb_3}
                     className="w-100 border-10"
                     alt="..."
-                  />
-                  <Link
-                    href="/listing_details_06"
-                    className="btn-four inverse rounded-circle position-absolute"
-                  >
-                    <i className="bi bi-arrow-up-right"></i>
-                  </Link>
+                  /> */}
+                    <img
+                      src={
+                        item.images.length > 0
+                          ? item.images[0].full_url
+                          : '/assets/images/listing/img_15.jpg'
+                      }
+                      width={100}
+                      height={100}
+                      style={{ height: 220, width: 100 }}
+                      className="w-100 border-10"
+                      alt="..."
+                    />
+                    <Link
+                      href="/listing_details_06"
+                      className="btn-four inverse rounded-circle position-absolute"
+                    >
+                      <i className="bi bi-arrow-up-right"></i>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="property-info pe-4 ps-4">
-                <Link href="/listing_details_06" className="title tran3s">
-                  {item.name}
-                </Link>
-                <div className="address m0 pb-5">{item.location}</div>
-                <div className="pl-footer m0 d-flex align-items-center justify-content-between">
-                  {/* <strong className="price fw-500 color-dark">
+                <div className="property-info pe-4 ps-4">
+                  <Link href="/listing_details_06" className="title tran3s">
+                    {item.name}
+                  </Link>
+                  <div className="address m0 pb-5">{item.location}</div>
+                  <div className="pl-footer m0 d-flex align-items-center justify-content-between">
+                    {/* <strong className="price fw-500 color-dark">
                     Start from Rp. {item.price.rent_sqm}
                   </strong> */}
-                  <p>
-                    <b>Start from Rp. {item.price.rent_sqm}</b>
-                  </p>
+                    <p>
+                      <b>Start from Rp. {item.price.rent_sqm}</b>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      )}
     </div>
   );
 };
 
 export default CommonSimilarProperty;
-{
-  /* <Slider {...setting} className="similar-listing-slider-one">
-        {data.data.map((item) => (
-          <div key={item.property_id} className="item">
-            <div
-              className="listing-card-one shadow style-three border-20 mb-50"
-              // style={{ height: '375px' }}
-            >
-              <div className="img-gallery p-15">
-                <div className="position-relative border-20 overflow-hidden">
-                  <div className="tag bg-white text-dark fw-500 border-20">
-                    {item.property_status}
-                  </div>
-                  <Image
-                    // src={item.thumb ? item.thumb : ''}
-                    src={'/assets/images/listing/img_15.jpg'}
-                    className="w-100 border-10"
-                    alt="..."
-                  />
-                  <Link
-                    href="/listing_details_06"
-                    className="btn-four inverse rounded-circle position-absolute"
-                  >
-                    <i className="bi bi-arrow-up-right"></i>
-                  </Link>
-                </div>
-              </div>
-              <div className="property-info pe-4 ps-4">
-                <Link href="/listing_details_06" className="title tran3s">
-                  {item.name}
-                </Link>
-                <div className="address m0 pb-5">{item.location}</div>
-                <div className="pl-footer m0 d-flex align-items-center justify-content-between">
-                  <strong className="price fw-500 color-dark">
-                    Rp. {item.price.rent_sqm}
-                  </strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slider> */
-}
-{
-  /* <Slider {...setting} className="similar-listing-slider-one">
-{property_data
-  .filter((items) => items.page == 'home_3_property_2')
-  .map((item) => (
-    <div key={item.id} className="item">
-      <div
-        className="listing-card-one shadow style-three border-20 mb-50"
-        // style={{ height: '375px' }}
-      >
-        <div className="img-gallery p-15">
-          <div className="position-relative border-20 overflow-hidden">
-            <div className="tag bg-white text-dark fw-500 border-20">
-              {item.tag}
-            </div>
-            <Image
-              src={item.thumb ? item.thumb : ''}
-              className="w-100 border-10"
-              alt="..."
-            />
-            <Link
-              href="/listing_details_06"
-              className="btn-four inverse rounded-circle position-absolute"
-            >
-              <i className="bi bi-arrow-up-right"></i>
-            </Link>
-          </div>
-        </div>
-        <div className="property-info pe-4 ps-4">
-          <Link href="/listing_details_06" className="title tran3s">
-            {item.title}
-          </Link>
-          <div className="address m0 pb-5">{item.address}</div>
-          <div className="pl-footer m0 d-flex align-items-center justify-content-between">
-            <strong className="price fw-500 color-dark">
-              Rp. {item.price}
-            </strong>
-          </div>
-        </div>
-      </div>
-    </div>
-  ))}
-</Slider> */
-}

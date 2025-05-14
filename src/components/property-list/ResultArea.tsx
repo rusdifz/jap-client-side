@@ -35,6 +35,7 @@ const ResultListArea = ({ style }: any) => {
   }: any = UseSearchOffice();
 
   const offices = useSelector(selectOffices);
+  console.log('offices', offices);
 
   return (
     <div
@@ -129,11 +130,8 @@ const ResultListArea = ({ style }: any) => {
                             >
                               <Image
                                 // src={
-                                //   property.images.length > 0
-                                //     ? property.images[0].full_url
-                                //     : noImageProperty
+                                //   property.images[0].full_url ?? imageProperty
                                 // }
-
                                 src={imageProperty}
                                 width={100}
                                 height={100}

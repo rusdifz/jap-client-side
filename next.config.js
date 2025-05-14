@@ -10,13 +10,16 @@ const nextConfig = {
   },
   experimental: {
     serverActions: {
-      bodySizeLimit: '4mb',
+      bodySizeLimit: '10mb',
       allowedOrigins: [
         'localhost:3000',
         'api-jap.vercel.com',
         'res.cloudinary.com',
       ],
     },
+  },
+  images: {
+    domains: ['res.cloudinary.com'],
   },
 };
 

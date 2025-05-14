@@ -36,9 +36,6 @@ export const officeReducer = createReducer(initialState, (builder) => {
     state.offices = action.payload;
   });
   builder.addCase(officeDetail, (state, action) => {
-    console.log('office detail', state);
-    console.log('action', action);
-
     state.office = action.payload;
   });
   builder.addCase(fetchPaginationOffices, (state, action) => {

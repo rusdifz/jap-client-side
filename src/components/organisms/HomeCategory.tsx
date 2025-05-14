@@ -2,12 +2,9 @@
 // import Image from 'next/image';
 import Link from 'next/link';
 import Slider from 'react-slick';
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
-import {
-  CategoryLP,
-  CategoryData,
-} from '@/libs/static-content/category-landing-page';
+import { fetchApiMasterLocation } from '@/api/master-location.api';
 
 // import titleShape from '@/assets/images/shape/title_shape_02.svg';
 
@@ -45,6 +42,20 @@ const setting = {
 };
 
 const HomeSectionCategory = () => {
+  const [popularLocations, setPopularLocation] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetchApiMasterLocation()
+      .then((resp) => {
+        setPopularLocation(resp.data);
+        console.log('res popular location', resp.data);
+      })
+      .catch((err) => {
+        console.log('error get feedback', err);
+        setPopularLocation([]);
+      });
+  }, []);
+
   const sliderRef = useRef<Slider | null>(null);
 
   const handlePrevClick = () => {
@@ -61,67 +72,55 @@ const HomeSectionCategory = () => {
 
   return (
     <div className="block-feature-three mt-40 xl-mt-100 md-mt-20">
-      <div className="container">
-        <div className="title-one text-center mb-20 xl-mb-10 md-mb-30 wow fadeInUp">
-          <h4>Explore Popular Location</h4>
-        </div>
-        <Slider
-          {...setting}
-          ref={sliderRef}
-          className="property-location-slider-one width-50"
-        >
-          {/* {CategoryLP.map((item: any) => (
-            <div key={item.id} className="item-first">
-              <div
-                // className={`location-card-new position-relative z-1 d-flex align-items-center ${item.item_bg} md-h-[200px]`}
-                className={`location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]`}
-                style={{ height: '300px', backgroundImage:  }}
-              >
-                <div className="content text-center w-100 tran3s">
-                  <h5 className="text-white font-garamond fw-normal">
-                    {item.title}
-                  </h5>
-                  <p className="text-white font-garamondt fw-light">
-                    {item.desc}
-                  </p>
+      {popularLocations.length > 0 && (
+        <div className="container">
+          <div className="title-one text-center mb-20 xl-mb-10 md-mb-30 wow fadeInUp">
+            <h4>Explore Popular Location</h4>
+          </div>
+          <Slider
+            {...setting}
+            ref={sliderRef}
+            className="property-location-slider-one width-50"
+          >
+            {popularLocations.map((item: any) => (
+              <div key={item.id} className="item-first">
+                <div
+                  // className={`location-card-new position-relative z-1 d-flex align-items-center ${item.item_bg} md-h-[200px]`}
+                  className={`location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]`}
+                  style={{
+                    height: '300px',
+                    backgroundImage:
+                      item.url_image && item.url_image !== ''
+                        ? `url(${item.url_image})`
+                        : `url(https://res.cloudinary.com/servicebizimage/image/upload/v1745684894/Jardine%20Asia%20Pasific/Popular%20Location/gxqieczyqughgi60gc38.png)`,
+                  }}
+                >
+                  <div className="content text-center w-100 tran3s">
+                    <h5 className="text-white font-garamond fw-normal">
+                      {item.location_name}
+                    </h5>
+                    <p className="text-white font-garamondt fw-light">
+                      {/* {item.desc} */}
+                    </p>
+                  </div>
+                  <Link href="/properties" className="stretched-link"></Link>
                 </div>
-                <Link href="/properties" className="stretched-link"></Link>
               </div>
-            </div>
-          ))} */}
-          {CategoryData.map((item: any) => (
-            <div key={item.id} className="item-first">
-              <div
-                // className={`location-card-new position-relative z-1 d-flex align-items-center ${item.item_bg} md-h-[200px]`}
-                className={`location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]`}
-                style={{
-                  height: '300px',
-                  backgroundImage: `url(${item.url_image})`,
-                }}
-              >
-                <div className="content text-center w-100 tran3s">
-                  <h5 className="text-white font-garamond fw-normal">
-                    {item.area}
-                  </h5>
-                  <p className="text-white font-garamondt fw-light">
-                    {/* {item.desc} */}
-                  </p>
-                </div>
-                <Link href="/properties" className="stretched-link"></Link>
-              </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
 
-        <ul className="slider-arrows slick-arrow-one d-flex justify-content-between style-none position-relative">
-          <li onClick={handlePrevClick} className="prev_a slick-arrow">
-            <i className="fa-sharp fa-light fa-angle-left"></i>
-          </li>
-          <li onClick={handleNextClick} className="next_a slick-arrow">
-            <i className="fa-sharp fa-light fa-angle-right"></i>
-          </li>
-        </ul>
-      </div>
+          {popularLocations.length > 6 && (
+            <ul className="slider-arrows slick-arrow-one d-flex justify-content-between style-none position-relative">
+              <li onClick={handlePrevClick} className="prev_a slick-arrow">
+                <i className="fa-sharp fa-light fa-angle-left"></i>
+              </li>
+              <li onClick={handleNextClick} className="next_a slick-arrow">
+                <i className="fa-sharp fa-light fa-angle-right"></i>
+              </li>
+            </ul>
+          )}
+        </div>
+      )}
     </div>
   );
 };

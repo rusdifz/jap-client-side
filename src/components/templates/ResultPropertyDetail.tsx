@@ -19,6 +19,7 @@ import TableUnit from '@/components/organisms/property-detail/TableUnit';
 
 const DetailResultBody = () => {
   const office: IProperty = useSelector(selectOffice);
+  console.log('on detail', office);
 
   function Description(htmlContent: any) {
     return (
@@ -58,8 +59,6 @@ const DetailResultBody = () => {
     }
   };
 
-  console.log('property detail', office);
-
   return (
     <div className="listing-details-one theme-details-one mt-120 lg-mt-100 pb-150 xl-pb-120">
       <div className="container">
@@ -93,15 +92,15 @@ const DetailResultBody = () => {
         {renderContent()}
 
         {/* area video */}
-        {/* {office.url_youtube && ( */}
-        <div className="container">
-          <div className="row border-top">
-            <div className="col-lg-8">
-              <MediaVideoYoutube property={office} />
+        {office.url_youtube && (
+          <div className="container">
+            <div className="row border-top">
+              <div className="col-lg-8">
+                <MediaVideoYoutube property={office} />
+              </div>
             </div>
           </div>
-        </div>
-        {/* )} */}
+        )}
 
         {/* area similiar property by location */}
         <div className="container border-top mt-50">

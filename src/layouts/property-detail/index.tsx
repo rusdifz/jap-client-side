@@ -1,3 +1,4 @@
+'use client';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { Spin, Result } from 'antd';
@@ -40,7 +41,17 @@ const PropertyDetail: React.FC<PropSlug> = ({ slug }) => {
 
   // Mengatur data ke Redux saat data tersedia
   if (data) {
-    dispatch(officeDetail(data.data));
+    if (data.data) {
+      console.log('data ada', data);
+
+      dispatch(officeDetail(data.data));
+    } else {
+      return (
+        <div className="position-relative z-1">
+          <Error />
+        </div>
+      );
+    }
   }
 
   if (error) {
