@@ -22,7 +22,7 @@ const MediaGalleryDekstop: React.FC<PropPropertyDetail> = ({ property }) => {
         <div className="row">
           <div className="col-md-7 d-flex">
             <div className="position-relative w-100">
-              <Image
+              <img
                 alt=""
                 className="media-bg rounded-3"
                 src={mainImage}

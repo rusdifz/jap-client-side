@@ -40,7 +40,7 @@ const UseSearchOffice = () => {
   }, []);
 
   const [sortOptionNew, setSortOptionNew] = useState<string>('');
-  const [locationNew, setLocationNew] = useState<any>(null);
+  const [location, setLocation] = useState<any>(null);
   const [officeType, setOfficeType] = useState<any>(null);
   const [selectedAmenitiesNew, setSelectedAmenitiesNew] = useState<string[]>(
     [],
@@ -55,7 +55,7 @@ const UseSearchOffice = () => {
 
   // handleLocationChange
   const handleLocationNewChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setLocationNew(event.target.value);
+    setLocation(event.target.value);
   };
 
   const handleOfficeTypeChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -80,8 +80,6 @@ const UseSearchOffice = () => {
   };
 
   const handlePageClick = async (event: any) => {
-    console.log('event page click', event);
-
     const newPage = event.selected + 1;
 
     let propsFilter: ReqPropertiesDTO = {
@@ -93,21 +91,29 @@ const UseSearchOffice = () => {
       propsFilter.sort = sortOptionNew;
     }
 
-    if (locationNew !== null) {
+    if (location !== null || location == 'All Area') {
       propsFilter.location =
-        locationNew === LocationEnum.ALL_AREA ? null : locationNew;
+        location === LocationEnum.ALL_AREA ? null : location;
+    } else {
+      propsFilter.location = undefined;
     }
 
     if (officeType !== null) {
       propsFilter.property_type = officeType;
+    } else {
+      propsFilter.property_type = undefined;
     }
 
     if (selectedAmenitiesNew.length > 0) {
       propsFilter.features = selectedAmenitiesNew;
+    } else {
+      propsFilter.features = undefined;
     }
 
     if (keyword !== null) {
       propsFilter.search_keyword = keyword;
+    } else {
+      propsFilter.search_keyword = undefined;
     }
 
     try {
@@ -148,24 +154,34 @@ const UseSearchOffice = () => {
       propsFilter.sort = sortOptionNew;
     }
 
-    if (locationNew !== null) {
-      propsFilter.location = locationNew;
+    if (location !== null || location !== 'All Area') {
+      propsFilter.location = location;
+    } else {
+      propsFilter.location = undefined;
     }
 
     if (officeType !== null) {
+      propsFilter.property_type = officeType;
+    } else {
       propsFilter.property_type = officeType;
     }
 
     if (selectedAmenitiesNew.length > 0) {
       propsFilter.features = selectedAmenitiesNew;
+    } else {
+      propsFilter.features = undefined;
     }
 
     if (keyword !== null) {
       propsFilter.search_keyword = keyword;
+    } else {
+      propsFilter.search_keyword = undefined;
     }
 
     if (propertyStatus !== null) {
       propsFilter.property_status = propertyStatus;
+    } else {
+      propsFilter.property_status = undefined;
     }
 
     console.log('submit form', propsFilter);
@@ -199,7 +215,7 @@ const UseSearchOffice = () => {
   const resetFilters = () => {
     setSortOptionNew('');
     setOfficeType('');
-    setLocationNew('');
+    setLocation('');
     setSelectedAmenitiesNew([]);
     // setPriceValue([0, maxPrice]);
   };
@@ -208,8 +224,8 @@ const UseSearchOffice = () => {
     pagination,
     // setPagination,
     sortOptionNew,
-    locationNew,
-    setLocationNew,
+    location,
+    setLocation,
     officeType,
     setOfficeType,
     propertyStatus,

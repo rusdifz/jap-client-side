@@ -27,15 +27,15 @@ import { pascalToKebab } from '@/libs/helper';
 const ResultListArea = ({ style }: any) => {
   const {
     pagination,
-    setPagination,
     sortOptionNew,
     handleSortNewChange,
     handlePageClick,
     loading,
-  }: any = UseSearchOffice();
+  } = UseSearchOffice();
 
   const offices = useSelector(selectOffices);
   console.log('offices', offices);
+  console.log('pagination', pagination);
 
   return (
     <div
@@ -51,18 +51,21 @@ const ResultListArea = ({ style }: any) => {
           <div>
             Showing{' '}
             <span className="color-dark fw-500">
-              {offices.length > 0 ? pagination.page : 0}
-            </span>{' '}
-            of{' '}
-            {/* <span className="color-dark fw-500">{offices.length > 0 ? pagination.total_page : 0}</span>{" "} */}
+              {offices.length > 0
+                ? pagination.page == pagination.total_page
+                  ? pagination.total
+                  : offices.length * pagination.page
+                : 0}
+            </span>
+            of
             <span className="color-dark fw-500">
-              {offices.length > 0 ? pagination.total_page : 0}
-            </span>{' '}
+              {offices.length > 0 ? pagination.total : 0}
+            </span>
             results
           </div>
 
           {/* buat sort data */}
-          <div className="d-flex align-items-center xs-mt-20">
+          {/* <div className="d-flex align-items-center xs-mt-20">
             <div className="short-filter d-flex align-items-center">
               <div className="fs-16 me-2">Short by:</div>
               <NiceSelect
@@ -83,7 +86,7 @@ const ResultListArea = ({ style }: any) => {
             >
               <i className="fa-regular fa-bars"></i>
             </Link>
-          </div>
+          </div> */}
           {/* buat sort data */}
         </div>
 
@@ -117,22 +120,18 @@ const ResultListArea = ({ style }: any) => {
                           {property.property_status}
                         </div>
 
-                        {/* <div id={`carousel${index}`} className="carousel slide"> */}
                         <div className="carousel-inner">
-                          <div
-                            key={index}
-                            className={`carousel-item active`}
-                            // data-bs-interval="1000000"
-                          >
+                          <div key={index} className={`carousel-item active`}>
                             <Link
                               href={'properties/' + property.slug}
                               className="d-block"
                             >
                               <Image
-                                // src={
-                                //   property.images[0].full_url ?? imageProperty
-                                // }
-                                src={imageProperty}
+                                src={
+                                  property.images.length > 0
+                                    ? property.images[0].full_url
+                                    : '/assets/images/category-dummy/cat-1.png'
+                                }
                                 width={100}
                                 height={100}
                                 alt=""
@@ -141,7 +140,6 @@ const ResultListArea = ({ style }: any) => {
                             </Link>
                           </div>
                         </div>
-                        {/* </div> */}
                       </div>
                     </div>
 
@@ -170,7 +168,7 @@ const ResultListArea = ({ style }: any) => {
                       <div>
                         <span
                           className=""
-                          style={{ color: '#6bb2ef', fontWeight: 550 }}
+                          style={{ color: '#c43820', fontWeight: 550 }}
                         >
                           {' '}
                           {property.property_type}
@@ -202,6 +200,7 @@ const ResultListArea = ({ style }: any) => {
                 previousLabel={<i className="fa-regular fa-chevron-left"></i>}
                 renderOnZeroPageCount={null}
                 className="pagination-two d-inline-flex align-items-center justify-content-center style-none"
+                forcePage={pagination.page - 1}
               />
             </div>
           </div>

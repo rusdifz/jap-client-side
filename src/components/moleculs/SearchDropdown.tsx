@@ -45,14 +45,14 @@ const SearchDropdown = () => {
   // };
 
   const {
-    setLocationNew,
+    setLocation,
     officeType,
     setOfficeType,
     propertyStatus,
     setPropertyStatus,
     handleSubmitForm,
     setKeyword,
-  }: any = UseSearchOffice();
+  } = UseSearchOffice();
 
   return (
     <>
@@ -63,7 +63,7 @@ const SearchDropdown = () => {
               onSubmit={(e) => {
                 e.preventDefault();
                 // searchHandler(e);
-                handleSubmitForm();
+                handleSubmitForm(e);
               }}
             >
               <div className="row gx-0 align-items-center">
@@ -124,7 +124,7 @@ const SearchDropdown = () => {
                       options={optionsLocation}
                       defaultCurrent={0}
                       onChange={(e) => {
-                        setLocationNew(e.target.value);
+                        setLocation(e.target.value);
                       }}
                       name=""
                       placeholder=""

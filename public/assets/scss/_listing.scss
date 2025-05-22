@@ -115,9 +115,9 @@
 .listing-card-one {
   background: #fbfafa;
   overflow: hidden;
-  // height: 400px;
-  // width: 380px;
-  @include transition(0.2s);
+  height: 450px;
+  width: 330px;
+  @include transition(0.3s);
   &.border-layout {
     border: 1px solid #f3f3f3;
   }
@@ -147,14 +147,14 @@
       // justify-content: center; /* Mengatur agar konten rata horizontal di tengah */
       // align-items: center; /* Mengatur agar konten rata vertikal di tengah */
       width: 100%;
-      height: 200px;
+      height: 250px;
       // position: relative;
     }
     overflow: hidden;
     .carousel-indicators {
       opacity: 0;
       margin-bottom: 12px;
-      @include transition(0.3s);
+      @include transition(0.5s);
     }
     .tag {
       width: 60px;

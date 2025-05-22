@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "PORT=4000 next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=4000 next start",
     "start:prod": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },

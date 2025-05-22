@@ -19,7 +19,6 @@ import TableUnit from '@/components/organisms/property-detail/TableUnit';
 
 const DetailResultBody = () => {
   const office: IProperty = useSelector(selectOffice);
-  console.log('on detail', office);
 
   function Description(htmlContent: any) {
     return (
