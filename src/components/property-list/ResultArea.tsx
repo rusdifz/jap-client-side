@@ -34,8 +34,6 @@ const ResultListArea = ({ style }: any) => {
   } = UseSearchOffice();
 
   const offices = useSelector(selectOffices);
-  console.log('offices', offices);
-  console.log('pagination', pagination);
 
   return (
     <div
@@ -168,9 +166,8 @@ const ResultListArea = ({ style }: any) => {
                       <div>
                         <span
                           className=""
-                          style={{ color: '#c43820', fontWeight: 550 }}
+                          style={{ color: '#c43820', fontWeight: 500 }}
                         >
-                          {' '}
                           {property.property_type}
                         </span>
                       </div>
@@ -178,7 +175,7 @@ const ResultListArea = ({ style }: any) => {
                       <Link
                         href={'properties/' + property.slug}
                         className="title-one"
-                        style={{ fontWeight: 700, fontSize: 25 }}
+                        style={{ fontWeight: 650, fontSize: 22 }}
                       >
                         {property.name}
                       </Link>

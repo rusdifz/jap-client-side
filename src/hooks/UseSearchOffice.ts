@@ -4,11 +4,7 @@ import { useDispatch } from 'react-redux';
 import { IPagination, ResponseAPI, IProperties } from '@/libs/interfaces';
 import { fetchApiProperties } from '@/api/property.api';
 
-import {
-  LocationEnum,
-  PropertyStatusEnum,
-  PropertyTypeEnum,
-} from '@/libs/enums';
+import { LocationEnum } from '@/libs/enums';
 import {
   fetchOfficesList,
   fetchPaginationOffices,
@@ -28,7 +24,7 @@ const UseSearchOffice = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetchApiProperties({ page: 1, limit: 12, location: LocationEnum.THAMRIN })
+    fetchApiProperties({ page: 1, limit: 12 })
       .then((resp) => {
         setPagination(resp.pagination);
         dispatch(fetchOfficesList(resp.data));

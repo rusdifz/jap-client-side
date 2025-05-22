@@ -1,16 +1,5 @@
-import {
-  // IOfficeDetail,
-  // IOfficeList,
-  IPagination,
-  IProperty,
-  IProperties,
-} from '@/libs/interfaces';
-import {
-  createAction,
-  createReducer,
-  createSlice,
-  PayloadAction,
-} from '@reduxjs/toolkit';
+import { IPagination, IProperty, IProperties } from '@/libs/interfaces';
+import { createAction, createReducer } from '@reduxjs/toolkit';
 
 interface OfficeState {
   offices: IProperties[] | any[];
