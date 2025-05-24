@@ -3,6 +3,7 @@
 import Slider from 'react-slick';
 import SearchDropdown from '../moleculs/SearchDropdown';
 import Image from 'next/image';
+import SearchDropdownHome from '../moleculs/SearchDropdownHome';
 
 const setting = {
   dots: false,
@@ -15,7 +16,7 @@ const setting = {
   autoplaySpeed: 5000,
 };
 
-const BannerTop = () => {
+const BannerTopHome = () => {
   return (
     <div className="hero-banner-four position-relative z-1 xl-pt-120 md-pt-60 pb-50 xl-pb-120 md-pb-20">
       <Slider {...setting} className="hero-slider-one m0">
@@ -55,11 +56,11 @@ const BannerTop = () => {
           </h1>
         </div>
         <div className="row pb-5 mt-100">
-          <SearchDropdown />
+          <SearchDropdownHome />
         </div>
       </div>
     </div>
   );
 };
 
-export default BannerTop;
+export default BannerTopHome;

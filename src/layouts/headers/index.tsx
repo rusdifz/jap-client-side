@@ -19,16 +19,21 @@ const Header = () => {
       >
         <div className="inner-content gap-one">
           {/* <div className="inner-content gap-two"> */}
-          <div className="top-header position-relative ml-50">
+          <div className="top-header position-relative ms-2 ms-lg-5">
             <div className="d-flex align-items-center">
               <div className="logo order-lg-0">
                 {/* company logo */}
                 <Link href="/" className="d-flex align-items-center">
-                  <Image src={logo} alt="" height={40} width={70} />
+                  <Image
+                    src={'/assets/images/logo/logo_jap.png'}
+                    alt=""
+                    height={40}
+                    width={70}
+                  />
                 </Link>
               </div>
 
-              <div className="right-widget ms-auto me-5 me-lg-5 order-lg-3">
+              <div className="right-widget ms-auto me-2 me-lg-5 order-lg-3">
                 <nav className="navbar navbar-expand-lg p0 ms-lg-5 order-lg-2">
                   <button
                     className="navbar-toggler d-block d-lg-none"

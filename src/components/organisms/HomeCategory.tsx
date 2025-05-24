@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import React, { useRef, useEffect, useState } from 'react';
 
 import { fetchApiMasterLocation } from '@/api/master-location.api';
+import { Skeleton } from 'antd';
 
 // import titleShape from '@/assets/images/shape/title_shape_02.svg';
 
@@ -43,16 +44,20 @@ const setting = {
 
 const HomeSectionCategory = () => {
   const [popularLocations, setPopularLocation] = useState<any[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const dataLoad = Array.from({ length: 6 }, (_, i) => i + 1);
 
   useEffect(() => {
     fetchApiMasterLocation()
       .then((resp) => {
         setPopularLocation(resp.data);
+        setLoading(false);
         console.log('res popular location', resp.data);
       })
       .catch((err) => {
         console.log('error get feedback', err);
         setPopularLocation([]);
+        setLoading(false);
       });
   }, []);
 
@@ -72,6 +77,36 @@ const HomeSectionCategory = () => {
 
   return (
     <div className="block-feature-three mt-40 xl-mt-100 md-mt-20">
+      {loading && (
+        <div className="container">
+          <div className="title-one text-center mb-20 xl-mb-10 md-mb-30 wow fadeInUp">
+            <h4>Explore Popular Location</h4>
+          </div>
+
+          <Slider
+            {...setting}
+            ref={sliderRef}
+            className="property-location-slider-one width-50"
+          >
+            {dataLoad.map((item, index) => (
+              <div key={index} className="item-first">
+                <div
+                  className="location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]"
+                  style={{
+                    height: '300px',
+                    backgroundImage: '',
+                  }}
+                >
+                  <div className="content text-center w-100 tran3s">
+                    <Skeleton active />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      )}
+
       {popularLocations.length > 0 && (
         <div className="container">
           <div className="title-one text-center mb-20 xl-mb-10 md-mb-30 wow fadeInUp">
@@ -85,7 +120,6 @@ const HomeSectionCategory = () => {
             {popularLocations.map((item: any) => (
               <div key={item.id} className="item-first">
                 <div
-                  // className={`location-card-new position-relative z-1 d-flex align-items-center ${item.item_bg} md-h-[200px]`}
                   className={`location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]`}
                   style={{
                     height: '300px',
@@ -99,9 +133,6 @@ const HomeSectionCategory = () => {
                     <h5 className="text-white font-garamond fw-normal">
                       {item.location_name}
                     </h5>
-                    <p className="text-white font-garamondt fw-light">
-                      {/* {item.desc} */}
-                    </p>
                   </div>
                   <Link href="/properties" className="stretched-link"></Link>
                 </div>

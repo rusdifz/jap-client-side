@@ -6,11 +6,9 @@ import Link from 'next/link';
 import Faq from '@/components/moleculs/Faq';
 import Count from '@/components/atoms/Count';
 
-// import titleShape from '@/assets/images/shape/title_shape_03.svg';
-
 const HomeSectionAboutUs = () => {
   return (
-    <div className="bg-rusdi block-feature-thirteen pt-20 xl-pt-40 lg-pt-55 pb-70 xl-pb-25 lg-pb-25 mt-80 mb-20 xl-mb-30 xl-mt-50">
+    <div className="bg-rusdi block-feature-thirteen pt-20 xl-pt-40 lg-pt-55 pb-25 xl-pb-25 lg-pb-25 mt-80 mb-20 xl-mb-30 xl-mt-50">
       <div className="position-relative z-1">
         <div className="container container-large">
           <div className="row">

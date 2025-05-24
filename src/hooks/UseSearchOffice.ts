@@ -8,6 +8,7 @@ import { LocationEnum } from '@/libs/enums';
 import {
   fetchOfficesList,
   fetchPaginationOffices,
+  setLoadingOffice,
 } from '@/redux/features/officeSlice';
 import { ReqGetDTO, ReqPropertiesDTO } from '@/libs/dto/request';
 
@@ -20,18 +21,22 @@ const UseSearchOffice = () => {
     total_page: 1,
   });
 
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
+    dispatch(setLoadingOffice(true));
     fetchApiProperties({ page: 1, limit: 12 })
       .then((resp) => {
+        setLoading(false);
         setPagination(resp.pagination);
         dispatch(fetchOfficesList(resp.data));
-        setLoading(false);
+        dispatch(setLoadingOffice(false));
       })
       .catch((err) => {
+        console.log('error get initiate office list');
         setLoading(false);
+        dispatch(setLoadingOffice(false));
       });
   }, []);
 
@@ -76,6 +81,9 @@ const UseSearchOffice = () => {
   };
 
   const handlePageClick = async (event: any) => {
+    setLoading(true);
+    dispatch(setLoadingOffice(true));
+
     const newPage = event.selected + 1;
 
     let propsFilter: ReqPropertiesDTO = {
@@ -113,34 +121,36 @@ const UseSearchOffice = () => {
     }
 
     try {
-      setLoading(true);
       const resp: ResponseAPI<IProperties[]> = await fetchApiProperties(
         propsFilter,
       );
       console.log('page click', newPage);
 
       if (!resp.error) {
+        setLoading(false);
         dispatch(fetchOfficesList(resp.data));
         dispatch(fetchPaginationOffices(resp.pagination));
         setPagination(resp.pagination);
-        setLoading(false);
+        dispatch(setLoadingOffice(false));
       }
     } catch (error: any) {
-      // dispatch(fetchOfficesSuccess([]));
       setPagination({
         page: 1,
         total: 0,
         total_page: 1,
       });
+      dispatch(setLoadingOffice(false));
       setLoading(false);
       throw new Error(error);
     }
   };
 
   const handleSubmitForm = async (e: FormEvent) => {
-    // console.log('this');
+    setLoading(true);
+    dispatch(setLoadingOffice(true));
 
-    // e.preventDefault();
+    e.preventDefault();
+
     let propsFilter: ReqPropertiesDTO = {
       page: pagination.page,
       limit: 12,
@@ -183,7 +193,6 @@ const UseSearchOffice = () => {
     console.log('submit form', propsFilter);
 
     try {
-      setLoading(true);
       const resp: ResponseAPI<IProperties[]> = await fetchApiProperties(
         propsFilter,
       );
@@ -193,6 +202,7 @@ const UseSearchOffice = () => {
         dispatch(fetchOfficesList(resp.data));
         dispatch(fetchPaginationOffices(resp.pagination));
         setPagination(resp.pagination);
+        dispatch(setLoadingOffice(false));
         setLoading(false);
       }
       console.log('pagination', pagination);
@@ -204,6 +214,7 @@ const UseSearchOffice = () => {
         total_page: 1,
       });
       setLoading(false);
+      dispatch(setLoadingOffice(false));
       throw new Error(error);
     }
   };
@@ -236,8 +247,8 @@ const UseSearchOffice = () => {
     resetFilters,
     handlePageClick,
     handleSubmitForm,
-    // setOffices,
-    loading,
+    isLoading,
+    setLoading,
     setKeyword,
   };
 };

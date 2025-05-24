@@ -1,39 +1,47 @@
 'use client';
 
-import { selectOffices } from '@/redux/features/officeSlice';
 import { useSelector } from 'react-redux';
 import ReactPaginate from 'react-paginate';
 import Link from 'next/link';
 import Image from 'next/image';
-// import '@ant-design/v5-patch-for-react-19';
 import { Skeleton, Empty } from 'antd';
+import {
+  selectLoadingOffice,
+  selectOffices,
+} from '@/redux/features/officeSlice';
 
-import NiceSelect from '@/ui/NiceSelect';
-import featureIcon_1 from '@/assets/images/icon/icon_04.svg';
+// import NiceSelect from '@/ui/NiceSelect';
+// import featureIcon_1 from '@/assets/images/icon/icon_04.svg';
 
-import noImageProperty from '@/assets/images/default-image/no-image.jpg';
-import imageProperty from '@/assets/images/category-dummy/cat-1.png';
+// import noImageProperty from '@/assets/images/default-image/no-image.jpg';
+// import imageProperty from '@/assets/images/category-dummy/cat-1.png';
 // import featureIcon_2 from '@/assets/images/icon/icon_05.svg';
 // import featureIcon_3 from '@/assets/images/icon/icon_06.svg';
 
 import UseSearchOffice from '@/hooks/UseSearchOffice';
 
-import { optionSort } from '@/libs/const/property.const';
+// import { optionSort } from '@/libs/const/property.const';
 // import { IOfficeList } from '@/libs/interfaces/property.interface';
 import { PropertyStatusEnum } from '@/libs/enums';
 import { IProperties } from '@/libs/interfaces';
-import { pascalToKebab } from '@/libs/helper';
+// import { pascalToKebab } from '@/libs/helper';
 
 const ResultListArea = ({ style }: any) => {
+  const dataLoad = Array.from({ length: 12 }, (_, i) => i + 1);
+
   const {
     pagination,
     sortOptionNew,
     handleSortNewChange,
     handlePageClick,
-    loading,
+    isLoading,
   } = UseSearchOffice();
 
   const offices = useSelector(selectOffices);
+  const isLoadingAgain = useSelector(selectLoadingOffice);
+
+  console.log('load search result', isLoading);
+  console.log('load dispach', isLoadingAgain);
 
   return (
     <div
@@ -90,8 +98,29 @@ const ResultListArea = ({ style }: any) => {
 
         {/* buat list data */}
 
-        {loading ? (
-          <Skeleton />
+        {isLoading ? (
+          // <Skeleton />
+          <div>
+            <div className="row gx-xxl-6">
+              {dataLoad.map((property, index: number) => (
+                <div
+                  key={index}
+                  className="col-lg-3 col-md-6  d-flex mb-50 wow fadeInUp"
+                  data-wow-delay={'0,' + index + 1}
+                >
+                  <div
+                    className={`listing-card-one shadow border-25  ${
+                      style ? 'border-layout' : ''
+                    }`}
+                  >
+                    <div className="property-info p-25">
+                      <Skeleton />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         ) : offices.length > 0 ? (
           <div>
             <div className="row gx-xxl-6">
@@ -145,11 +174,16 @@ const ResultListArea = ({ style }: any) => {
                       <ul className="style-none feature d-flex flex-wrap align-items-center justify-content-between">
                         <li className="d-flex align-items-center">
                           <Image
-                            src={featureIcon_1}
+                            src={'/assets/images/icon/icon_04.svg'}
                             alt=""
+                            width={17}
+                            height={17}
                             className="lazy-img icon me-2"
                           />
-                          <span className="fs-14" style={{ fontWeight: 700 }}>
+                          <span
+                            className="ms-2 fs-14"
+                            style={{ fontWeight: 700 }}
+                          >
                             {property.spesification?.property_size}/sqm
                           </span>
                         </li>

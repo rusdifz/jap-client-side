@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
 
   const base = baseApi(`/api/v1/client/properties`);
 
-  //proxy request
+  // // Proxy request ke PokeAPI
   const res = await fetch(base.url, {
     headers: base.headers,
   });
@@ -21,3 +21,5 @@ export async function GET(request: NextRequest) {
     headers: { 'Cache-Control': 'public, max-age=60' },
   });
 }
+
+// refreshInterval: 1000

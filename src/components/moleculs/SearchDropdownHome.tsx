@@ -10,25 +10,30 @@ import {
 } from '@/libs/const';
 
 import UseSearchOffice from '@/hooks/UseSearchOffice';
+import { useRouter } from 'next/router';
+// const router = useRouter();
 
-const tab_title: string[] = ['Lease', 'Sale'];
+const SearchDropdownHome = () => {
+  const { setLocation, setOfficeType, setPropertyStatus, setKeyword } =
+    UseSearchOffice();
 
-const SearchDropdown = () => {
-  const {
-    setLocation,
-    setOfficeType,
-    setPropertyStatus,
-    handleSubmitForm,
-    setKeyword,
-    setLoading,
-  } = UseSearchOffice();
+  const handleSubmitFormNew = () => {
+    // router.push('/properties');
+    window.location.href = '/properties';
+  };
 
   return (
     <>
       <div className="search-wrapper-one layout-two mt-150 xl-mt-150 lg-mt-100 position-relative wow fadeInUp">
         <div className="bg-wrapper border-1 rounded-3 m-auto">
           <div className="tab-content">
-            <form onSubmit={handleSubmitForm}>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                // searchHandler(e);
+                handleSubmitFormNew();
+              }}
+            >
               <div className="row gx-0 align-items-center">
                 <div className="col-xl-2 col-lg-3 col-md-6">
                   <div className="input-box-one border-left border-lg-0">
@@ -53,7 +58,7 @@ const SearchDropdown = () => {
                       options={optionsProperty}
                       defaultCurrent={1}
                       onChange={(e) => {
-                        setLoading(true), setOfficeType(e.target.value);
+                        setOfficeType(e.target.value);
                       }}
                       name="select"
                       placeholder=""
@@ -114,4 +119,4 @@ const SearchDropdown = () => {
   );
 };
 
-export default SearchDropdown;
+export default SearchDropdownHome;

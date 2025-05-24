@@ -8,8 +8,7 @@ const BlogThree = () => {
       <BreadcrumbOne
         title="Article Publication"
         link="#"
-        link_title="Pages"
-        sub_title="Blog"
+        link_title="Update"
         style={true}
       />
       <BlogArea />

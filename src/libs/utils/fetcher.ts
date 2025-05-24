@@ -10,7 +10,6 @@ export async function fetcher(url: string) {
       'api-key': API_KEY,
     },
   });
-  console.log('res for', res);
 
   if (!res.ok) throw new Error('Gagal memuat data');
   return res.json();

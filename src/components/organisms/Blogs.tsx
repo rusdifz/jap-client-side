@@ -1,20 +1,32 @@
 'use client';
+
+import { fetchApiArticleList } from '@/api/article.api';
 import inner_blog_data from '@/data/inner-data/BlogData';
+import { Skeleton } from 'antd';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
-const categories: string[] = [
-  'all',
-  'apartments',
-  'villa',
-  'mortgage',
-  'sale',
-  'home',
-  'flat',
-];
+const categories: string[] = ['articles', 'video'];
 
 const Blogs = () => {
+  const [articles, setArticles] = useState<any[]>([]);
+  const [isLoading, setLoading] = useState<boolean>(true);
+  const dataLoad = Array.from({ length: 6 }, (_, i) => i + 1);
+
+  useEffect(() => {
+    fetchApiArticleList({ page: 1, limit: 6 })
+      .then((resp) => {
+        setArticles(resp.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log('error get articles', err);
+        setArticles([]);
+        setLoading(false);
+      });
+  }, []);
+
   const blog = inner_blog_data.filter((items) => items.page === 'blog_3');
 
   const [selectedCategory, setSelectedCategory] = useState('all'); // Step 1
@@ -39,6 +51,44 @@ const Blogs = () => {
     setItemOffset(0); // Reset offset when category changes
   };
 
+  if (isLoading) {
+    return (
+      <div className="blog-section-three mt-50 xl-mt-50 mb-150 xl-mb-100">
+        <div className="container">
+          <div className="blog-filter-nav">
+            <ul className="style-none d-flex justify-content-center flex-wrap isotop-menu-wrapper">
+              {categories.map((category) => (
+                <li
+                  key={category}
+                  className={selectedCategory === category ? 'is-checked' : ''}
+                  onClick={() => handleCategoryClick(category)}
+                >
+                  {category.charAt(0).toUpperCase() + category.slice(1)}{' '}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="row isotop-gallery-2-wrapper pt-60 lg-pt-40">
+            {dataLoad.map((item, index) => (
+              <div key={index} className="col-lg-6">
+                <div className="isotop-item villa sale">
+                  <article className="blog-meta-one mb-70 lg-mb-40">
+                    <Skeleton.Image />
+
+                    <div className="post-data">
+                      <Skeleton />
+                    </div>
+                  </article>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="blog-section-three mt-50 xl-mt-50 mb-150 xl-mb-100">
       <div className="container">
@@ -51,7 +101,6 @@ const Blogs = () => {
                 onClick={() => handleCategoryClick(category)}
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}{' '}
-                {/* Capitalize first letter */}
               </li>
             ))}
           </ul>

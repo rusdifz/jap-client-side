@@ -5,7 +5,6 @@ import { Rating } from 'react-simple-star-rating';
 import Slider from 'react-slick';
 import { useEffect, useRef, useState } from 'react';
 
-import defaultProfile from '@/assets/images/default-image/user/user_1.jpg';
 import quoteIcon from '@/assets/images/icon/icon_29.svg';
 import titleShape_1 from '@/assets/images/shape/title_shape_01.svg';
 import feedbackShape_1 from '@/assets/images/shape/shape_42.svg';
@@ -13,6 +12,7 @@ import feedbackShape_2 from '@/assets/images/shape/shape_43.svg';
 
 import { IFeedback } from '@/libs/interfaces';
 import { fetchApiFeedbackList } from '@/api/feedback.api';
+import { Skeleton } from 'antd';
 
 const setting = {
   dots: false,
@@ -41,16 +41,20 @@ const setting = {
 
 const HomeSectionFeedback = ({ style }: any) => {
   const [feedbacks, setFeedbacks] = useState<IFeedback[]>([]);
+  const [isLoading, setLoading] = useState<boolean>(true);
+  const dataLoad = Array.from({ length: 3 }, (_, i) => i + 1);
 
   useEffect(() => {
     fetchApiFeedbackList({ page: 1, limit: 5 })
       .then((resp) => {
         setFeedbacks(resp.data);
+        setLoading(false);
         console.log('res feedback', resp.data);
       })
       .catch((err) => {
         console.log('error get feedback', err);
         setFeedbacks([]);
+        setLoading(false);
       });
   }, []);
 
@@ -70,7 +74,7 @@ const HomeSectionFeedback = ({ style }: any) => {
 
   return (
     <div
-      className={`feedback-section-four position-relative overflow-hidden z-1 pt-50 lg-pt-20 ${
+      className={`feedback-section-four position-relative overflow-hidden z-1 pt-20 lg-pt-20 ${
         style ? '' : 'pb-110 lg-pb-80'
       }`}
     >
@@ -93,6 +97,23 @@ const HomeSectionFeedback = ({ style }: any) => {
               </div>
             </div>
           </div>
+
+          {/* //for loading */}
+          {isLoading && (
+            <Slider
+              {...setting}
+              ref={sliderRef}
+              className="feedback-slider-two"
+            >
+              {dataLoad.map((item, index) => (
+                <div key={index} className="item">
+                  <div className="feedback-block-four ps-lg-4 pe-lg-4">
+                    <Skeleton active />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          )}
 
           {/* section feedback client */}
           <Slider {...setting} ref={sliderRef} className="feedback-slider-two">
