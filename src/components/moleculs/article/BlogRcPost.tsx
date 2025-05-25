@@ -1,11 +1,15 @@
-// 'use client';
+'use client';
 
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 import rcPostImg_1 from '@/assets/images/blog/blog_img_08.jpg';
 import rcPostImg_2 from '@/assets/images/blog/blog_img_09.jpg';
 import rcPostImg_3 from '@/assets/images/blog/blog_img_10.jpg';
+import { IArticleList } from '@/libs/interfaces';
+import { fetchApiArticleList } from '@/api/article.api';
+import { Skeleton } from 'antd';
 
 interface DataType {
   id: number;
@@ -36,16 +40,57 @@ const rc_data: DataType[] = [
 ];
 
 const BlogRcPost = () => {
+  const [articles, setArticles] = useState<IArticleList[]>([]);
+  const [isLoading, setLoading] = useState<boolean>(true);
+  const dataLoad = Array.from({ length: 3 }, (_, i) => i + 1);
+
+  useEffect(() => {
+    fetchApiArticleList({ page: 1, limit: 3 })
+      .then((resp) => {
+        setArticles(resp.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log('error get articles', err);
+        setArticles([]);
+        setLoading(false);
+      });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="recent-news bg-white bg-wrapper mb-30">
+        <h5 className="mb-20">Recent Update</h5>
+        {dataLoad.map((item, index) => (
+          <div
+            key={index}
+            className="news-block d-flex align-items-center pb-25"
+          >
+            <div>
+              <Skeleton.Image />
+            </div>
+            <div className="post ps-4">
+              <Skeleton />
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="recent-news bg-white bg-wrapper mb-30">
       <h5 className="mb-20">Recent Update</h5>
-      {rc_data.map((item) => (
-        <div
-          key={item.id}
-          className="news-block d-flex align-items-center pb-25"
-        >
+      {articles.map((item, index) => (
+        <div key={index} className="news-block d-flex align-items-center pb-25">
           <div>
-            <Image src={item.img} alt="" className="lazy-img" />
+            <Image
+              src={item.thumbnail ?? '/assets/images/blog/blog_img_08.jpg'}
+              alt=""
+              width={50}
+              height={100}
+              className="lazy-img"
+            />
           </div>
           <div className="post ps-4">
             <h4 className="mb-5">
@@ -53,7 +98,7 @@ const BlogRcPost = () => {
                 {item.title}
               </Link>
             </h4>
-            <div className="date">{item.date}</div>
+            <div className="date">{item.updated_at}</div>
           </div>
         </div>
       ))}

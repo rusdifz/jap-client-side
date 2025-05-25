@@ -4,10 +4,19 @@ import Wrapper from '@/layouts/Wrapper';
 export const metadata = {
   title: 'Blog Details Homy - Real Estate React Next js Template',
 };
-const index = () => {
+
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+const index = ({ params }: PageProps) => {
+  const { id } = params;
+
   return (
     <Wrapper>
-      <BlogDetails />
+      <BlogDetails id={params.id} />
     </Wrapper>
   );
 };

@@ -1,4 +1,4 @@
-import { IProperty } from '@/libs/interfaces';
+import { IArticleDetail, IProperty } from '@/libs/interfaces';
 
 export type PropSlug = {
   slug: any;

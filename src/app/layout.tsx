@@ -27,6 +27,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://jardineasiapasific.asia" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Jardine Asiapasific" />
+        <meta name="robots" content="index, follow" />
         {/* <meta name="og:image" content="images/assets/ogg.png" /> */}
         {/* For IE  */}
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

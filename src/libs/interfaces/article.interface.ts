@@ -1,11 +1,12 @@
-import {StatusPublishEnum} from '../enums';
+import { StatusPublishEnum } from '../enums';
 
 export interface IArticleList {
-  article_id: number;
+  // article_id: number;
+  slug: string;
   title: string;
   thumbnail: string;
   status: StatusPublishEnum;
-  created_at: string;
+  updated_at: string;
   created_by: string;
 }
 
@@ -15,6 +16,7 @@ export interface IArticleDetail {
   slug?: string;
   content: string;
   thumbnail: any;
+  url_youtube: string;
   status_publish: StatusPublishEnum | string;
   created_at?: string;
   updated_at?: string;

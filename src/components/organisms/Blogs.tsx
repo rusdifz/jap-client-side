@@ -1,16 +1,23 @@
 'use client';
 
-import { fetchApiArticleList } from '@/api/article.api';
-import inner_blog_data from '@/data/inner-data/BlogData';
 import { Skeleton } from 'antd';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
+import { fetchApiArticleList } from '@/api/article.api';
+import { IArticleList, IPagination, ResponseAPI } from '@/libs/interfaces';
+
 const categories: string[] = ['articles', 'video'];
 
 const Blogs = () => {
-  const [articles, setArticles] = useState<any[]>([]);
+  const [articles, setArticles] = useState<IArticleList[]>([]);
+  const [pagination, setPagination] = useState<IPagination>({
+    page: 1,
+    total: 0,
+    total_page: 1,
+  });
+
   const [isLoading, setLoading] = useState<boolean>(true);
   const dataLoad = Array.from({ length: 6 }, (_, i) => i + 1);
 
@@ -18,6 +25,7 @@ const Blogs = () => {
     fetchApiArticleList({ page: 1, limit: 6 })
       .then((resp) => {
         setArticles(resp.data);
+        setPagination(resp.pagination);
         setLoading(false);
       })
       .catch((err) => {
@@ -27,28 +35,38 @@ const Blogs = () => {
       });
   }, []);
 
-  const blog = inner_blog_data.filter((items) => items.page === 'blog_3');
-
   const [selectedCategory, setSelectedCategory] = useState('all'); // Step 1
 
-  const itemsPerPage = 6;
-  const [itemOffset, setItemOffset] = useState(0);
-  const endOffset = itemOffset + itemsPerPage;
-  const filteredBlog =
-    selectedCategory === 'all'
-      ? blog
-      : blog.filter((item) => item.category === selectedCategory); // Step 3
-  const currentItems = filteredBlog.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(filteredBlog.length / itemsPerPage);
+  const handlePageClick = async (event: any) => {
+    setLoading(true);
+    const newPage = event.selected + 1;
 
-  const handlePageClick = (event: any) => {
-    const newOffset = (event.selected * itemsPerPage) % filteredBlog.length;
-    setItemOffset(newOffset);
+    try {
+      const resp: ResponseAPI<IArticleList[]> = await fetchApiArticleList({
+        page: newPage,
+        limit: 6,
+      });
+      console.log('page click', newPage);
+
+      if (!resp.error) {
+        setLoading(false);
+        setArticles(resp.data);
+        setPagination(resp.pagination);
+      }
+    } catch (error: any) {
+      setPagination({
+        page: 1,
+        total: 0,
+        total_page: 1,
+      });
+      setLoading(false);
+      throw new Error(error);
+    }
   };
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category); // Step 2
-    setItemOffset(0); // Reset offset when category changes
+    // setItemOffset(0); // Reset offset when category changes
   };
 
   if (isLoading) {
@@ -107,31 +125,39 @@ const Blogs = () => {
         </div>
 
         <div className="row isotop-gallery-2-wrapper pt-60 lg-pt-40">
-          {currentItems.map((item) => (
-            <div key={item.id} className="col-lg-6">
+          {articles.map((article, index) => (
+            <div key={index} className="col-lg-6">
               <div className="isotop-item villa sale">
                 <article className="blog-meta-one mb-70 lg-mb-40">
                   <figure
-                    className={`post-img border-25 position-relative m0 ${item.class_name}`}
+                    className={`post-img border-25 position-relative m0`}
+                    style={{
+                      backgroundImage: article.thumbnail
+                        ? `url(${article.thumbnail})`
+                        : `url(/assets/images/blog/blog_img_02.jpg)`,
+                    }}
                   >
                     <Link
-                      href="/article/100"
+                      href={`/article/${article.slug}`}
                       className="stretched-link date tran3s"
-                    >
-                      {item.date}
-                    </Link>
+                    />
                   </figure>
+
                   <div className="post-data">
                     <div className="post-info">
-                      <Link href="/article/100">{item.info_name}</Link>{' '}
-                      {item.info_time} min
+                      <pre>
+                        {article.created_by}, {article.updated_at}
+                      </pre>
                     </div>
                     <div className="d-flex justify-content-between align-items-sm-center flex-wrap">
-                      <Link href="/article/100" className="blog-title">
-                        <h4>{item.title}</h4>
+                      <Link
+                        href={`/article/${article.slug}`}
+                        className="blog-title"
+                      >
+                        <h4>{article.title}</h4>
                       </Link>
                       <Link
-                        href="/article/100"
+                        href={`/article/${article.slug}`}
                         className="read-btn rounded-circle d-flex align-items-center justify-content-center tran3s"
                       >
                         <i className="bi bi-arrow-up-right"></i>
@@ -149,11 +175,12 @@ const Blogs = () => {
             breakLabel="..."
             nextLabel={<i className="fa-regular fa-chevron-right"></i>}
             onPageChange={handlePageClick}
-            pageRangeDisplayed={5}
-            pageCount={pageCount}
+            pageRangeDisplayed={pagination.total_page}
+            pageCount={pagination.total_page}
             previousLabel={<i className="fa-regular fa-chevron-left"></i>}
             renderOnZeroPageCount={null}
             className="pagination-two d-inline-flex align-items-center justify-content-center style-none"
+            forcePage={pagination.page - 1}
           />
         </div>
       </div>

@@ -37,7 +37,13 @@ const OurServices = ({ style }: any) => {
             >
               <div className="card-style-ten d-flex align-items-start flex-column w-100 h-100">
                 <div className="icon d-flex align-items-center justify-content-center rounded-circle tran3s">
-                  <Image src={item.icon} alt="" className="lazy-img" />
+                  <Image
+                    src={item.icon}
+                    alt=""
+                    width={27}
+                    height={25}
+                    className="lazy-img"
+                  />
                 </div>
                 <h6>{item.title}</h6>
                 <p>{item.desc}</p>

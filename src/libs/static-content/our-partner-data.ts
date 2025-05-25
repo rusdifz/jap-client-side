@@ -30,36 +30,17 @@ export const partnertData: DataType[] = [
   },
   {
     id: 3,
-    icon: '/assets/images/default-image/mebo-concept.jpeg',
-    title: 'Raz Developer',
-    desc: `RAZ TECH is one of Indonesia’s professional IT consultants. Leveraging professionalism and extensive experience in the technology industry, RAZ TECH delivers unwavering commitment through a dynamic team of IT experts, offering tailored solutions for clients across all aspects of IT consultancy.
+    icon: '/assets/images/raz-dev.png',
+    title: 'Raz Technology',
+    desc: `RAZ TECH is one of Indonesia’s professional Software House. Leveraging professionalism and extensive experience in the technology industry, RAZ TECH delivers unwavering commitment through a dynamic team of IT experts, offering tailored solutions for clients across all aspects of IT consultancy.
             With expertise in IT infrastructure, cybersecurity, and digital transformation, RAZ TECH is dedicated to building a solid reputation as a trusted partner for innovative, high-quality technology consulting services.`,
     data_delay_time: '0.2s',
   },
-  //   {
-  //     id: 4,
-  //     page: 'service_1',
-  //     icon: serviceIcon_1,
-  //     title: 'Landed-Houses / Townhouses',
-  //     btn: 'Buy Home',
-  //     desc: 'Explore homy’s 2 million+ homes and uncover your ideal living space.',
-  //   },
-  //   {
-  //     id: 5,
-  //     page: 'service_1',
-  //     icon: serviceIcon_2,
-  //     title: 'Apartments / Condominium',
-  //     btn: 'Rent Home',
-  //     desc: "Discover a rental you'll love on homy, thanks to 35+ filters.",
-  //     data_delay_time: '0.1s',
-  //   },
-  //   {
-  //     id: 6,
-  //     page: 'service_1',
-  //     icon: serviceIcon_3,
-  //     title: 'Property Managements',
-  //     btn: 'Sell Home',
-  //     desc: 'List, sell, thrive – with our top-notch real estate agency.',
-  //     data_delay_time: '0.2s',
-  //   },
+  {
+    id: 4,
+    icon: '/assets/images/Cahaya-Cipta-Technology.png',
+    title: 'Cipta Technology',
+    desc: `Cipta Technology bergerak di bidang layanan teknologi informasi dengan komitmen untuk memberikan solusi IT terbaik dan terpercaya. Kami menyediakan berbagai layanan profesional, termasuk pengembangan Website dan APlikasi, instalasi CCTV. infrastruktur jaringan serta Cipta Technology juga menyediakan berbagai macam perangkat IT untuk mendukung infrastruktur IT anda`,
+    data_delay_time: '0.3s',
+  },
 ];

@@ -7,7 +7,7 @@ import serviceIcon_3 from '@/assets/images/icon/icon_71.svg';
 interface DataType {
   id: number;
   page: string;
-  icon: StaticImageData;
+  icon: string;
   title: string;
   desc: string;
   data_delay_time?: string;
@@ -19,7 +19,8 @@ const service_data: DataType[] = [
   {
     id: 1,
     page: 'service_1',
-    icon: serviceIcon_1,
+    // icon: serviceIcon_1,
+    icon: '/assets/images/icon/icon_69.svg',
     title: 'Real Estate Businesses',
     btn: 'Buy Home',
     desc: 'Explore homy’s 2 million+ homes and uncover your ideal living space.',
@@ -27,7 +28,8 @@ const service_data: DataType[] = [
   {
     id: 2,
     page: 'service_1',
-    icon: serviceIcon_2,
+    // icon: serviceIcon_2,
+    icon: '/assets/images/icon/icon_70.svg',
     title: 'Offices & Commercial ',
     btn: 'Rent Home',
     desc: "Discover a rental you'll love on homy, thanks to 35+ filters.",
@@ -36,7 +38,8 @@ const service_data: DataType[] = [
   {
     id: 3,
     page: 'service_1',
-    icon: serviceIcon_3,
+    // icon: serviceIcon_3,
+    icon: '/assets/images/icon/icon_71.svg',
     title: 'Property Managements',
     btn: 'Sell Home',
     desc: 'List, sell, thrive – with our top-notch real estate agency.',
@@ -45,7 +48,8 @@ const service_data: DataType[] = [
   {
     id: 4,
     page: 'service_1',
-    icon: serviceIcon_1,
+    // icon: serviceIcon_1,
+    icon: '/assets/images/icon/icon_71.svg',
     title: 'Landed-Houses / Townhouses',
     btn: 'Buy Home',
     desc: 'Explore homy’s 2 million+ homes and uncover your ideal living space.',
@@ -53,7 +57,7 @@ const service_data: DataType[] = [
   {
     id: 5,
     page: 'service_1',
-    icon: serviceIcon_2,
+    icon: '/assets/images/icon/icon_69.svg',
     title: 'Apartments / Condominium',
     btn: 'Rent Home',
     desc: "Discover a rental you'll love on homy, thanks to 35+ filters.",
@@ -62,7 +66,7 @@ const service_data: DataType[] = [
   {
     id: 6,
     page: 'service_1',
-    icon: serviceIcon_3,
+    icon: '/assets/images/icon/icon_70.svg',
     title: 'Property Managements',
     btn: 'Sell Home',
     desc: 'List, sell, thrive – with our top-notch real estate agency.',
