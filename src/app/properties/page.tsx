@@ -1,8 +1,8 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+// import { useSearchParams } from 'next/navigation';
+// import { useEffect } from 'react';
+// import { useDispatch } from 'react-redux';
 
 import ListProperty from '@/components/property-list';
 import Wrapper from '@/layouts/Wrapper';
@@ -27,12 +27,12 @@ interface SearchParams {
 
 const index = () => {
   // const index = ({ searchParams }: { searchParams: SearchParams }) => {
-  const searchParams = useSearchParams();
-  const locationParams = searchParams.get('location') || ''; // Default ke string kosong
-  const officeTypeParams = searchParams.get('office_type') || ''; // Default ke string kosong
-  const propertyStatusParams = searchParams.get('property_status') || ''; // Default ke string kosong
+  // const searchParams = useSearchParams();
+  // const locationParams = searchParams.get('location') || ''; // Default ke string kosong
+  // const officeTypeParams = searchParams.get('office_type') || ''; // Default ke string kosong
+  // const propertyStatusParams = searchParams.get('property_status') || ''; // Default ke string kosong
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   // const location = searchParams.location || ''; // Default ke string kosong
   // const officeType = searchParams.office_type || ''; // Default ke string kosong
