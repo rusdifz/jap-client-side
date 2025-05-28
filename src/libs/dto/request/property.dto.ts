@@ -8,8 +8,8 @@ import { ReqGetDTO } from './global.dto';
 
 export class ReqPropertiesDTO extends ReqGetDTO {
   location?: LocationEnum | string;
-  property_type?: PropertyTypeEnum;
-  property_status?: PropertyStatusEnum;
+  property_type?: PropertyTypeEnum | string;
+  property_status?: PropertyStatusEnum | string;
 }
 
 export class ReqCreatePropertyDTO {

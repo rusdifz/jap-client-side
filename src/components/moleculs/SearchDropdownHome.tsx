@@ -14,12 +14,22 @@ import { useRouter } from 'next/router';
 // const router = useRouter();
 
 const SearchDropdownHome = () => {
-  const { setLocation, setOfficeType, setPropertyStatus, setKeyword } =
-    UseSearchOffice();
+  const {
+    location,
+    setLocation,
+    officeType,
+    setOfficeType,
+    propertyStatus,
+    setPropertyStatus,
+    setKeyword,
+  } = UseSearchOffice();
 
   const handleSubmitFormNew = () => {
     // router.push('/properties');
-    window.location.href = '/properties';
+    const queryParams = `?location=${location ?? ''}&office_type=${
+      officeType ?? ''
+    }&property_status=${propertyStatus ?? ''}`;
+    window.location.href = '/properties' + queryParams;
   };
 
   return (

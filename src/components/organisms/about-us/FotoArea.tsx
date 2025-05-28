@@ -46,27 +46,27 @@ const FotoArea = ({ style }: any) => {
 
           <div className="wrapper position-relative z-1">
             <Slider {...settings} className="agent-slider-one">
-              {agent_data
-                .filter((items) => items.page === 'home_1')
-                .map((item) => (
-                  <div key={item.id} className="item">
-                    <div className="agent-card-one position-relative">
-                      <div className="img border-20">
-                        <Image
-                          src={item.thumb}
-                          alt=""
-                          className="w-100 tran5s"
-                        />
-                      </div>
-                      {/* <div className="text-center">
+              {agent_data.map((item) => (
+                <div key={item.id} className="item">
+                  <div className="agent-card-one position-relative">
+                    <div className="img border-20">
+                      <Image
+                        src={item.thumb}
+                        alt=""
+                        width={1000}
+                        height={1000}
+                        className="w-100 tran5s"
+                      />
+                    </div>
+                    {/* <div className="text-center">
                         <h6>{item.title}</h6>
                         <Link href="/agent_details" className="stretched-link">
                           {item.desc}
                         </Link>
                       </div> */}
-                    </div>
                   </div>
-                ))}
+                </div>
+              ))}
             </Slider>
           </div>
         </div>

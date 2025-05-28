@@ -42,27 +42,27 @@
     }
   }
 }
-// // Agent Card One
-// .agent-card-one {
-//   .img {
-//     overflow: hidden;
-//     margin-bottom: 35px;
-//     &.border-20 {
-//       border-radius: 20px;
-//     }
-//   }
-//   h6 {
-//     margin-bottom: 8px;
-//   }
-//   a {
-//     color: #9d9d9d;
-//   }
-//   &:hover {
-//     .img img {
-//       transform: scale3d(1.1, 1.1, 1);
-//     }
-//   }
-// }
+// Agent Card One
+.agent-card-one {
+  .img {
+    overflow: hidden;
+    margin-bottom: 35px;
+    &.border-20 {
+      border-radius: 20px;
+    }
+  }
+  h6 {
+    margin-bottom: 8px;
+  }
+  a {
+    color: #9d9d9d;
+  }
+  &:hover {
+    .img img {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+}
 // // Agent Card Two
 // .agent-card-two {
 //   .tag {

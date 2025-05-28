@@ -32,14 +32,14 @@ export enum PropertyStatusEnum {
 }
 
 export enum PropertyTypeEnum {
-  COWORKING = 'Coworking Space',
   OFFICE = 'Office',
-  VIRTUAL_OFFICE = 'Virtual Office',
-  RESIDENTIAL = 'Residential',
-  lANDED = 'Landed',
-  RETAIL = 'Retail',
-  COMMERCIAL = 'Commercial',
   SERVICED_OFFICED = 'Serviced Office',
+  VIRTUAL_OFFICE = 'Virtual Office',
+  COWORKING = 'Coworking Space',
+  RETAIL = 'Retail',
+  RESIDENTIAL = 'Residential',
+  // lANDED = 'Landed',
+  // COMMERCIAL = 'Commercial',
 }
 
 export enum ConditionUnitEnum {

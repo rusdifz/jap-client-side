@@ -1,3 +1,5 @@
+'use client';
+
 import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
@@ -23,10 +25,54 @@ const UseSearchOffice = () => {
 
   const [isLoading, setLoading] = useState(true);
 
+  const [sortOptionNew, setSortOptionNew] = useState<string>('');
+  const [location, setLocation] = useState<any>(null);
+  const [officeType, setOfficeType] = useState<any>(null);
+  const [selectedAmenitiesNew, setSelectedAmenitiesNew] = useState<string[]>(
+    [],
+  );
+  const [keyword, setKeyword] = useState<string | null>(null);
+  const [propertyStatus, setPropertyStatus] = useState<any>();
+
   useEffect(() => {
+    let propsFilter: ReqPropertiesDTO = {
+      page: 1,
+      limit: 12,
+    };
+
+    if (sortOptionNew.length > 0) {
+      propsFilter.sort = sortOptionNew;
+    }
+
+    if (location !== null || location == 'All Area') {
+      propsFilter.location =
+        location === LocationEnum.ALL_AREA ? null : location;
+    } else {
+      propsFilter.location = undefined;
+    }
+
+    if (officeType !== null) {
+      propsFilter.property_type = officeType;
+    } else {
+      propsFilter.property_type = undefined;
+    }
+
+    if (selectedAmenitiesNew.length > 0) {
+      propsFilter.features = selectedAmenitiesNew;
+    } else {
+      propsFilter.features = undefined;
+    }
+
+    if (keyword !== null) {
+      propsFilter.search_keyword = keyword;
+    } else {
+      propsFilter.search_keyword = undefined;
+    }
+    console.log('in use efef', location);
+
     setLoading(true);
     dispatch(setLoadingOffice(true));
-    fetchApiProperties({ page: 1, limit: 12 })
+    fetchApiProperties(propsFilter)
       .then((resp) => {
         setLoading(false);
         setPagination(resp.pagination);
@@ -39,15 +85,6 @@ const UseSearchOffice = () => {
         dispatch(setLoadingOffice(false));
       });
   }, []);
-
-  const [sortOptionNew, setSortOptionNew] = useState<string>('');
-  const [location, setLocation] = useState<any>(null);
-  const [officeType, setOfficeType] = useState<any>(null);
-  const [selectedAmenitiesNew, setSelectedAmenitiesNew] = useState<string[]>(
-    [],
-  );
-  const [keyword, setKeyword] = useState<string | null>(null);
-  const [propertyStatus, setPropertyStatus] = useState<any>();
 
   // handleSortOptionChange
   const handleSortNewChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -229,7 +266,7 @@ const UseSearchOffice = () => {
 
   return {
     pagination,
-    // setPagination,
+    setPagination,
     sortOptionNew,
     location,
     setLocation,

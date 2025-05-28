@@ -20,7 +20,7 @@ const OurPartners = ({ style }: any) => {
           {partnertData.map((item) => (
             <div
               key={item.id}
-              className="col-lg-3  d-flex mt-40 wow fadeInUp"
+              className="col-lg-6  d-flex mt-40 wow fadeInUp"
               data-wow-delay="0.1s"
             >
               {/* items-center justify-center text-center */}

@@ -15,8 +15,11 @@ const tab_title: string[] = ['Lease', 'Sale'];
 
 const SearchDropdown = () => {
   const {
+    location,
     setLocation,
+    officeType,
     setOfficeType,
+    propertyStatus,
     setPropertyStatus,
     handleSubmitForm,
     setKeyword,
@@ -51,7 +54,7 @@ const SearchDropdown = () => {
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsProperty}
-                      defaultCurrent={1}
+                      defaultCurrent={officeType ?? 1}
                       onChange={(e) => {
                         setLoading(true), setOfficeType(e.target.value);
                       }}
@@ -68,7 +71,7 @@ const SearchDropdown = () => {
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsPropertyStatus}
-                      defaultCurrent={0}
+                      defaultCurrent={propertyStatus ?? 0}
                       onChange={(e) => {
                         setPropertyStatus(e.target.value);
                       }}
@@ -85,7 +88,7 @@ const SearchDropdown = () => {
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsLocation}
-                      defaultCurrent={0}
+                      defaultCurrent={location ?? 0}
                       onChange={(e) => {
                         setLocation(e.target.value);
                       }}

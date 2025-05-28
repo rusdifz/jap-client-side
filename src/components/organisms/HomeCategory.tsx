@@ -134,7 +134,10 @@ const HomeSectionCategory = () => {
                       {item.location_name}
                     </h5>
                   </div>
-                  <Link href="/properties" className="stretched-link"></Link>
+                  <Link
+                    href={`/properties?location=${item.location_name}`}
+                    className="stretched-link"
+                  ></Link>
                 </div>
               </div>
             ))}
