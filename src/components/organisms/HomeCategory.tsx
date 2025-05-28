@@ -123,6 +123,7 @@ const HomeSectionCategory = () => {
                   className={`location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]`}
                   style={{
                     height: '300px',
+                    // width: '200px',
                     backgroundImage:
                       item.url_image && item.url_image !== ''
                         ? `url(${item.url_image})`

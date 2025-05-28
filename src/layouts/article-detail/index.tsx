@@ -29,6 +29,8 @@ const BlogDetails = ({ id }: PageProps) => {
   useEffect(() => {
     fetchApiArticleDetail(id)
       .then((resp) => {
+        console.log('res', resp);
+
         setArticle(resp.data);
         setLoading(false);
       })
@@ -112,8 +114,8 @@ const BlogDetails = ({ id }: PageProps) => {
 
               <div className="bottom-widget d-sm-flex align-items-center justify-content-between">
                 <ul className="d-flex align-items-center tags style-none pt-20">
-                  <li>Tag:</li>
-                  <li>
+                  <li>Tag: {article?.tags}</li>
+                  {/* <li>
                     <Link href="#">Apartments,</Link>
                   </li>
                   <li>
@@ -121,7 +123,7 @@ const BlogDetails = ({ id }: PageProps) => {
                   </li>
                   <li>
                     <Link href="#">Sale</Link>
-                  </li>
+                  </li> */}
                 </ul>
                 <ul className="d-flex share-icon align-items-center style-none pt-20">
                   {/* <li>Share:</li> */}

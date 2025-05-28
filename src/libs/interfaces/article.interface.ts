@@ -17,6 +17,7 @@ export interface IArticleDetail {
   content: string;
   thumbnail: any;
   url_youtube: string;
+  tags: string;
   status_publish: StatusPublishEnum | string;
   created_at?: string;
   updated_at?: string;

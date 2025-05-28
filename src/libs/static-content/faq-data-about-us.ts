@@ -9,7 +9,7 @@ export const faq_data: DataType[] = [
   {
     id: 1,
     question: 'Who we are?',
-    answer: `Jakarta Asia Property, part of PT. Jardine Asia Pacific, was established in 2016 as a professional property consultant in Indonesia. Leveraging professionalism and industry experience, we provide comprehensive consultancy services through a dedicated, dynamic team, tailored to meet client needs. With a broad scope of expertise, we aim to build a solid reputation for delivering high-quality property consulting solutions.`,
+    answer: `Jakarta Asia Property, a subsidiary of PT. Jardine Asia Pacific, was established in 2016 as a professional property consultancy in Indonesia. Leveraging our professionalism and industry experience, we offer comprehensive consultancy services through a dedicated and dynamic team, tailored to meet each client's needs. With a broad range of expertise, we are committed to building a solid reputation for delivering high-quality property consulting solutions.`,
     showAnswer: false,
   },
   {
@@ -17,7 +17,7 @@ export const faq_data: DataType[] = [
 
     question: 'What’s our goal',
     answer:
-      'Jakarta Asia Property offers commitment and dedication from a dynamic team of professionals and provides personalized services to our valued clients and customers covering all aspects of property consultancies. From it’s strength in the scope of businesses and services, Jakarta Asia Property aims to build up a solid reputation for quality consulting.',
+      'Jakarta Asia Property offers unwavering commitment and dedication through a dynamic team of professionals, delivering personalized services to our valued clients across all aspects of property consultancy. Drawing on its strengths in various business areas and services, Jakarta Asia Property aims to build a solid reputation for delivering high-quality consulting solutions.',
     showAnswer: false,
   },
   {
@@ -28,12 +28,12 @@ export const faq_data: DataType[] = [
   },
 ];
 
-interface DataType {
-  id: number;
-  question: string;
-  answer: string;
-  showAnswer: boolean;
-}
+// interface DataType {
+//   id: number;
+//   question: string;
+//   answer: string;
+//   showAnswer: boolean;
+// }
 
 // const faq_data: DataType[] = [
 //   {

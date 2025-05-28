@@ -31,17 +31,19 @@ const FaqPageAboutUs = () => {
                 <>
                   <p>
                     {' '}
-                    - Establish in a good working relationship with our Clients.
+                    - We strive to establish strong and effective working
+                    relationships with our clients.
                   </p>
                   <p>
                     {' '}
-                    - We believe that relationships determine the success and
-                    accomplishments
+                    - We believe that the quality of relationships determines
+                    success and achievement.
                   </p>
                   <p>
                     {' '}
-                    - Filled with passion and a desire to get things done and
-                    get good appreciation in the eyes of clients and companies.
+                    - Driven by passion and a strong desire to deliver results,
+                    we aim to earn recognition and appreciation from both our
+                    clients and partner companies.
                   </p>
                 </>
               ) : (

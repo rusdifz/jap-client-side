@@ -32,7 +32,7 @@ const OurPartners = ({ style }: any) => {
                   className=""
                   width={100}
                   height={100}
-                  style={{ maxWidth: 200, width: '150px', height: '150px' }}
+                  style={{ maxWidth: 200, width: '150px', height: '100px' }}
                 />
 
                 <div className="mt-30">
