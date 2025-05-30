@@ -1,6 +1,6 @@
 'use client';
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Spin, Result } from 'antd';
 
 import { officeDetail } from '@/redux/features/officeSlice';
@@ -13,14 +13,34 @@ import ResultBody from '@/components/templates/ResultPropertyDetail';
 
 import useSWR from 'swr';
 import { fetcher } from '@/libs/utils/fetcher';
+import { fetchApiPropertyDetail } from '@/api/property.api';
 
 const PropertyDetail: React.FC<PropSlug> = ({ slug }) => {
   const dispatch = useDispatch();
 
-  const { data, error, isLoading } = useSWR<ResponseAPI<IProperty>>(
-    `/api/property/${slug}`,
-    fetcher,
-  );
+  // const { data, error, isLoading } = useSWR<ResponseAPI<IProperty>>(
+  //   `/api/property/${slug}`,
+  //   fetcher,
+  // );
+
+  const [property, setProperty] = useState<any>();
+  const [isLoading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    fetchApiPropertyDetail(slug)
+      .then((resp) => {
+        console.log('res', resp);
+        setProperty(resp.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log('error get articles', err);
+        setError(err.message);
+        setProperty(null);
+        setLoading(false);
+      });
+  }, []);
 
   if (isLoading) {
     return (
@@ -40,18 +60,14 @@ const PropertyDetail: React.FC<PropSlug> = ({ slug }) => {
   }
 
   // Mengatur data ke Redux saat data tersedia
-  if (data) {
-    if (data.data) {
-      console.log('data ada', data);
-
-      dispatch(officeDetail(data.data));
-    } else {
-      return (
-        <div className="position-relative z-1">
-          <Error />
-        </div>
-      );
-    }
+  if (property) {
+    dispatch(officeDetail(property));
+  } else {
+    return (
+      <div className="position-relative z-1">
+        <Error />
+      </div>
+    );
   }
 
   if (error) {
