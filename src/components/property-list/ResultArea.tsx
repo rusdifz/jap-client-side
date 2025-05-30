@@ -25,6 +25,7 @@ import UseSearchOffice from '@/hooks/UseSearchOffice';
 // import { IOfficeList } from '@/libs/interfaces/property.interface';
 import { PropertyStatusEnum } from '@/libs/enums';
 import { IProperties } from '@/libs/interfaces';
+import { formatCurrency } from '@/libs/helper/convert-currency';
 // import { pascalToKebab } from '@/libs/helper';
 
 const ResultListArea = ({ style }: any) => {
@@ -193,7 +194,9 @@ const ResultListArea = ({ style }: any) => {
 
                         <li className="d-flex align-items-center">
                           <strong className="color-dark">
-                            IDR {property.price.rent_sqm}
+                            {formatCurrency(
+                              `IDR ${property.price.rent_sqm.toString()}`,
+                            )}
                           </strong>
                         </li>
                       </ul>

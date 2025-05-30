@@ -1,3 +1,4 @@
+import { formatCurrency } from '@/libs/helper/convert-currency';
 import { PropPropertyDetail } from '@/libs/type/property.type';
 
 const Banner: React.FC<PropPropertyDetail> = ({ property }) => {
@@ -17,7 +18,11 @@ const Banner: React.FC<PropPropertyDetail> = ({ property }) => {
         </div>
       </div>
       <div className="col-md-3 ms-auto">
-        <div>Start From Rp. {property.price.rent_sqm}/sqm/month</div>
+        <div>
+          Start From{' '}
+          {formatCurrency(`Rp. ${property.price.rent_sqm.toString()}`)}
+          /sqm/month
+        </div>
       </div>
     </div>
   );
