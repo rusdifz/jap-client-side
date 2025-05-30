@@ -38,36 +38,37 @@ const UseSearchOffice = () => {
     let propsFilter: ReqPropertiesDTO = {
       page: 1,
       limit: 12,
+      location: LocationEnum.THAMRIN,
     };
 
-    if (sortOptionNew.length > 0) {
-      propsFilter.sort = sortOptionNew;
-    }
+    // if (sortOptionNew.length > 0) {
+    //   propsFilter.sort = sortOptionNew;
+    // }
 
-    if (location !== null || location == 'All Area') {
-      propsFilter.location =
-        location === LocationEnum.ALL_AREA ? null : location;
-    } else {
-      propsFilter.location = undefined;
-    }
+    // if (location !== null || location == 'All Area') {
+    //   propsFilter.location =
+    //     location === LocationEnum.ALL_AREA ? null : location;
+    // } else {
+    //   propsFilter.location = undefined;
+    // }
 
-    if (officeType !== null) {
-      propsFilter.property_type = officeType;
-    } else {
-      propsFilter.property_type = undefined;
-    }
+    // if (officeType !== null) {
+    //   propsFilter.property_type = officeType;
+    // } else {
+    //   propsFilter.property_type = undefined;
+    // }
 
-    if (selectedAmenitiesNew.length > 0) {
-      propsFilter.features = selectedAmenitiesNew;
-    } else {
-      propsFilter.features = undefined;
-    }
+    // if (selectedAmenitiesNew.length > 0) {
+    //   propsFilter.features = selectedAmenitiesNew;
+    // } else {
+    //   propsFilter.features = undefined;
+    // }
 
-    if (keyword !== null) {
-      propsFilter.search_keyword = keyword;
-    } else {
-      propsFilter.search_keyword = undefined;
-    }
+    // if (keyword !== null) {
+    //   propsFilter.search_keyword = keyword;
+    // } else {
+    //   propsFilter.search_keyword = undefined;
+    // }
     console.log('in use efef', location);
 
     setLoading(true);

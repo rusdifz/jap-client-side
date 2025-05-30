@@ -54,7 +54,7 @@ const SearchDropdown = () => {
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsProperty}
-                      defaultCurrent={officeType ?? 1}
+                      defaultCurrent={officeType ?? 0}
                       onChange={(e) => {
                         setLoading(true), setOfficeType(e.target.value);
                       }}
@@ -88,7 +88,7 @@ const SearchDropdown = () => {
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsLocation}
-                      defaultCurrent={location ?? 0}
+                      defaultCurrent={location ?? 1}
                       onChange={(e) => {
                         setLocation(e.target.value);
                       }}

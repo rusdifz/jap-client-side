@@ -29,7 +29,7 @@ const FaqPageAboutUs = () => {
             <div className="accordion-body">
               {item.id === 3 ? (
                 <>
-                  <p>
+                  {/* <p>
                     {' '}
                     - We strive to establish strong and effective working
                     relationships with our clients.
@@ -44,6 +44,14 @@ const FaqPageAboutUs = () => {
                     - Driven by passion and a strong desire to deliver results,
                     we aim to earn recognition and appreciation from both our
                     clients and partner companies.
+                  </p> */}
+                  <p>
+                    We are committed to establishing strong, effective working
+                    relationships, as we believe that the quality of these
+                    relationships directly influences long-term success and
+                    achievement. Guided by passion and a results-driven mindset,
+                    we aim to earn recognition and appreciation from both our
+                    clients and business partners.
                   </p>
                 </>
               ) : (

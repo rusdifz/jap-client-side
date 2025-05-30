@@ -9,7 +9,7 @@ export const faq_data: DataType[] = [
   {
     id: 1,
     question: 'Who we are?',
-    answer: `Jakarta Asia Property, a subsidiary of PT. Jardine Asia Pacific, was established in 2016 as a professional property consultancy in Indonesia. Leveraging our professionalism and industry experience, we offer comprehensive consultancy services through a dedicated and dynamic team, tailored to meet each client's needs. With a broad range of expertise, we are committed to building a solid reputation for delivering high-quality property consulting solutions.`,
+    answer: `Jakarta Asia Property, a subsidiary of PT Jardine Asia Pacific, was established in 2016 as a professional property consultancy in Indonesia. By leveraging our industry expertise and unwavering commitment to excellence, we provide comprehensive consultancy services through a dedicated and dynamic team, tailored to meet the unique needs of each client. With a broad spectrum of capabilities, we are committed to building a strong reputation for delivering high-quality property consulting solutions.`,
     showAnswer: false,
   },
   {
@@ -17,7 +17,7 @@ export const faq_data: DataType[] = [
 
     question: 'What’s our goal',
     answer:
-      'Jakarta Asia Property offers unwavering commitment and dedication through a dynamic team of professionals, delivering personalized services to our valued clients across all aspects of property consultancy. Drawing on its strengths in various business areas and services, Jakarta Asia Property aims to build a solid reputation for delivering high-quality consulting solutions.',
+      'Jakarta Asia Property demonstrates its dedication through a passionate team of professionals, offering personalized services that cover all aspects of property consultancy. Drawing on our strengths across diverse business areas and service sectors, we strive to consistently deliver value and build long-term trust with our clients.',
     showAnswer: false,
   },
   {
@@ -27,35 +27,3 @@ export const faq_data: DataType[] = [
     showAnswer: false,
   },
 ];
-
-// interface DataType {
-//   id: number;
-//   question: string;
-//   answer: string;
-//   showAnswer: boolean;
-// }
-
-// const faq_data: DataType[] = [
-//   {
-//     id: 1,
-//     question: 'Who we are?',
-//     answer: `Jakarta Asia Property is under PT. Jardine Asia Pasific was established in 2016 to be one of Indonesian professional’s property consultants
-//             On the basis  of  professionalism  and  fast experiences  in the property industry.`,
-//     showAnswer: false,
-//   },
-//   {
-//     id: 2,
-//     question: 'What’s our goal',
-//     answer:
-//       'Jakarta Asia Property offers commitment and dedication from a dynamic team of professionals and provides personalized services to our valued clients and customers covering all aspects of property consultancies. From it’s strength in the scope of businesses and services, Jakarta Asia Property aims to build up a solid reputation for quality consulting.',
-//     showAnswer: false,
-//   },
-//   {
-//     id: 3,
-//     question: 'Our vision',
-//     answer: 'Giving the best services to the clients',
-//     showAnswer: false,
-//   },
-// ];
-
-// export default faq_data;

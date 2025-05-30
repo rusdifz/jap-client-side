@@ -38,8 +38,6 @@ export enum PropertyTypeEnum {
   COWORKING = 'Coworking Space',
   RETAIL = 'Retail',
   RESIDENTIAL = 'Residential',
-  // lANDED = 'Landed',
-  // COMMERCIAL = 'Commercial',
 }
 
 export enum ConditionUnitEnum {

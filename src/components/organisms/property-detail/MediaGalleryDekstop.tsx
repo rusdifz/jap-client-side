@@ -6,7 +6,7 @@ import { PropPropertyDetail } from '@/libs/type/property.type';
 import Image from 'next/image';
 
 const MediaGalleryDekstop: React.FC<PropPropertyDetail> = ({ property }) => {
-  // console.log('props', property);
+  console.log('props', property);
 
   const mainImage =
     property.images.length > 0
