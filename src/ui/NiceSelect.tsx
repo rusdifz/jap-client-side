@@ -44,7 +44,7 @@ const NiceSelect: FC<NiceSelectProps> = ({
 
   return (
     <div
-      className={`nice-select form-select-lg ${className || ''} ${
+      className={`absolute nice-select form-select-lg ${className || ''} ${
         open ? 'open' : ''
       }`}
       role="button"
@@ -53,7 +53,9 @@ const NiceSelect: FC<NiceSelectProps> = ({
       onKeyDown={(e) => e}
       ref={ref}
     >
-      <span className="current">{current?.text || placeholder}</span>
+      <span style={{ fontSize: '14px' }} className="current">
+        {current?.text.trim() || placeholder}{' '}
+      </span>
       <ul
         className="list"
         role="menubar"

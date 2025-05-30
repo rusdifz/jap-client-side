@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { Skeleton, Empty } from 'antd';
 import {
   selectLoadingOffice,
+  selectOfficePagination,
   selectOffices,
 } from '@/redux/features/officeSlice';
 
@@ -38,16 +39,18 @@ const ResultListArea = ({ style }: any) => {
   } = UseSearchOffice();
 
   const offices = useSelector(selectOffices);
+  const paginationOffice: any = useSelector(selectOfficePagination);
   const isLoadingAgain = useSelector(selectLoadingOffice);
 
-  console.log('load search result', isLoading);
-  console.log('load dispach', isLoadingAgain);
+  console.log('pagination', pagination);
+  console.log('data', offices);
+  console.log('pageeee', paginationOffice);
 
   return (
     <div
       className={`property-listing-six pb-170 xl-pb-120 ${
         style
-          ? 'pt-50 xl-pt-100'
+          ? 'pt-150 xl-pt-100'
           : 'pt-110 md-pt-80 mt-150 xl-mt-120 bg-pink-two'
       }`}
     >
@@ -58,14 +61,14 @@ const ResultListArea = ({ style }: any) => {
             Showing{' '}
             <span className="color-dark fw-500">
               {offices.length > 0
-                ? pagination.page == pagination.total_page
-                  ? pagination.total
-                  : offices.length * pagination.page
+                ? paginationOffice.page == paginationOffice.total_page
+                  ? paginationOffice.total
+                  : offices.length * paginationOffice.page
                 : 0}
             </span>
             of
             <span className="color-dark fw-500">
-              {offices.length > 0 ? pagination.total : 0}
+              {offices.length > 0 ? paginationOffice.total : 0}
             </span>
             results
           </div>
@@ -202,7 +205,7 @@ const ResultListArea = ({ style }: any) => {
                           className=""
                           style={{ color: '#c43820', fontWeight: 500 }}
                         >
-                          {property.property_type}
+                          {property.property_type[0]}
                         </span>
                       </div>
 
@@ -226,12 +229,12 @@ const ResultListArea = ({ style }: any) => {
                 breakLabel="..."
                 nextLabel={<i className="fa-regular fa-chevron-right"></i>}
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={pagination.total_page}
-                pageCount={pagination.total_page}
+                pageRangeDisplayed={paginationOffice.total_page}
+                pageCount={paginationOffice.total_page}
                 previousLabel={<i className="fa-regular fa-chevron-left"></i>}
                 renderOnZeroPageCount={null}
                 className="pagination-two d-inline-flex align-items-center justify-content-center style-none"
-                forcePage={pagination.page - 1}
+                forcePage={paginationOffice.page - 1}
               />
             </div>
           </div>

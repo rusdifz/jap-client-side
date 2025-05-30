@@ -78,7 +78,7 @@ export interface IProperties {
   name: string;
   slug: string;
   location?: LocationEnum;
-  property_type?: PropertyTypeEnum;
+  property_type: PropertyTypeEnum[];
   price: {
     rent_sqm: number;
   };

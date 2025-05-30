@@ -48,7 +48,7 @@ const SearchDropdown = () => {
                   </div>
                 </div>
 
-                <div className="col-xl-3 col-lg-3">
+                <div className="col-xl-2 col-lg-2">
                   <div className="input-box-one border-left">
                     <div className="labelNew">I’m looking to...</div>
                     <NiceSelect
@@ -65,7 +65,7 @@ const SearchDropdown = () => {
                 </div>
 
                 {/* area type property */}
-                <div className="col-xl-2 col-lg-3">
+                <div className="col-xl-2 col-lg-2">
                   <div className="input-box-one border-left">
                     <div className="labelNew">Property Type</div>
                     <NiceSelect
@@ -82,7 +82,7 @@ const SearchDropdown = () => {
                 </div>
 
                 {/* area type location */}
-                <div className="col-xl-2 col-lg-3">
+                <div className="col-xl-3 col-lg-3">
                   <div className="input-box-one border-left">
                     <div className="labelNew">Location</div>
                     <NiceSelect

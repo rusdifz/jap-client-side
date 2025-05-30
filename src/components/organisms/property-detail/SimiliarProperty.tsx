@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,6 +11,9 @@ import Error from '@/components/atoms/Error';
 
 import property3Thumb_3 from '@/assets/images/listing/img_15.jpg';
 import { IProperties, ResponseAPI } from '@/libs/interfaces';
+import { useEffect, useState } from 'react';
+import { ReqPropertiesDTO } from '@/libs/dto/request';
+import { fetchApiProperties } from '@/api/property.api';
 
 const setting = {
   dots: true,
@@ -53,12 +56,39 @@ interface Props {
 }
 
 const CommonSimilarProperty = ({ location }: Props) => {
+  console.log('location prop', location);
+
   const url = `/api/property?page=1&limit=5&location=${location}`;
-  const { data, error, isLoading } = useSWR<ResponseAPI<IProperties[]>>(
-    url,
-    fetcher,
-  );
-  console.log('data similiar', data);
+  console.log('ul', url);
+
+  // const { data, error, isLoading } = useSWR<ResponseAPI<IProperties[]>>(
+  //   url,
+  //   fetcher,
+  // );
+
+  const [isLoading, setLoading] = useState(true);
+  const [propertiesSimiliar, setPropertiesSimiliar] = useState<any[]>([]);
+
+  useEffect(() => {
+    // setLocation(LocationEnum.THAMRIN);
+    let propsFilter: ReqPropertiesDTO = {
+      page: 1,
+      limit: 12,
+      location: location,
+    };
+
+    setLoading(true);
+    fetchApiProperties(propsFilter)
+      .then((resp) => {
+        setLoading(false);
+        setPropertiesSimiliar(resp.data);
+      })
+      .catch((err) => {
+        console.log('error get initiate office list');
+        setLoading(false);
+        setPropertiesSimiliar([]);
+      });
+  }, []);
 
   if (isLoading) {
     return (
@@ -77,8 +107,8 @@ const CommonSimilarProperty = ({ location }: Props) => {
     );
   }
 
-  if (error || !data) {
-    console.log('error fetch property detail', error);
+  if (!propertiesSimiliar) {
+    console.log('error fetch property detail');
     return (
       <div className="position-relative z-1">
         <Error />
@@ -89,9 +119,9 @@ const CommonSimilarProperty = ({ location }: Props) => {
   return (
     <div className="similar-property mt-50">
       <h4 className="mb-40">Similar Property</h4>
-      {data.data.length > 0 && (
+      {propertiesSimiliar.length > 0 && (
         <Slider {...setting} className="similar-listing-slider-one">
-          {data.data.map((item: IProperties) => (
+          {propertiesSimiliar.map((item: IProperties) => (
             <div key={item.property_id} className="item">
               <div className="listing-card-one shadow style-three border-20 mb-50">
                 <div className="img-gallery p-15">

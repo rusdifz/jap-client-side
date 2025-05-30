@@ -35,40 +35,13 @@ const UseSearchOffice = () => {
   const [propertyStatus, setPropertyStatus] = useState<any>();
 
   useEffect(() => {
+    // setLocation(LocationEnum.THAMRIN);
     let propsFilter: ReqPropertiesDTO = {
       page: 1,
       limit: 12,
       location: LocationEnum.THAMRIN,
     };
 
-    // if (sortOptionNew.length > 0) {
-    //   propsFilter.sort = sortOptionNew;
-    // }
-
-    // if (location !== null || location == 'All Area') {
-    //   propsFilter.location =
-    //     location === LocationEnum.ALL_AREA ? null : location;
-    // } else {
-    //   propsFilter.location = undefined;
-    // }
-
-    // if (officeType !== null) {
-    //   propsFilter.property_type = officeType;
-    // } else {
-    //   propsFilter.property_type = undefined;
-    // }
-
-    // if (selectedAmenitiesNew.length > 0) {
-    //   propsFilter.features = selectedAmenitiesNew;
-    // } else {
-    //   propsFilter.features = undefined;
-    // }
-
-    // if (keyword !== null) {
-    //   propsFilter.search_keyword = keyword;
-    // } else {
-    //   propsFilter.search_keyword = undefined;
-    // }
     console.log('in use efef', location);
 
     setLoading(true);
@@ -77,6 +50,7 @@ const UseSearchOffice = () => {
       .then((resp) => {
         setLoading(false);
         setPagination(resp.pagination);
+        dispatch(fetchPaginationOffices(resp.pagination));
         dispatch(fetchOfficesList(resp.data));
         dispatch(setLoadingOffice(false));
       })
@@ -128,6 +102,7 @@ const UseSearchOffice = () => {
       page: newPage,
       limit: 12,
     };
+    console.log('location page ', location);
 
     if (sortOptionNew.length > 0) {
       propsFilter.sort = sortOptionNew;
@@ -139,12 +114,15 @@ const UseSearchOffice = () => {
     } else {
       propsFilter.location = undefined;
     }
+    console.log('office type', officeType);
 
     if (officeType !== null) {
       propsFilter.property_type = officeType;
     } else {
       propsFilter.property_type = undefined;
     }
+
+    console.log('amnei', selectedAmenitiesNew);
 
     if (selectedAmenitiesNew.length > 0) {
       propsFilter.features = selectedAmenitiesNew;
@@ -157,12 +135,14 @@ const UseSearchOffice = () => {
     } else {
       propsFilter.search_keyword = undefined;
     }
+    console.log('filter handle clik', propsFilter);
 
     try {
       const resp: ResponseAPI<IProperties[]> = await fetchApiProperties(
         propsFilter,
       );
       console.log('page click', newPage);
+      console.log('resp', resp);
 
       if (!resp.error) {
         setLoading(false);
@@ -198,7 +178,7 @@ const UseSearchOffice = () => {
       propsFilter.sort = sortOptionNew;
     }
 
-    if (location !== null || location !== 'All Area') {
+    if (location !== null && location != 'All Area') {
       propsFilter.location = location;
     } else {
       propsFilter.location = undefined;
@@ -228,13 +208,11 @@ const UseSearchOffice = () => {
       propsFilter.property_status = undefined;
     }
 
-    console.log('submit form', propsFilter);
-
     try {
       const resp: ResponseAPI<IProperties[]> = await fetchApiProperties(
         propsFilter,
       );
-      console.log('res', resp.pagination);
+      console.log('resp data', resp);
 
       if (!resp.error) {
         dispatch(fetchOfficesList(resp.data));
@@ -242,8 +220,14 @@ const UseSearchOffice = () => {
         setPagination(resp.pagination);
         dispatch(setLoadingOffice(false));
         setLoading(false);
+        console.log('pag', pagination);
+        setPagination({
+          page: 1,
+          total: 0,
+          total_page: 1,
+        });
+        setLoading;
       }
-      console.log('pagination', pagination);
     } catch (error: any) {
       // dispatch(fetchOfficesSuccess([]));
       setPagination({
