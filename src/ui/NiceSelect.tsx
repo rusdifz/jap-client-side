@@ -25,6 +25,8 @@ const NiceSelect: FC<NiceSelectProps> = ({
   onChange,
   name,
 }) => {
+  console.log('select', defaultCurrent);
+
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState<Option>(options[defaultCurrent]);
   const onClose = useCallback(() => {

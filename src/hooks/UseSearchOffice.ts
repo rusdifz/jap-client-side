@@ -26,7 +26,7 @@ const UseSearchOffice = () => {
   const [isLoading, setLoading] = useState(true);
 
   const [sortOptionNew, setSortOptionNew] = useState<string>('');
-  const [location, setLocation] = useState<any>(null);
+  const [location, setLocation] = useState<any>(LocationEnum.THAMRIN);
   const [officeType, setOfficeType] = useState<any>(null);
   const [selectedAmenitiesNew, setSelectedAmenitiesNew] = useState<string[]>(
     [],
@@ -34,34 +34,32 @@ const UseSearchOffice = () => {
   const [keyword, setKeyword] = useState<string | null>(null);
   const [propertyStatus, setPropertyStatus] = useState<any>();
 
-  useEffect(() => {
-    // setLocation(LocationEnum.THAMRIN);
-    let propsFilter: ReqPropertiesDTO = {
-      page: 1,
-      limit: 12,
-      location: LocationEnum.THAMRIN,
-    };
+  // useEffect(() => {
+  //   let propsFilter: ReqPropertiesDTO = {
+  //     page: 1,
+  //     limit: 12,
+  //     location: LocationEnum.THAMRIN,
+  //   };
 
-    console.log('in use efef', location);
-
-    setLoading(true);
-    dispatch(setLoadingOffice(true));
-    fetchApiProperties(propsFilter)
-      .then((resp) => {
-        setLoading(false);
-        setPagination(resp.pagination);
-        dispatch(fetchPaginationOffices(resp.pagination));
-        dispatch(fetchOfficesList(resp.data));
-        dispatch(setLoadingOffice(false));
-      })
-      .catch((err) => {
-        console.log('error get initiate office list');
-        setLoading(false);
-        dispatch(setLoadingOffice(false));
-      });
-  }, []);
+  //   setLoading(true);
+  //   dispatch(setLoadingOffice(true));
+  //   fetchApiProperties(propsFilter)
+  //     .then((resp) => {
+  //       setLoading(false);
+  //       setPagination(resp.pagination);
+  //       dispatch(fetchPaginationOffices(resp.pagination));
+  //       dispatch(fetchOfficesList(resp.data));
+  //       dispatch(setLoadingOffice(false));
+  //     })
+  //     .catch((err) => {
+  //       console.log('error get initiate office list');
+  //       setLoading(false);
+  //       dispatch(setLoadingOffice(false));
+  //     });
+  // }, []);
 
   // handleSortOptionChange
+
   const handleSortNewChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setSortOptionNew(event.target.value);
   };

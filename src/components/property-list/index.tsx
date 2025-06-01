@@ -1,9 +1,28 @@
+'use client';
+
 import ListBody from './ListBody';
 
-const ListProperty = () => {
+type Props = {
+  keyword: string;
+  location: string;
+  propertyType: string;
+  propertyStatus: string;
+};
+
+const ListProperty: React.FC<Props> = ({
+  keyword,
+  location,
+  propertyType,
+  propertyStatus,
+}) => {
   return (
     <>
-      <ListBody />
+      <ListBody
+        keywordParams={keyword}
+        locationParams={location}
+        propertyTypeParams={propertyType}
+        propertyStatusParams={propertyStatus}
+      />
     </>
   );
 };

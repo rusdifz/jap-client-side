@@ -1,7 +1,7 @@
 'use client';
 
 import NiceSelect from '@/ui/NiceSelect';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 
 import {
   optionsLocation,
@@ -10,21 +10,37 @@ import {
 } from '@/libs/const';
 
 import UseSearchOffice from '@/hooks/UseSearchOffice';
+import { LocationEnum, PropertyTypeEnum } from '@/libs/enums';
 
-const tab_title: string[] = ['Lease', 'Sale'];
+// const tab_title: string[] = ['Lease', 'Sale'];
 
-const SearchDropdown = () => {
-  const {
-    location,
-    setLocation,
-    officeType,
-    setOfficeType,
-    propertyStatus,
-    setPropertyStatus,
-    handleSubmitForm,
-    setKeyword,
-    setLoading,
-  } = UseSearchOffice();
+type TableProps = {
+  location: LocationEnum | any;
+  setLocation: any;
+  propertyType: PropertyTypeEnum | any;
+  setPropertyType: any;
+  propertyStatus: string | any;
+  setPropertyStatus: any;
+  keyword: string;
+  setKeyword: any;
+  handleSubmitForm: (e: FormEvent) => void;
+};
+
+const SearchDropdown: React.FC<TableProps> = ({
+  location,
+  setLocation,
+  propertyType,
+  setPropertyType,
+  propertyStatus,
+  setPropertyStatus,
+  keyword,
+  setKeyword,
+  handleSubmitForm,
+}) => {
+  console.log('in search dropdown location', location);
+  console.log('in search dropdown property type', propertyType);
+  console.log('in search dropdown property status', propertyStatus);
+  console.log('in search dropdown keyword', keyword);
 
   return (
     <>
@@ -41,6 +57,7 @@ const SearchDropdown = () => {
                       placeholder="search here..."
                       className="type-input"
                       name="keyword"
+                      defaultValue={keyword}
                       onChange={(e) => {
                         setKeyword(e.target.value);
                       }}
@@ -54,9 +71,9 @@ const SearchDropdown = () => {
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsProperty}
-                      defaultCurrent={officeType ?? 0}
+                      defaultCurrent={propertyType ?? 0}
                       onChange={(e) => {
-                        setLoading(true), setOfficeType(e.target.value);
+                        setPropertyType(e.target.value);
                       }}
                       name="select"
                       placeholder=""

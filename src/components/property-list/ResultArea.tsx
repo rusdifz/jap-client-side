@@ -1,51 +1,30 @@
 'use client';
 
-import { useSelector } from 'react-redux';
 import ReactPaginate from 'react-paginate';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Skeleton, Empty } from 'antd';
-import {
-  selectLoadingOffice,
-  selectOfficePagination,
-  selectOffices,
-} from '@/redux/features/officeSlice';
 
-// import NiceSelect from '@/ui/NiceSelect';
-// import featureIcon_1 from '@/assets/images/icon/icon_04.svg';
-
-// import noImageProperty from '@/assets/images/default-image/no-image.jpg';
-// import imageProperty from '@/assets/images/category-dummy/cat-1.png';
-// import featureIcon_2 from '@/assets/images/icon/icon_05.svg';
-// import featureIcon_3 from '@/assets/images/icon/icon_06.svg';
-
-import UseSearchOffice from '@/hooks/UseSearchOffice';
-
-// import { optionSort } from '@/libs/const/property.const';
-// import { IOfficeList } from '@/libs/interfaces/property.interface';
 import { PropertyStatusEnum } from '@/libs/enums';
-import { IProperties } from '@/libs/interfaces';
+import { IPagination, IProperties } from '@/libs/interfaces';
 import { formatCurrency } from '@/libs/helper/convert-currency';
-// import { pascalToKebab } from '@/libs/helper';
 
-const ResultListArea = ({ style }: any) => {
+type Props = {
+  properties: IProperties[];
+  pagination: IPagination;
+  isLoading: boolean;
+  handlePageClick: (e: any) => void;
+  style: boolean;
+};
+
+const ResultListArea: React.FC<Props> = ({
+  properties,
+  pagination,
+  isLoading,
+  handlePageClick,
+  style,
+}) => {
   const dataLoad = Array.from({ length: 12 }, (_, i) => i + 1);
-
-  const {
-    pagination,
-    sortOptionNew,
-    handleSortNewChange,
-    handlePageClick,
-    isLoading,
-  } = UseSearchOffice();
-
-  const offices = useSelector(selectOffices);
-  const paginationOffice: any = useSelector(selectOfficePagination);
-  const isLoadingAgain = useSelector(selectLoadingOffice);
-
-  console.log('pagination', pagination);
-  console.log('data', offices);
-  console.log('pageeee', paginationOffice);
 
   return (
     <div
@@ -61,15 +40,15 @@ const ResultListArea = ({ style }: any) => {
           <div>
             Showing{' '}
             <span className="color-dark fw-500">
-              {offices.length > 0
-                ? paginationOffice.page == paginationOffice.total_page
-                  ? paginationOffice.total
-                  : offices.length * paginationOffice.page
+              {properties.length > 0
+                ? pagination.page == pagination.total_page
+                  ? pagination.total
+                  : properties.length * pagination.page
                 : 0}
             </span>
             of
             <span className="color-dark fw-500">
-              {offices.length > 0 ? paginationOffice.total : 0}
+              {properties.length > 0 ? pagination.total : 0}
             </span>
             results
           </div>
@@ -125,10 +104,10 @@ const ResultListArea = ({ style }: any) => {
               ))}
             </div>
           </div>
-        ) : offices.length > 0 ? (
+        ) : properties.length > 0 ? (
           <div>
             <div className="row gx-xxl-6">
-              {offices.map((property: IProperties, index: number) => (
+              {properties.map((property: IProperties, index: number) => (
                 <div
                   key={property.property_id}
                   className="col-lg-3 col-md-6  d-flex mb-50 wow fadeInUp"
@@ -232,12 +211,12 @@ const ResultListArea = ({ style }: any) => {
                 breakLabel="..."
                 nextLabel={<i className="fa-regular fa-chevron-right"></i>}
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={paginationOffice.total_page}
-                pageCount={paginationOffice.total_page}
+                pageRangeDisplayed={pagination.total_page}
+                pageCount={pagination.total_page}
                 previousLabel={<i className="fa-regular fa-chevron-left"></i>}
                 renderOnZeroPageCount={null}
                 className="pagination-two d-inline-flex align-items-center justify-content-center style-none"
-                forcePage={paginationOffice.page - 1}
+                forcePage={pagination.page - 1}
               />
             </div>
           </div>
