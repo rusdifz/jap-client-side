@@ -10,7 +10,11 @@ import {
 } from '@/libs/const';
 
 import UseSearchOffice from '@/hooks/UseSearchOffice';
-import { LocationEnum, PropertyTypeEnum } from '@/libs/enums';
+import {
+  LocationEnum,
+  PropertyStatusEnum,
+  PropertyTypeEnum,
+} from '@/libs/enums';
 
 // const tab_title: string[] = ['Lease', 'Sale'];
 
@@ -21,7 +25,7 @@ type TableProps = {
   setPropertyType: any;
   propertyStatus: string | any;
   setPropertyStatus: any;
-  keyword: string;
+  keyword: string | undefined;
   setKeyword: any;
   handleSubmitForm: (e: FormEvent) => void;
 };
@@ -37,11 +41,6 @@ const SearchDropdown: React.FC<TableProps> = ({
   setKeyword,
   handleSubmitForm,
 }) => {
-  console.log('in search dropdown location', location);
-  console.log('in search dropdown property type', propertyType);
-  console.log('in search dropdown property status', propertyStatus);
-  console.log('in search dropdown keyword', keyword);
-
   return (
     <>
       <div className="search-wrapper-one layout-two mt-150 xl-mt-150 lg-mt-100 position-relative wow fadeInUp">
@@ -54,7 +53,7 @@ const SearchDropdown: React.FC<TableProps> = ({
                     <div className="labelNew">Search Keyword</div>
                     <input
                       type="text"
-                      placeholder="search here..."
+                      placeholder={keyword ?? 'search here...'}
                       className="type-input"
                       name="keyword"
                       defaultValue={keyword}
@@ -76,7 +75,7 @@ const SearchDropdown: React.FC<TableProps> = ({
                         setPropertyType(e.target.value);
                       }}
                       name="select"
-                      placeholder=""
+                      placeholder={propertyType ?? PropertyTypeEnum.OFFICE}
                     />
                   </div>
                 </div>
@@ -93,7 +92,7 @@ const SearchDropdown: React.FC<TableProps> = ({
                         setPropertyStatus(e.target.value);
                       }}
                       name=""
-                      placeholder=""
+                      placeholder={propertyStatus ?? PropertyStatusEnum.SALE}
                     />
                   </div>
                 </div>
@@ -110,7 +109,7 @@ const SearchDropdown: React.FC<TableProps> = ({
                         setLocation(e.target.value);
                       }}
                       name=""
-                      placeholder=""
+                      placeholder={location ?? 'All Area'}
                     />
                   </div>
                 </div>

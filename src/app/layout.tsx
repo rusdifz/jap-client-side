@@ -20,10 +20,10 @@ export default function RootLayout({
       <head>
         <meta
           name="keywords"
-          content="Workspace, workspace jabodetabek, jll, regus, property, office"
+          content="workspace jabodetabek, jll, regus, property, office, office space, jabodetabek,coworking space jakarta"
         />
         <meta name="description" content="master property in jabodetabek" />
-        <meta property="og:site_name" content="Office" />
+        <meta property="og:site_name" content="office, workspace jabodetabek" />
         <meta property="og:url" content="https://jardineasiapasific.asia" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Jardine Asiapasific" />

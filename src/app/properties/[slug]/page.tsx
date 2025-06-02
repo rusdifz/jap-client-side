@@ -3,6 +3,7 @@ import Wrapper from '@/layouts/Wrapper';
 
 export const metadata = {
   title: 'JAP Property',
+  content: 'workspace jabodetabek',
 };
 interface PageProps {
   params: {
@@ -11,9 +12,7 @@ interface PageProps {
 }
 
 const Index = ({ params }: PageProps) => {
-  // const params = useParams();
-  // const { slug } = params; // Menangkap id dari URL
-  const { slug } = params;
+  const { slug } = params; // Menangkap id dari URL
   return (
     <Wrapper>
       <PropertyDetail slug={slug} />

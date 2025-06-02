@@ -13,10 +13,10 @@ import { fetchApiProperties } from '@/api/property.api';
 import { ReqPropertiesDTO } from '@/libs/dto/request';
 
 type Props = {
-  keywordParams: string;
-  locationParams: LocationEnum | string;
-  propertyTypeParams: PropertyTypeEnum | string;
-  propertyStatusParams: PropertyStatusEnum | string;
+  keywordParams: string | undefined;
+  locationParams: LocationEnum | string | undefined;
+  propertyTypeParams: PropertyTypeEnum | string | undefined;
+  propertyStatusParams: PropertyStatusEnum | string | undefined;
 };
 
 const ListBody: React.FC<Props> = ({
@@ -27,73 +27,64 @@ const ListBody: React.FC<Props> = ({
 }) => {
   const [pagination, setPagination] = useState<IPagination>({
     page: 1,
-    total: 0,
+    total: 1,
     total_page: 1,
   });
   const [properties, setProperties] = useState<IProperties[]>([]);
   const [isLoading, setLoading] = useState(true);
 
   //for select options filter
-  const [keyword, setKeyword] = useState<string>('');
-  const [location, setLocation] = useState<any>();
-  const [propertyType, setPropertyType] = useState<any>();
-  const [propertyStatus, setPropertyStatus] = useState<any>();
+  const [keyword, setKeyword] = useState<string | undefined>(keywordParams);
+  const [location, setLocation] = useState<any>(locationParams);
+  const [propertyType, setPropertyType] = useState<any>(propertyTypeParams);
+  const [propertyStatus, setPropertyStatus] =
+    useState<any>(propertyStatusParams);
 
   const [sortOption, setSortOption] = useState<string>('');
 
   useEffect(() => {
-    console.log('keyword', keywordParams);
-    console.log('location params', locationParams);
-    console.log('property type', propertyTypeParams);
-    console.log('property status', propertyStatusParams);
+    setKeyword(keywordParams || undefined);
+    setLocation(locationParams || LocationEnum.THAMRIN);
+    setPropertyType(propertyTypeParams || null);
+    setPropertyStatus(propertyStatusParams || null);
+  }, [keywordParams, locationParams, propertyTypeParams, propertyStatusParams]);
 
-    if (keywordParams) {
-      setKeyword(keywordParams);
-    }
+  useEffect(() => {
+    setKeyword(keywordParams || '');
 
-    if (locationParams) {
-      setLocation(locationParams);
+    setPropertyType(propertyTypeParams || null);
+    setPropertyStatus(propertyStatusParams || null);
+
+    if (locationParams === 'All Area') {
+      locationParams = undefined;
     } else {
-      setLocation('Thamrin');
-      console.log('location in ', location);
-    }
-
-    if (propertyTypeParams) {
-      setPropertyType(propertyTypeParams);
-    }
-
-    if (propertyStatusParams) {
-      setPropertyStatus(propertyStatusParams);
+      setLocation(locationParams || LocationEnum.THAMRIN);
     }
 
     const propsFilter: ReqPropertiesDTO = {
       page: 1,
       limit: 12,
-      keyword: keyword ?? '',
-      location: location ?? '',
-      property_type: propertyType ?? undefined,
-      property_status: propertyStatus ?? undefined,
+      keyword: keywordParams,
+      location: locationParams,
+      property_type: propertyTypeParams,
+      property_status: propertyStatusParams,
     };
-
-    console.log('filter props', propsFilter);
 
     fetchApiProperties(propsFilter)
       .then((resp) => {
         setPagination(resp.pagination);
         setProperties(resp.data);
         setLoading(false);
-        setLocation('Thamrin');
         // dispatch(fetchPaginationOffices(resp.pagination));
         // dispatch(fetchOfficesList(resp.data));
         // dispatch(setLoadingOffice(false));
-        console.log('location res ', location);
       })
       .catch((err) => {
         console.log('error get initiate office list');
         setLoading(false);
         setProperties([]);
       });
-  }, []);
+  }, [keywordParams, locationParams, propertyTypeParams, propertyStatusParams]);
 
   const handlePageClick = async (event: any) => {
     setLoading(true);

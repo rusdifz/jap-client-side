@@ -11,24 +11,26 @@ import {
 
 import UseSearchOffice from '@/hooks/UseSearchOffice';
 import { useRouter } from 'next/router';
+import {
+  LocationEnum,
+  PropertyStatusEnum,
+  PropertyTypeEnum,
+} from '@/libs/enums';
 // const router = useRouter();
 
 const SearchDropdownHome = () => {
-  const {
-    location,
-    setLocation,
-    officeType,
-    setOfficeType,
-    propertyStatus,
-    setPropertyStatus,
-    setKeyword,
-  } = UseSearchOffice();
+  const [keyword, setKeyword] = useState<string>();
+  const [location, setLocation] = useState<LocationEnum | any>();
+  const [propertyType, setPropertyType] = useState<PropertyTypeEnum | any>();
+  const [propertyStatus, setPropertyStatus] = useState<
+    PropertyStatusEnum | any
+  >();
 
   const handleSubmitFormNew = () => {
-    // router.push('/properties');
     const queryParams = `?location=${location ?? ''}&office_type=${
-      officeType ?? ''
-    }&property_status=${propertyStatus ?? ''}`;
+      propertyType ?? ''
+    }&property_status=${propertyStatus ?? ''}&keyword=${keyword ?? ''}`;
+
     window.location.href = '/properties' + queryParams;
   };
 
@@ -66,9 +68,9 @@ const SearchDropdownHome = () => {
                     <NiceSelect
                       className="nice-select fw-normal"
                       options={optionsProperty}
-                      defaultCurrent={1}
+                      defaultCurrent={0}
                       onChange={(e) => {
-                        setOfficeType(e.target.value);
+                        setPropertyType(e.target.value);
                       }}
                       name="select"
                       placeholder=""

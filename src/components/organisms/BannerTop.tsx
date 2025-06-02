@@ -24,7 +24,7 @@ type Props = {
   setPropertyType: any;
   propertyStatus: string | any;
   setPropertyStatus: any;
-  keyword: string;
+  keyword: string | undefined;
   setKeyword: any;
   handleSubmitForm: (e: FormEvent) => void;
 };

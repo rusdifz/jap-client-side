@@ -3,10 +3,10 @@
 import ListBody from './ListBody';
 
 type Props = {
-  keyword: string;
-  location: string;
-  propertyType: string;
-  propertyStatus: string;
+  keyword: string | undefined;
+  location: string | undefined;
+  propertyType: string | undefined;
+  propertyStatus: string | undefined;
 };
 
 const ListProperty: React.FC<Props> = ({
