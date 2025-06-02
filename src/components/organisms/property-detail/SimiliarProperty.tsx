@@ -14,6 +14,7 @@ import { IProperties, ResponseAPI } from '@/libs/interfaces';
 import { useEffect, useState } from 'react';
 import { ReqPropertiesDTO } from '@/libs/dto/request';
 import { fetchApiProperties } from '@/api/property.api';
+import { formatCurrency } from '@/libs/helper/convert-currency';
 
 const setting = {
   dots: true,
@@ -59,7 +60,6 @@ const CommonSimilarProperty = ({ location }: Props) => {
   console.log('location prop', location);
 
   const url = `/api/property?page=1&limit=5&location=${location}`;
-  console.log('ul', url);
 
   // const { data, error, isLoading } = useSWR<ResponseAPI<IProperties[]>>(
   //   url,
@@ -148,7 +148,7 @@ const CommonSimilarProperty = ({ location }: Props) => {
                       alt="..."
                     />
                     <Link
-                      href="/listing_details_06"
+                      href={`/properties/${item.slug}`}
                       className="btn-four inverse rounded-circle position-absolute"
                     >
                       <i className="bi bi-arrow-up-right"></i>
@@ -156,7 +156,10 @@ const CommonSimilarProperty = ({ location }: Props) => {
                   </div>
                 </div>
                 <div className="property-info pe-4 ps-4">
-                  <Link href="/listing_details_06" className="title tran3s">
+                  <Link
+                    href={`/properties/${item.slug}`}
+                    className="title tran3s"
+                  >
                     {item.name}
                   </Link>
                   <div className="address m0 pb-5">{item.location}</div>
@@ -165,7 +168,12 @@ const CommonSimilarProperty = ({ location }: Props) => {
                     Start from Rp. {item.price.rent_sqm}
                   </strong> */}
                     <p>
-                      <b>Start from Rp. {item.price.rent_sqm}</b>
+                      <b>
+                        Start from{' '}
+                        {formatCurrency(
+                          `Rp. ${item.price.rent_sqm.toString()}`,
+                        )}{' '}
+                      </b>
                     </p>
                   </div>
                 </div>

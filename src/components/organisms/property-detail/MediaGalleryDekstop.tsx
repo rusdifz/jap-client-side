@@ -66,7 +66,6 @@ const MediaGalleryDekstop: React.FC<PropPropertyDetail> = ({ property }) => {
                     ))
                   ) : (
                     <>
-                      IDR 180000
                       <div className="col-6 mb-20">
                         <a
                           href="/assets/images/listing/img_62.jpg"
