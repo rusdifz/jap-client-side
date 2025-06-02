@@ -64,6 +64,7 @@ export interface IProperty {
   nearby_new: any[];
   //join table
   units: IUnit[];
+  thumbnail: string;
   images: IMedia[];
   created_at?: string;
   upstringd_at?: string;
@@ -86,7 +87,8 @@ export interface IProperties {
     property_size: number;
   };
   property_status: string;
-  images: IMedia[];
+  thumbnail: string;
+  // images: IMedia[];
   created_at?: string;
   updated_at?: string;
 }

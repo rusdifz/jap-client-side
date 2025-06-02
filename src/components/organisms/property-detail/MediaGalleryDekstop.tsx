@@ -6,12 +6,13 @@ import { PropPropertyDetail } from '@/libs/type/property.type';
 import Image from 'next/image';
 
 const MediaGalleryDekstop: React.FC<PropPropertyDetail> = ({ property }) => {
-  console.log('props', property);
-
   const mainImage =
     property.images.length > 0
       ? property.images[0].full_url
       : 'https://www.sewakantor-update.com/wp-content/uploads/2018/04/Gama-Tower.jpg';
+  // const mainImage = property.thumbnail
+  //   ? property.thumbnail
+  //   : 'https://www.sewakantor-update.com/wp-content/uploads/2018/04/Gama-Tower.jpg';
 
   const images: IMedia[] =
     property.images.length > 0 ? property.images.slice(1) : [];
@@ -58,7 +59,6 @@ const MediaGalleryDekstop: React.FC<PropPropertyDetail> = ({ property }) => {
                             backgroundImage: dt.full_url
                               ? `url(${dt.full_url})`
                               : `url(/assets/images/listing/img_62.jpg)`,
-                            // backgroundImage: `url(https://www.sewakantor-update.com/wp-content/uploads/2018/04/Gama-Tower.jpg)`,
                             height: '190px',
                           }}
                         />
