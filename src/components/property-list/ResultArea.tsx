@@ -141,8 +141,8 @@ const ResultListArea: React.FC<Props> = ({
                                   property.thumbnail ??
                                   '/assets/images/category-dummy/cat-1.png'
                                 }
-                                width={100}
-                                height={100}
+                                width={200}
+                                height={200}
                                 alt=""
                                 className="image-aja"
                               />
