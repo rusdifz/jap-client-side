@@ -24,7 +24,7 @@ const columns: TableColumnsType<any> = [
   },
   {
     title: 'Rent Price',
-    dataIndex: 'rent_sqm',
+    dataIndex: 'rent_price',
     align: 'center',
   },
   {

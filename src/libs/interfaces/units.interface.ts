@@ -7,7 +7,9 @@ export interface IUnit {
   floor: string;
   condition: ConditionUnitEnum;
   available: boolean;
-  rent_sqm: number;
+  rent_price: number;
+  service_charge_price: number;
+  service_charge_info: string;
   status: PropertyStatusEnum;
   created_at?: string;
   upstringd_at?: string;

@@ -137,9 +137,7 @@ const CommonSimilarProperty = ({ location }: Props) => {
                   /> */}
                     <img
                       src={
-                        item.images.length > 0
-                          ? item.images[0].full_url
-                          : '/assets/images/listing/img_15.jpg'
+                        item.thumbnail ?? '/assets/images/listing/img_15.jpg'
                       }
                       width={100}
                       height={100}
@@ -171,7 +169,7 @@ const CommonSimilarProperty = ({ location }: Props) => {
                       <b>
                         Start from{' '}
                         {formatCurrency(
-                          `Rp. ${item.price.rent_sqm.toString()}`,
+                          `Rp. ${item.price.rent_average.toString()}`,
                         )}{' '}
                       </b>
                     </p>

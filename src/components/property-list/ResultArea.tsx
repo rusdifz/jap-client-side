@@ -138,9 +138,8 @@ const ResultListArea: React.FC<Props> = ({
                             >
                               <Image
                                 src={
-                                  property.images.length > 0
-                                    ? property.images[0].full_url
-                                    : '/assets/images/category-dummy/cat-1.png'
+                                  property.thumbnail ??
+                                  '/assets/images/category-dummy/cat-1.png'
                                 }
                                 width={100}
                                 height={100}
@@ -174,7 +173,7 @@ const ResultListArea: React.FC<Props> = ({
                         <li className="d-flex align-items-center">
                           <strong className="color-dark">
                             {formatCurrency(
-                              `IDR ${property.price.rent_sqm.toString()}`,
+                              `IDR ${property.price.rent_average.toString()}`,
                             )}
                           </strong>
                         </li>

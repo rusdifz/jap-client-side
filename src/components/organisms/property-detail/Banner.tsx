@@ -20,7 +20,7 @@ const Banner: React.FC<PropPropertyDetail> = ({ property }) => {
       <div className="col-md-3 ms-auto">
         <div>
           Start From{' '}
-          {formatCurrency(`Rp. ${property.price.rent_sqm.toString()}`)}
+          {formatCurrency(`Rp. ${property.price.rent_average.toString()}`)}
           /sqm/month
         </div>
       </div>

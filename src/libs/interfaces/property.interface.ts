@@ -28,11 +28,11 @@ export interface IProperty {
       ac: string;
     };
     ground_floor_sqm: number;
-    rent_sqm: number;
-    service_charge: {
-      price: number;
-      info: string;
-    };
+    rent_average: number;
+    // service_charge: {
+    //   price: number;
+    //   info: string;
+    // };
     parking_charge: {
       reserved: {
         car: string;
@@ -81,7 +81,7 @@ export interface IProperties {
   location?: LocationEnum;
   property_type: PropertyTypeEnum[];
   price: {
-    rent_sqm: number;
+    rent_average: number;
   };
   spesification?: {
     property_size: number;
@@ -89,6 +89,7 @@ export interface IProperties {
   property_status: string;
   thumbnail: string;
   // images: IMedia[];
+  // units: IUnit[];
   created_at?: string;
   updated_at?: string;
 }

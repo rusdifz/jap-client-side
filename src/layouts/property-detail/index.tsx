@@ -10,18 +10,10 @@ import Error from '@/components/atoms/Error';
 import { IProperty, ResponseAPI } from '@/libs/interfaces';
 
 import ResultBody from '@/components/templates/ResultPropertyDetail';
-
-import useSWR from 'swr';
-import { fetcher } from '@/libs/utils/fetcher';
 import { fetchApiPropertyDetail } from '@/api/property.api';
 
 const PropertyDetail: React.FC<PropSlug> = ({ slug }) => {
   const dispatch = useDispatch();
-
-  // const { data, error, isLoading } = useSWR<ResponseAPI<IProperty>>(
-  //   `/api/property/${slug}`,
-  //   fetcher,
-  // );
 
   const [property, setProperty] = useState<any>();
   const [isLoading, setLoading] = useState<boolean>(true);
@@ -79,7 +71,6 @@ const PropertyDetail: React.FC<PropSlug> = ({ slug }) => {
       </div>
     );
   }
-
   return (
     <div className="position-relative z-1">
       <ResultBody />
