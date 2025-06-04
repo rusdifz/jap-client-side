@@ -65,7 +65,7 @@ const ListBody: React.FC<Props> = ({
       page: 1,
       limit: 12,
       keyword: keywordParams,
-      location: locationParams,
+      location: locationParams ?? LocationEnum.THAMRIN,
       property_type: propertyTypeParams,
       property_status: propertyStatusParams,
     };

@@ -137,7 +137,8 @@ const CommonSimilarProperty = ({ location }: Props) => {
                   /> */}
                     <img
                       src={
-                        item.thumbnail ?? '/assets/images/listing/img_15.jpg'
+                        item.thumbnail ??
+                        '/assets/images/category-dummy/cat-1.png'
                       }
                       width={100}
                       height={100}

@@ -6,16 +6,14 @@ import { PropPropertyDetail } from '@/libs/type/property.type';
 import Image from 'next/image';
 
 const MediaGalleryDekstop: React.FC<PropPropertyDetail> = ({ property }) => {
-  // const mainImage =
-  //   property.images.length > 0
-  //     ? property.images[0].full_url
-  //     : 'https://www.sewakantor-update.com/wp-content/uploads/2018/04/Gama-Tower.jpg';
   const mainImage = property.thumbnail
     ? property.thumbnail
     : 'https://www.sewakantor-update.com/wp-content/uploads/2018/04/Gama-Tower.jpg';
 
-  const images: IMedia[] =
-    property.images.length > 0 ? property.images.slice(1) : [];
+  // const images: IMedia[] =
+  //   property.images.length > 0 ? property.images.slice(1) : [];
+
+  const images: IMedia[] = property.images;
 
   return (
     <div className="media-gallery-grid mb-40 mt-30 d-none d-lg-block">

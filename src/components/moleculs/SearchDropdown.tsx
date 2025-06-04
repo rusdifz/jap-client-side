@@ -41,6 +41,8 @@ const SearchDropdown: React.FC<TableProps> = ({
   setKeyword,
   handleSubmitForm,
 }) => {
+  console.log('keyword', keyword);
+
   return (
     <>
       <div className="search-wrapper-one layout-two mt-150 xl-mt-150 lg-mt-100 position-relative wow fadeInUp">
@@ -53,7 +55,7 @@ const SearchDropdown: React.FC<TableProps> = ({
                     <div className="labelNew">Search Keyword</div>
                     <input
                       type="text"
-                      placeholder={keyword ?? 'search here...'}
+                      placeholder={'search here...'}
                       className="type-input"
                       name="keyword"
                       defaultValue={keyword}
