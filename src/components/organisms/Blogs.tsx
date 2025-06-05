@@ -110,7 +110,7 @@ const Blogs = () => {
   return (
     <div className="blog-section-three mt-50 xl-mt-50 mb-150 xl-mb-100">
       <div className="container">
-        <div className="blog-filter-nav">
+        {/* <div className="blog-filter-nav">
           <ul className="style-none d-flex justify-content-center flex-wrap isotop-menu-wrapper">
             {categories.map((category) => (
               <li
@@ -122,7 +122,7 @@ const Blogs = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         <div className="row isotop-gallery-2-wrapper pt-60 lg-pt-40">
           {articles.map((article, index) => (

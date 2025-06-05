@@ -6,7 +6,7 @@ const BlogThree = () => {
   return (
     <>
       <BreadcrumbOne
-        title="Article Publication"
+        title="Update Publication"
         link="#"
         link_title="Update"
         style={true}
