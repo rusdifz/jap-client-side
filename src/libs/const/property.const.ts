@@ -81,7 +81,16 @@ export const optionsProperty = Object.values(PropertyTypeEnum).map((prop) => {
 });
 
 export const optionsLocation = Object.values(LocationEnum).map((prop) => {
-  return { value: prop, text: prop };
+  let value: string = prop;
+  if (prop == LocationEnum.DETABEK) {
+    value = 'Depok, Tangerang & Bekasi';
+  }
+
+  if (prop === LocationEnum.PIM_KEBAYORAN_BLOKM) {
+    value = 'Pondok Indah, Blok M & Kebayoran';
+  }
+
+  return { value: value, text: prop };
 });
 
 export const optionsPropertyStatus = Object.values(PropertyStatusEnum).map(
