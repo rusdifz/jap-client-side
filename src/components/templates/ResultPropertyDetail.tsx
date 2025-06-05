@@ -103,7 +103,10 @@ const DetailResultBody = () => {
 
         {/* area similiar property by location */}
         <div className="container border-top mt-50">
-          <SimilarProperty location={office.location} />
+          <SimilarProperty
+            location={office.location}
+            id_except={office.property_id}
+          />
         </div>
       </div>
     </div>

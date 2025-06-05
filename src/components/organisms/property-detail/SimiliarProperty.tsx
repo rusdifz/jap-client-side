@@ -54,18 +54,10 @@ const setting = {
 
 interface Props {
   location: string;
+  id_except: number;
 }
 
-const CommonSimilarProperty = ({ location }: Props) => {
-  console.log('location prop', location);
-
-  const url = `/api/property?page=1&limit=5&location=${location}`;
-
-  // const { data, error, isLoading } = useSWR<ResponseAPI<IProperties[]>>(
-  //   url,
-  //   fetcher,
-  // );
-
+const CommonSimilarProperty = ({ location, id_except }: Props) => {
   const [isLoading, setLoading] = useState(true);
   const [propertiesSimiliar, setPropertiesSimiliar] = useState<any[]>([]);
 
@@ -75,6 +67,7 @@ const CommonSimilarProperty = ({ location }: Props) => {
       page: 1,
       limit: 12,
       location: location,
+      id_except,
     };
 
     setLoading(true);

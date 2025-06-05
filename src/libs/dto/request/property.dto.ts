@@ -11,6 +11,7 @@ export class ReqPropertiesDTO extends ReqGetDTO {
   location?: LocationEnum | string;
   property_type?: PropertyTypeEnum | string;
   property_status?: PropertyStatusEnum | string;
+  id_except?: number;
 }
 
 export class ReqCreatePropertyDTO {
