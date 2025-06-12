@@ -52,7 +52,7 @@ const SearchDropdownHome = () => {
                     <div className="labelNew">Search Keyword</div>
                     <input
                       type="text"
-                      placeholder="search here..."
+                      placeholder="Nama Gedung...."
                       className="type-input"
                       name="keyword"
                       onChange={(e) => {

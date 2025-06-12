@@ -55,7 +55,7 @@ const SearchDropdown: React.FC<TableProps> = ({
                     <div className="labelNew">Search Keyword</div>
                     <input
                       type="text"
-                      placeholder={'search here...'}
+                      placeholder={'Nama Gedung....'}
                       className="type-input"
                       name="keyword"
                       defaultValue={keyword}
