@@ -113,7 +113,7 @@ const HomeSectionCategory = () => {
                     backgroundImage: '',
                   }}
                 >
-                  <div className="content text-center w-100 tran3s">
+                  <div className="content text-center w-100 tran3s lazy-img">
                     <Skeleton active />
                   </div>
                 </div>

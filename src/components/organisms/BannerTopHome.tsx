@@ -32,6 +32,7 @@ const BannerTopHome = () => {
               backgroundImage: `url(/assets/images/banner/banner-image-13.jpg)`,
             }}
             className="hero-img lazy-img"
+            loading="lazy"
           />
         </div>
         {/* <div className="item m-0">

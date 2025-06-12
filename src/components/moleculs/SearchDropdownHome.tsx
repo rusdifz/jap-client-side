@@ -118,7 +118,7 @@ const SearchDropdownHome = () => {
                   <div className="input-box-one lg-mt-10">
                     <button className="fw-500 text-uppercase tran3s search-btn-four">
                       <span>Search</span>
-                      <i className="fa-light fa-magnifying-glass"></i>
+                      <i className="fa-light fa-magnifying-glass lazy-img" />
                     </button>
                   </div>
                 </div>
