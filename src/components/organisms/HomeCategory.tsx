@@ -6,6 +6,7 @@ import React, { useRef, useEffect, useState } from 'react';
 
 import { fetchApiMasterLocation } from '@/api/master-location.api';
 import { Skeleton } from 'antd';
+import useSWR from 'swr';
 
 const setting = {
   infinite: true,
@@ -45,19 +46,36 @@ const HomeSectionCategory = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const dataLoad = Array.from({ length: 6 }, (_, i) => i + 1);
 
+  const { data: popularLocationsData } = useSWR(
+    'popular-locations',
+    fetchApiMasterLocation,
+    {
+      revalidateOnFocus: false,
+      revalidateOnReconnect: false,
+      dedupingInterval: 60000, // 1 minute
+    },
+  );
+
   useEffect(() => {
-    fetchApiMasterLocation()
-      .then((resp) => {
-        setPopularLocation(resp.data);
-        setLoading(false);
-        console.log('res popular location', resp.data);
-      })
-      .catch((err) => {
-        console.log('error get feedback', err);
-        setPopularLocation([]);
-        setLoading(false);
-      });
-  }, []);
+    if (popularLocationsData) {
+      setPopularLocation(popularLocationsData.data);
+      setLoading(false);
+    }
+  }, [popularLocationsData]);
+
+  // useEffect(() => {
+  //   fetchApiMasterLocation()
+  //     .then((resp) => {
+  //       setPopularLocation(resp.data);
+  //       setLoading(false);
+  //       console.log('res popular location', resp.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log('error get feedback', err);
+  //       setPopularLocation([]);
+  //       setLoading(false);
+  //     });
+  // }, []);
 
   const sliderRef = useRef<Slider | null>(null);
 

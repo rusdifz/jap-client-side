@@ -57,7 +57,7 @@ const BannerTop: React.FC<Props> = ({
             className="hero-img lazy-img"
           />
         </div>
-        <div className="item m-0">
+        {/* <div className="item m-0">
           <Image
             alt=""
             src="/assets/images/banner/banner-image-9.jpg"
@@ -69,7 +69,7 @@ const BannerTop: React.FC<Props> = ({
             }}
             className="hero-img lazy-img"
           />
-        </div>
+        </div> */}
       </Slider>
 
       <div className="container flex z-1">

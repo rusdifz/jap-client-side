@@ -24,8 +24,7 @@ const HomeSectionAboutUs = () => {
                         src="/assets/images/shape/title_shape_03.svg"
                         width={200}
                         height={200}
-                        // fill
-                        alt=""
+                        alt="about us image"
                         className="lazy-img"
                       />
                     </span>{' '}

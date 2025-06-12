@@ -20,7 +20,7 @@ const BannerTopHome = () => {
   return (
     <div className="hero-banner-four position-relative z-1 xl-pt-120 md-pt-60 pb-50 xl-pb-120 md-pb-20">
       <Slider {...setting} className="hero-slider-one m0">
-        {/* <div className="item m-0">
+        <div className="item m-0">
           <Image
             alt=""
             src={''}
@@ -33,8 +33,8 @@ const BannerTopHome = () => {
             }}
             className="hero-img lazy-img"
           />
-        </div> */}
-        <div className="item m-0">
+        </div>
+        {/* <div className="item m-0">
           <Image
             alt=""
             src="/assets/images/banner/banner-image-9.jpg"
@@ -46,7 +46,7 @@ const BannerTopHome = () => {
             }}
             className="hero-img lazy-img"
           />
-        </div>
+        </div> */}
       </Slider>
 
       <div className="container flex z-1">

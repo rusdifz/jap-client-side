@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { Rating } from 'react-simple-star-rating';
 import Slider from 'react-slick';
 import { useEffect, useRef, useState } from 'react';
+import { Skeleton } from 'antd';
+import useSWR from 'swr';
 
 import quoteIcon from '@/assets/images/icon/icon_29.svg';
 import titleShape_1 from '@/assets/images/shape/title_shape_01.svg';
@@ -12,7 +14,6 @@ import feedbackShape_2 from '@/assets/images/shape/shape_43.svg';
 
 import { IFeedback } from '@/libs/interfaces';
 import { fetchApiFeedbackList } from '@/api/feedback.api';
-import { Skeleton } from 'antd';
 
 const setting = {
   dots: false,
@@ -44,19 +45,37 @@ const HomeSectionFeedback = ({ style }: any) => {
   const [isLoading, setLoading] = useState<boolean>(true);
   const dataLoad = Array.from({ length: 3 }, (_, i) => i + 1);
 
+  const { data } = useSWR(
+    'feedback-list',
+    () => fetchApiFeedbackList({ page: 1, limit: 5 }),
+    {
+      revalidateOnFocus: false,
+      revalidateOnReconnect: false,
+      dedupingInterval: 60000, // 1 minute
+    },
+  );
+
   useEffect(() => {
-    fetchApiFeedbackList({ page: 1, limit: 5 })
-      .then((resp) => {
-        setFeedbacks(resp.data);
-        setLoading(false);
-        console.log('res feedback', resp.data);
-      })
-      .catch((err) => {
-        console.log('error get feedback', err);
-        setFeedbacks([]);
-        setLoading(false);
-      });
-  }, []);
+    if (data) {
+      setFeedbacks(data.data);
+      setLoading(false);
+      console.log('res feedback', data.data);
+    }
+  }, [data]);
+
+  // useEffect(() => {
+  //   fetchApiFeedbackList({ page: 1, limit: 5 })
+  //     .then((resp) => {
+  //       setFeedbacks(resp.data);
+  //       setLoading(false);
+  //       console.log('res feedback', resp.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log('error get feedback', err);
+  //       setFeedbacks([]);
+  //       setLoading(false);
+  //     });
+  // }, []);
 
   const sliderRef = useRef<Slider | null>(null);
 
@@ -87,7 +106,11 @@ const HomeSectionFeedback = ({ style }: any) => {
                   Client{' '}
                   <span>
                     Feedback{' '}
-                    <Image src={titleShape_1} alt="" className="lazy-img" />
+                    <Image
+                      src={titleShape_1}
+                      alt="feedback image"
+                      className="lazy-img"
+                    />
                   </span>
                 </h3>
                 <p className={`fs-20 mt-xs`}>
