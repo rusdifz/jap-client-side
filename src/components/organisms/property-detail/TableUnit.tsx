@@ -3,6 +3,7 @@ import type { TableColumnsType } from 'antd';
 
 import { PropPropertyDetail } from '@/libs/type/property.type';
 import { IUnit } from '@/libs/interfaces';
+import { formatCurrency } from '@/libs/helper/convert-currency';
 
 // interface DataType {
 //   key: React.Key;
@@ -26,7 +27,11 @@ const columns: TableColumnsType<any> = [
     title: 'Rent Price',
     dataIndex: 'rent_price',
     align: 'center',
+    render: (_: any, record: IUnit) => {
+      return formatCurrency(`Rp. ${record.rent_price.toString()}`);
+    },
   },
+  // formatCurrency(`Rp. ${property.price.rent_average.toString()}`)
   {
     title: 'Status',
     dataIndex: 'status',
