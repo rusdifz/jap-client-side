@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <>
       <BannerTopHome />
-      <Category />
+      {/* <Category /> */}
       <AboutUs />
-      <Feedback style={true} />
+      {/* <Feedback style={true} /> */}
       <ListClient />
       <Address />
     </>

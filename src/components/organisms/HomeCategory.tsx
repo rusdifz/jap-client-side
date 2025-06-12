@@ -120,7 +120,7 @@ const HomeSectionCategory = () => {
             {popularLocations.map((item: any) => (
               <div key={item.id} className="item-first">
                 <div
-                  className={`location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]`}
+                  className={`location-card-new position-relative z-1 d-flex align-items-center md-h-[200px] lazy-img`}
                   style={{
                     height: '300px',
                     // width: '200px',

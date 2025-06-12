@@ -128,7 +128,7 @@ const HomeSectionFeedback = ({ style }: any) => {
                           : '/assets/images/default-image/profile-default.jpg'
                       }
                       alt=""
-                      className="rounded-circle avatar"
+                      className="rounded-circle avatar lazy-img"
                       width={200}
                       height={200}
                     />
@@ -148,7 +148,7 @@ const HomeSectionFeedback = ({ style }: any) => {
                       <Rating initialValue={5} size={20} readonly={true} />
                     </li>
                   </ul>
-                  <Image src={quoteIcon} alt="" className="icon" />
+                  <Image src={quoteIcon} alt="" className="icon lazy-img" />
                 </div>
               </div>
             ))}

@@ -47,6 +47,7 @@ const HomeSectionAddress = () => {
                     width="20"
                     height="20"
                     loading="lazy"
+                    className="lazy-img"
                   />
                   <Link href="#">{email}</Link>
                 </li>
@@ -57,6 +58,7 @@ const HomeSectionAddress = () => {
                     width="20"
                     height="20"
                     loading="lazy"
+                    className="lazy-img"
                   />
                   <Link href="https://wa.me/6282111782867?text=Hello%20I%20need%20more%20information">
                     {number}
@@ -71,7 +73,7 @@ const HomeSectionAddress = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className={`fa-brands fa-${icon}`}></i>
+                      <i className={`fa-brands fa-${icon} lazy-img`}></i>
                     </Link>
                   </li>
                 ))}
@@ -88,7 +90,7 @@ const HomeSectionAddress = () => {
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="footer-maps"
+              className="footer-maps lazy-img"
             />
           </div>
         </div>

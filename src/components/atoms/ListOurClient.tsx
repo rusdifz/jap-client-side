@@ -72,7 +72,7 @@ const ListOurClient = () => {
     <Slider {...setting} className="partner-logo-one">
       {clientData.map((brand, i) => (
         <div key={i} className="item">
-          <Image src={brand} alt="" />
+          <Image src={brand} alt="" className="lazy-img" />
         </div>
       ))}
     </Slider>
