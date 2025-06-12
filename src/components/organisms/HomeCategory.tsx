@@ -1,13 +1,11 @@
 'use client';
-// import Image from 'next/image';
+
 import Link from 'next/link';
 import Slider from 'react-slick';
 import React, { useRef, useEffect, useState } from 'react';
 
 import { fetchApiMasterLocation } from '@/api/master-location.api';
 import { Skeleton } from 'antd';
-
-// import titleShape from '@/assets/images/shape/title_shape_02.svg';
 
 const setting = {
   infinite: true,
@@ -88,7 +86,7 @@ const HomeSectionCategory = () => {
             ref={sliderRef}
             className="property-location-slider-one width-50"
           >
-            {dataLoad.map((item, index) => (
+            {dataLoad.map((_, index) => (
               <div key={index} className="item-first">
                 <div
                   className="location-card-new position-relative z-1 d-flex align-items-center md-h-[200px]"
