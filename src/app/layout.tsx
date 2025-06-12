@@ -3,6 +3,7 @@
 import '../styles/index.scss';
 import { Provider } from 'react-redux';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import store from '@/redux/store';
 import Header from '@/layouts/headers';
@@ -52,6 +53,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Analytics />
+            <SpeedInsights />
             {/* <Footer /> */}
           </Provider>
         </div>
