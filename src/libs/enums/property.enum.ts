@@ -24,6 +24,7 @@ export enum LocationEnum {
   DETABEK = 'Depok Tangerang Bekasi',
   BALI = 'Bali',
   BANDUNG = 'Bandung',
+  OTHERS_AREA = 'Others Area',
 }
 
 export enum PropertyStatusEnum {
