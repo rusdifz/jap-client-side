@@ -1,9 +1,11 @@
 'use client';
 
 import '../styles/index.scss';
+import Script from 'next/script';
 import { Provider } from 'react-redux';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+// import { GoogleAnalytics } from '@next/third-parties/google'
 
 import store from '@/redux/store';
 import Header from '@/layouts/headers';
@@ -19,6 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={isDev}>
       <head>
+        {/* GTM Script */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KW8V6BHQ');
+          `}
+        </Script>
         <meta
           name="keywords"
           content="workspace jabodetabek, jll, regus, property, office, office space, jabodetabek,coworking space jakarta"
@@ -46,10 +58,18 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
         />
-        <script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KW8V6BHQ'); </script>
+        
       </head>
       <body suppressHydrationWarning={true}>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW8V6BHQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KW8V6BHQ"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+
         <div className="main-page-wrapper">
           <Provider store={store}>
             <Header />
@@ -62,4 +82,7 @@ export default function RootLayout({
       </body>
     </html>
   );
+
+
+        
 }
