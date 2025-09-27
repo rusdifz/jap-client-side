@@ -62,10 +62,10 @@ const HomeSectionAboutUs = () => {
                 <h3>
                   <Count number={7} />+
                 </h3>
-                <p>
+                <h1>
                   Years Experience <br />
                   with proud.
-                </p>
+                </h1>
               </div>
             </div>
           </div>

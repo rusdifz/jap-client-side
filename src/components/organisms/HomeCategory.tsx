@@ -63,20 +63,6 @@ const HomeSectionCategory = () => {
     }
   }, [popularLocationsData]);
 
-  // useEffect(() => {
-  //   fetchApiMasterLocation()
-  //     .then((resp) => {
-  //       setPopularLocation(resp.data);
-  //       setLoading(false);
-  //       console.log('res popular location', resp.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log('error get feedback', err);
-  //       setPopularLocation([]);
-  //       setLoading(false);
-  //     });
-  // }, []);
-
   const sliderRef = useRef<Slider | null>(null);
 
   const handlePrevClick = () => {

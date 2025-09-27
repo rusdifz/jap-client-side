@@ -34,7 +34,6 @@ export default function RootLayout({
             gtag('config', 'G-74ES17K0X0');
           `}
         </Script>
-
         <meta
           name="keywords"
           content="workspace jabodetabek, jll, regus, property, office, office space, jabodetabek,coworking space jakarta"
@@ -49,7 +48,7 @@ export default function RootLayout({
         {/* For IE  */}
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         {/* For Resposive Device */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
         {/* For Window Tab Color */}
         {/* Chrome, Firefox OS and Opera */}
         <meta name="theme-color" content="#0D1A1C" />

@@ -63,20 +63,6 @@ const HomeSectionFeedback = ({ style }: any) => {
     }
   }, [data]);
 
-  // useEffect(() => {
-  //   fetchApiFeedbackList({ page: 1, limit: 5 })
-  //     .then((resp) => {
-  //       setFeedbacks(resp.data);
-  //       setLoading(false);
-  //       console.log('res feedback', resp.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log('error get feedback', err);
-  //       setFeedbacks([]);
-  //       setLoading(false);
-  //     });
-  // }, []);
-
   const sliderRef = useRef<Slider | null>(null);
 
   const handlePrevClick = () => {
