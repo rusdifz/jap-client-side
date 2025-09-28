@@ -53,7 +53,7 @@ const BannerTopHome = () => {
       <div className="container flex z-1">
         <div className="row pt-150">
           <h1 className="hero-heading font-garamond wow fadeInUp">
-            {/* Featured Office */}
+            Featured Office
           </h1>
         </div>
         <div className="row pb-5 mt-100">

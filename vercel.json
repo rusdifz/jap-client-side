@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://jardineasiapasific.asia/$1",
+      "permanent": true
+    }
+  ]
+}

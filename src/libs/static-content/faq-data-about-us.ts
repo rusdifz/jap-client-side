@@ -23,7 +23,7 @@ export const faq_data: DataType[] = [
   {
     id: 3,
     question: 'Our vision',
-    answer: '',
+    answer: 'Empowering companies to grow by simplifying the search for their ideal office space',
     showAnswer: false,
   },
 ];
