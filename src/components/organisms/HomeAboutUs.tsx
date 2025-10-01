@@ -16,7 +16,7 @@ const HomeSectionAboutUs = () => {
               <div className="pb-5 xl-pb-50 position-relative z-1">
                 {}
                 <div className="title-one mb-55 lg-mb-20">
-                  <h3>
+                  <h2>
                     Find Your{' '}
                     <span>
                       Perfect
@@ -29,7 +29,7 @@ const HomeSectionAboutUs = () => {
                       />
                     </span>{' '}
                     Match Easily.
-                  </h3>
+                  </h2>
                 </div>
                 <div className="accordion-style-three">
                   <div className="accordion" id="accordionThree">
@@ -59,11 +59,11 @@ const HomeSectionAboutUs = () => {
           >
             <div className="card-style-three p0">
               <div className="bg-wrapper text-center">
-                <h3>
+                {/* <h2>
                   <Count number={7} />+
-                </h3>
+                </h2> */}
                 <h1>
-                  Years Experience <br />
+                  7 <br /> Years Experience <br />
                   with proud.
                 </h1>
               </div>
