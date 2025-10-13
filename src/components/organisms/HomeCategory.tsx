@@ -82,7 +82,7 @@ const HomeSectionCategory = () => {
       {loading && (
         <div className="container">
           <div className="title-one text-center mb-20 xl-mb-10 md-mb-30 wow fadeInUp">
-            <h4>Explore Popular Location</h4>
+            <h2>Explore Popular Location</h2>
           </div>
 
           <Slider

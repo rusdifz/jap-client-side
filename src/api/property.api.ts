@@ -9,6 +9,7 @@ import { Get } from './base.api';
 export async function fetchApiProperties(
   props?: ReqPropertiesDTO,
 ): Promise<ResponseAPI<IProperties[]>> {
+  console.log('[SSR] Fetch Api Properties : ', props);
   try {
     return await Get<IProperties[]>('/api/v1/client/properties', { ...props });
   } catch (error: any) {
