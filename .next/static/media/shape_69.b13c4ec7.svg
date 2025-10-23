@@ -1,0 +1,2183 @@
+var _path, _g, _path2, _g2;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+var SvgShape69 = function SvgShape69(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 448,
+    height: 1237,
+    fill: "none"
+  }, props), /*#__PURE__*/React.createElement("g", {
+    opacity: 0.7
+  }, /*#__PURE__*/React.createElement("mask", {
+    id: "shape_69_svg__a",
+    width: 448,
+    height: 880,
+    x: 0,
+    y: 0,
+    maskUnits: "userSpaceOnUse",
+    style: {
+      maskType: "alpha"
+    }
+  }, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "#fff",
+    fillOpacity: 0.3,
+    d: "M0 0h448v880H0z"
+  }))), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    fill: "#000",
+    mask: "url(#shape_69_svg__a)"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 682.363 -50.63)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 680.448 -30.084)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 678.54 -9.455)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 676.618 11.09)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 674.71 31.72)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 672.798 52.306)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 670.884 72.936)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 659.41 196.5)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 668.972 93.522)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 657.499 217.087)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 667.06 114.11)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 655.581 237.675)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 665.148 134.697)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 653.673 258.304)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 663.235 155.326)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 651.761 278.891)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 661.323 175.913)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 649.85 299.478)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 647.932 320.065)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 636.462 443.672)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 646.024 340.694)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 634.545 464.26)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 644.112 361.281)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 632.633 484.847)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 642.194 381.87)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 630.725 505.478)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 640.282 402.456)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 628.812 526.06)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 638.374 423.085)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 626.895 546.65)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 624.983 567.237)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 613.513 690.847)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 623.071 587.825)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 611.596 711.43)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 621.163 608.451)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 609.683 732.018)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 619.245 629.04)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 607.77 752.606)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 617.333 649.628)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 605.86 773.237)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 615.421 670.216)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 603.947 793.82)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 602.034 814.408)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 590.557 937.975)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 600.12 834.996)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 588.643 958.563)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 598.208 855.584)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 586.733 979.189)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 596.297 876.21)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 584.82 999.777)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 594.383 896.798)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 582.907 1020.365)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 592.47 917.387)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 580.998 1040.996)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 579.085 1061.579)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 567.609 1185.145)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 577.171 1082.167)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 565.693 1205.734)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 575.257 1102.755)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 563.78 1226.322)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 573.344 1123.343)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 561.87 1246.948)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 571.43 1143.932)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 559.957 1267.536)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 569.521 1164.557)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 558.045 1288.124)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 556.135 1308.755)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 544.653 1432.273)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 554.22 1329.338)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 542.748 1452.948)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 552.308 1349.926)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 540.83 1473.493)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 550.398 1370.557)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 538.917 1494.08)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 548.48 1391.102)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 537.007 1514.707)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 546.566 1411.69)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 535.093 1535.295)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 533.431 1553.231)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 521.953 1676.792)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 531.517 1573.814)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 520.046 1697.423)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 529.604 1594.402)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 518.128 1717.969)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 527.695 1615.033)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 516.218 1738.6)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 525.781 1635.621)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 514.303 1759.183)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 523.867 1656.204)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 512.39 1779.77)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 510.482 1800.402)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 499.004 1923.963)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 508.567 1820.99)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 497.095 1944.594)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 506.654 1841.573)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 495.177 1965.14)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 504.741 1862.161)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 493.268 1985.77)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 502.832 1882.792)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 491.355 2006.353)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 500.919 1903.38)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 489.441 2026.942)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 487.527 2047.53)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 476.054 2171.14)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 485.618 2068.161)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 474.14 2191.722)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 483.706 2088.75)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 472.228 2212.31)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 481.791 2109.332)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 470.314 2232.899)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 479.879 2129.92)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 468.4 2253.487)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 477.965 2150.508)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 466.492 2274.118)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 464.579 2294.7)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 453.104 2418.31)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 462.665 2315.289)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 451.192 2438.898)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 460.756 2335.92)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 449.278 2459.481)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 458.841 2356.508)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 447.365 2480.07)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 456.928 2377.09)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 445.455 2500.7)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 455.014 2397.68)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 443.538 2521.246)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 441.628 2541.872)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 430.152 2665.438)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 439.715 2562.46)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 428.24 2686.07)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 437.801 2583.048)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 426.328 2706.658)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 435.892 2603.679)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 424.414 2727.24)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 433.98 2624.267)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 422.506 2747.871)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 432.064 2644.85)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 420.593 2768.46)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 418.679 2789.048)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 416.765 2809.636)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 414.85 2830.219)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 412.938 2850.807)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 411.025 2871.395)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 409.115 2892.026)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -1749.464 2986.079)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -1760.939 3109.683)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -1751.376 3006.662)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -1753.29 3027.293)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -1755.201 3047.881)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -1757.113 3068.47)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -1759.025 3089.057)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2157.525 208.902)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2169.004 332.467)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2159.442 229.49)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2170.916 353.054)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2161.354 250.076)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2172.824 373.683)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2163.262 270.705)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2174.741 394.27)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2165.178 291.25)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2176.653 414.857)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2167.092 311.88)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2178.565 435.444)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2180.474 456.073)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2191.953 579.639)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2182.391 476.66)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2193.865 600.225)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2184.303 497.248)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2195.782 620.813)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2186.211 517.877)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2197.69 641.442)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2188.132 538.423)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2199.602 662.03)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2190.044 559.01)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2201.52 682.617)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2203.428 703.246)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2214.905 826.766)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2205.34 723.833)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2216.813 847.397)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2207.252 744.42)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2218.73 867.986)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2209.164 765.007)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2220.643 888.574)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2211.081 785.596)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2222.551 909.2)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2212.99 806.221)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2224.468 929.788)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2226.132 947.724)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2237.606 1071.285)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2228.045 968.307)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2239.518 1091.873)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2229.957 988.895)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2241.436 1112.462)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2231.865 1009.526)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2243.344 1133.088)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2233.777 1030.114)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2245.256 1153.676)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2235.694 1050.697)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2247.168 1174.264)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2249.076 1194.895)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2260.555 1318.456)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2250.994 1215.478)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2262.467 1339.044)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2252.906 1236.066)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2264.384 1359.633)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2254.817 1256.654)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2266.296 1380.22)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2256.735 1277.242)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2268.205 1400.846)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2258.643 1297.873)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2270.117 1421.434)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2272.034 1442.023)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2283.508 1565.59)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2273.946 1462.61)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2285.421 1586.215)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2275.854 1483.242)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2287.333 1606.803)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2277.772 1503.825)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2289.245 1627.391)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2279.684 1524.413)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2291.153 1648.023)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2281.596 1545.001)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2293.071 1668.606)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2294.983 1689.194)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2306.452 1812.803)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2296.895 1709.782)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2308.37 1833.392)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2298.812 1730.37)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2310.282 1853.974)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2300.72 1750.996)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2312.194 1874.562)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2302.633 1771.584)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2314.107 1895.194)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2304.55 1792.172)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2316.023 1915.739)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2317.932 1936.364)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2329.405 2059.93)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2319.844 1956.952)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2331.319 2080.562)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2321.761 1977.541)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2333.23 2101.15)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2323.673 1998.129)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2335.148 2121.734)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2325.58 2018.76)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2337.056 2142.365)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2327.499 2039.343)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2338.968 2162.953)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2340.88 2183.54)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2352.36 2307.102)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2342.801 2204.086)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2354.271 2327.69)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2344.71 2224.712)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2356.18 2348.321)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2346.622 2245.3)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2358.097 2368.91)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2348.534 2265.888)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2360.01 2389.492)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2350.448 2286.514)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2361.926 2410.08)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2363.829 2430.711)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2375.308 2554.278)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2365.746 2451.3)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2377.22 2574.86)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2367.659 2471.883)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2379.138 2595.45)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2369.57 2492.47)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2381.046 2616.08)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2371.488 2513.06)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2382.957 2636.669)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2373.4 2533.647)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2384.87 2657.251)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2386.787 2677.84)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2398.26 2801.406)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2388.695 2698.47)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2400.17 2822.032)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2390.607 2719.059)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2402.086 2842.62)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2392.525 2739.642)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2403.998 2863.208)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2394.437 2760.23)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2405.912 2883.84)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2396.349 2780.818)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -2407.818 2904.427)skewX(.08)"
+  }))), /*#__PURE__*/React.createElement("mask", {
+    id: "shape_69_svg__b",
+    width: 448,
+    height: 357,
+    x: 0,
+    y: 880,
+    maskUnits: "userSpaceOnUse",
+    style: {
+      maskType: "alpha"
+    }
+  }, _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "#fff",
+    fillOpacity: 0.3,
+    d: "M0 880h448v357H0z"
+  }))), _g2 || (_g2 = /*#__PURE__*/React.createElement("g", {
+    fill: "#000",
+    mask: "url(#shape_69_svg__b)"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4056.248 389.36)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4058.164 409.905)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4060.078 430.535)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4061.994 451.08)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4063.902 471.709)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4065.814 492.296)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4067.727 512.925)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4079.201 636.49)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4069.64 533.512)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4081.113 657.077)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4071.551 554.1)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4083.03 677.665)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4073.463 574.686)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4084.939 698.294)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4075.377 595.316)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4086.85 718.88)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4077.289 615.903)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4088.763 739.467)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4090.68 760.055)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4102.15 883.662)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4092.588 780.684)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4104.067 904.249)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4094.5 801.27)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4105.98 924.836)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4096.418 821.859)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4107.887 945.468)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4098.33 842.446)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4109.8 966.05)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4100.238 863.075)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4111.717 986.639)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4113.629 1007.227)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4125.098 1130.836)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4115.54 1027.815)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4127.016 1151.42)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4117.45 1048.44)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4128.928 1172.007)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4119.367 1069.029)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4130.84 1192.595)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4121.278 1089.617)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4132.753 1213.227)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4123.19 1110.205)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4134.666 1233.81)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4136.578 1254.398)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4148.057 1377.964)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4138.49 1274.986)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4149.968 1398.552)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4140.407 1295.574)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4151.877 1419.178)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4142.315 1316.2)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4153.789 1439.766)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4144.227 1336.788)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4155.706 1460.355)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4146.14 1357.376)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4157.614 1480.986)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4159.527 1501.568)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4171.005 1625.135)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4161.444 1522.157)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4172.917 1645.723)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4163.356 1542.745)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4174.835 1666.312)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4165.268 1563.333)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4176.743 1686.937)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4167.18 1583.92)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4178.655 1707.525)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4169.093 1604.547)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4180.567 1728.113)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4182.475 1748.745)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4193.958 1872.263)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4184.393 1769.328)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4195.862 1892.937)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4186.305 1789.916)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4197.784 1913.482)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4188.213 1810.547)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4199.695 1934.07)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4190.134 1831.092)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4201.604 1954.696)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4192.046 1851.68)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4203.521 1975.285)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4205.18 1993.22)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4216.66 2116.782)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4207.092 2013.803)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4218.567 2137.413)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4209.01 2034.392)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4220.483 2157.958)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4210.917 2055.023)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4222.396 2178.59)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4212.83 2075.61)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4224.309 2199.172)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4214.747 2096.194)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4226.22 2219.76)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4228.129 2240.391)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4239.608 2363.953)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4230.046 2260.98)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4241.516 2384.584)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4231.958 2281.562)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4243.437 2405.13)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4233.87 2302.15)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4245.345 2425.76)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4235.778 2322.782)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4247.258 2446.343)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4237.696 2343.37)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4249.17 2466.931)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4251.087 2487.52)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4262.556 2611.129)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4252.995 2508.15)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4264.469 2631.712)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4254.907 2528.739)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4266.386 2652.3)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4256.82 2549.321)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4268.298 2672.888)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4258.731 2569.91)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4270.21 2693.476)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4260.648 2590.498)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4272.118 2714.107)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4274.036 2734.69)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4285.505 2858.3)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4275.948 2755.278)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4287.423 2878.888)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4277.856 2775.91)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4289.335 2899.47)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4279.773 2796.498)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4291.247 2920.059)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4281.685 2817.08)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4293.155 2940.69)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4283.597 2837.669)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4295.076 2961.235)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4296.985 2981.861)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4308.458 3105.427)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4298.897 3002.45)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4310.371 3126.059)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4300.808 3023.037)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4312.283 3146.647)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4302.722 3043.669)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4314.196 3167.23)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4304.634 3064.257)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4316.104 3187.86)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4306.546 3084.84)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4318.021 3208.45)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4319.933 3229.037)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4321.845 3249.625)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4323.763 3270.208)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4325.675 3290.796)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4327.587 3311.384)skewX(.08)"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 0.669,
+    height: 519.213,
+    rx: 0.335,
+    transform: "rotate(10.61 -4329.495 3332.016)skewX(.08)"
+  })))));
+};
+export default SvgShape69;

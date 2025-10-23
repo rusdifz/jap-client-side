@@ -1,0 +1,13 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/api/popular-location/route": "app/api/popular-location/route.js",
+  "/api/property/[slug]/route": "app/api/property/[slug]/route.js",
+  "/api/property/route": "app/api/property/route.js",
+  "/properties/page": "app/properties/page.js",
+  "/[...not-found]/page": "app/[...not-found]/page.js",
+  "/article/[id]/page": "app/article/[id]/page.js",
+  "/properties/[slug]/page": "app/properties/[slug]/page.js",
+  "/page": "app/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/article/page": "app/article/page.js"
+}
