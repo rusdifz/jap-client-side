@@ -34,6 +34,22 @@ export default function RootLayout({
             gtag('config', 'G-74ES17K0X0');
           `}
         </Script>
+
+        {/* Google Analytics Script Account rusdifazan@gmail.com*/}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3QHBXTFPLF"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3QHBXTFPLF');
+          `}
+        </Script>
+
         <meta
           name="keywords"
           content="workspace jabodetabek, jll, regus, property, office, office space, jabodetabek,coworking space jakarta"
