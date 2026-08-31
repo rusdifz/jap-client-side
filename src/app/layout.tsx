@@ -50,6 +50,7 @@ export default function RootLayout({
           `}
         </Script>
 
+        {/* Meta Script */}
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
@@ -63,11 +64,12 @@ export default function RootLayout({
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '2240133223449081');
+              fbq('init', '2949984038727465');
               fbq('track', 'PageView');
             `,
           }}
         />
+        {/* Meta Script */}
 
         <meta
           name="keywords"
@@ -108,15 +110,17 @@ export default function RootLayout({
           />
         </noscript>
 
+        {/* Meta Script */}
         <noscript>
           <img
             height="1"
             width="1"
             style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=2240133223449081&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=2949984038727465&ev=PageView&noscript=1"
             alt=""
           />
         </noscript>
+        {/* Meta Script */}
 
         <div className="main-page-wrapper">
           <Provider store={store}>
