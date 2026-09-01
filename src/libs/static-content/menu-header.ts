@@ -49,7 +49,7 @@ const menu_data: MenuItem[] = [
     id: 5,
     has_dropdown: false,
     title: '+62-821-1178-2867',
-    link: 'https://wa.me/6282111782867?text=Hello%20I%20need%20more%20information',
+    link: 'https://wa.me/6282111782867?text=Hello%20I%20need%20more%20information%20from%20website',
   },
 ];
 export default menu_data;
